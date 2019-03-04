@@ -38,8 +38,8 @@ gogoslick_plugin_prefix := --gogoslick_out=plugins=grpc,
 # protoc_gen_python
 ########################
 
-protoc_gen_python_prefix := --python_out=,
-protoc_gen_python_plugin := $(protoc_gen_python_prefix):$(repo_dir)/python/istio_api
+protoc_gen_python_prefix := --cpp_out=,
+protoc_gen_python_plugin := $(protoc_gen_python_prefix):$(repo_dir)/cpp/istio_api
 
 comma := ,
 empty:=
