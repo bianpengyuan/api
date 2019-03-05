@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,7 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
 namespace istio {
 namespace policy {
 namespace v1beta1 {
@@ -26,6 +26,9 @@ namespace v1beta1 {
 }  // namespace policy
 }  // namespace istio
 namespace protobuf_policy_2fv1beta1_2fvalue_5ftype_2eproto {
+void InitDefaults() {
+}
+
 const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
 const ::google::protobuf::uint32 TableStruct::offsets[1] = {};
 static const ::google::protobuf::internal::MigrationSchema* schemas = NULL;
@@ -33,15 +36,14 @@ static const ::google::protobuf::Message* const* file_default_instances = NULL;
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "policy/v1beta1/value_type.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "policy/v1beta1/value_type.proto", schemas, file_default_instances, TableStruct::offsets,
       NULL, file_level_enum_descriptors, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -68,8 +70,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -110,5 +112,9 @@ bool ValueType_IsValid(int value) {
 }  // namespace v1beta1
 }  // namespace policy
 }  // namespace istio
+namespace google {
+namespace protobuf {
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

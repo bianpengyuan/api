@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,10 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_DirectHttpResponse_HeadersEntry_DoNotUse;
+}  // namespace protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto
 namespace istio {
 namespace policy {
 namespace v1beta1 {
@@ -36,14 +39,9 @@ class DirectHttpResponseDefaultTypeInternal {
 }  // namespace policy
 }  // namespace istio
 namespace protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto {
-void InitDefaultsDirectHttpResponse_HeadersEntry_DoNotUseImpl() {
+static void InitDefaultsDirectHttpResponse_HeadersEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::policy::v1beta1::_DirectHttpResponse_HeadersEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::policy::v1beta1::DirectHttpResponse_HeadersEntry_DoNotUse();
@@ -51,20 +49,12 @@ void InitDefaultsDirectHttpResponse_HeadersEntry_DoNotUseImpl() {
   ::istio::policy::v1beta1::DirectHttpResponse_HeadersEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsDirectHttpResponse_HeadersEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsDirectHttpResponse_HeadersEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_DirectHttpResponse_HeadersEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsDirectHttpResponse_HeadersEntry_DoNotUse}, {}};
 
-void InitDefaultsDirectHttpResponseImpl() {
+static void InitDefaultsDirectHttpResponse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto::InitDefaultsDirectHttpResponse_HeadersEntry_DoNotUse();
   {
     void* ptr = &::istio::policy::v1beta1::_DirectHttpResponse_default_instance_;
     new (ptr) ::istio::policy::v1beta1::DirectHttpResponse();
@@ -73,9 +63,13 @@ void InitDefaultsDirectHttpResponseImpl() {
   ::istio::policy::v1beta1::DirectHttpResponse::InitAsDefaultInstance();
 }
 
-void InitDefaultsDirectHttpResponse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsDirectHttpResponseImpl);
+::google::protobuf::internal::SCCInfo<1> scc_info_DirectHttpResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsDirectHttpResponse}, {
+      &protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto::scc_info_DirectHttpResponse_HeadersEntry_DoNotUse.base,}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_DirectHttpResponse_HeadersEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_DirectHttpResponse.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[2];
@@ -112,15 +106,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "policy/v1beta1/http_response.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "policy/v1beta1/http_response.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, file_level_enum_descriptors, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -178,8 +171,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -290,16 +283,14 @@ const int DirectHttpResponse::kHeadersFieldNumber;
 
 DirectHttpResponse::DirectHttpResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto::InitDefaultsDirectHttpResponse();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto::scc_info_DirectHttpResponse.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.policy.v1beta1.DirectHttpResponse)
 }
 DirectHttpResponse::DirectHttpResponse(const DirectHttpResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   headers_.MergeFrom(from.headers_);
   body_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -313,7 +304,6 @@ DirectHttpResponse::DirectHttpResponse(const DirectHttpResponse& from)
 void DirectHttpResponse::SharedCtor() {
   body_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   code_ = 0;
-  _cached_size_ = 0;
 }
 
 DirectHttpResponse::~DirectHttpResponse() {
@@ -326,9 +316,7 @@ void DirectHttpResponse::SharedDtor() {
 }
 
 void DirectHttpResponse::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* DirectHttpResponse::descriptor() {
   ::protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto::protobuf_AssignDescriptorsOnce();
@@ -336,17 +324,10 @@ const ::google::protobuf::Descriptor* DirectHttpResponse::descriptor() {
 }
 
 const DirectHttpResponse& DirectHttpResponse::default_instance() {
-  ::protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto::InitDefaultsDirectHttpResponse();
+  ::google::protobuf::internal::InitSCC(&protobuf_policy_2fv1beta1_2fhttp_5fresponse_2eproto::scc_info_DirectHttpResponse.base);
   return *internal_default_instance();
 }
 
-DirectHttpResponse* DirectHttpResponse::New(::google::protobuf::Arena* arena) const {
-  DirectHttpResponse* n = new DirectHttpResponse;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void DirectHttpResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.policy.v1beta1.DirectHttpResponse)
@@ -366,7 +347,7 @@ bool DirectHttpResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.policy.v1beta1.DirectHttpResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -491,7 +472,7 @@ void DirectHttpResponse::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->headers().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->headers().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
       size_type n = 0;
@@ -501,7 +482,7 @@ void DirectHttpResponse::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
+      ::std::unique_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(headers_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -510,7 +491,7 @@ void DirectHttpResponse::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
+      ::std::unique_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
           it = this->headers().begin();
           it != this->headers().end(); ++it) {
@@ -575,7 +556,7 @@ void DirectHttpResponse::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->headers().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->headers().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
       size_type n = 0;
@@ -585,7 +566,7 @@ void DirectHttpResponse::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
+      ::std::unique_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(headers_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -596,7 +577,7 @@ void DirectHttpResponse::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
+      ::std::unique_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
           it = this->headers().begin();
           it != this->headers().end(); ++it) {
@@ -632,7 +613,7 @@ size_t DirectHttpResponse::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->headers_size());
   {
-    ::google::protobuf::scoped_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
+    ::std::unique_ptr<DirectHttpResponse_HeadersEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
         it = this->headers().begin();
         it != this->headers().end(); ++it) {
@@ -656,9 +637,7 @@ size_t DirectHttpResponse::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -719,10 +698,10 @@ void DirectHttpResponse::Swap(DirectHttpResponse* other) {
 void DirectHttpResponse::InternalSwap(DirectHttpResponse* other) {
   using std::swap;
   headers_.Swap(&other->headers_);
-  body_.Swap(&other->body_);
+  body_.Swap(&other->body_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(code_, other->code_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DirectHttpResponse::GetMetadata() const {
@@ -735,5 +714,15 @@ void DirectHttpResponse::InternalSwap(DirectHttpResponse* other) {
 }  // namespace v1beta1
 }  // namespace policy
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::policy::v1beta1::DirectHttpResponse_HeadersEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::policy::v1beta1::DirectHttpResponse_HeadersEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::policy::v1beta1::DirectHttpResponse_HeadersEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::policy::v1beta1::DirectHttpResponse* Arena::CreateMaybeMessage< ::istio::policy::v1beta1::DirectHttpResponse >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::policy::v1beta1::DirectHttpResponse >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

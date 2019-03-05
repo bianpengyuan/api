@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,13 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_google_2fprotobuf_2fduration_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fduration_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Duration;
+}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
+namespace protobuf_google_2frpc_2fstatus_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2frpc_2fstatus_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Status;
+}  // namespace protobuf_google_2frpc_2fstatus_2eproto
 namespace istio {
 namespace mixer {
 namespace adapter {
@@ -35,16 +41,9 @@ class CheckResultDefaultTypeInternal {
 }  // namespace mixer
 }  // namespace istio
 namespace protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fcheck_2eproto {
-void InitDefaultsCheckResultImpl() {
+static void InitDefaultsCheckResult() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2frpc_2fstatus_2eproto::InitDefaultsStatus();
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
   {
     void* ptr = &::istio::mixer::adapter::model::v1beta1::_CheckResult_default_instance_;
     new (ptr) ::istio::mixer::adapter::model::v1beta1::CheckResult();
@@ -53,9 +52,13 @@ void InitDefaultsCheckResultImpl() {
   ::istio::mixer::adapter::model::v1beta1::CheckResult::InitAsDefaultInstance();
 }
 
-void InitDefaultsCheckResult() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCheckResultImpl);
+::google::protobuf::internal::SCCInfo<2> scc_info_CheckResult =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCheckResult}, {
+      &protobuf_google_2frpc_2fstatus_2eproto::scc_info_Status.base,
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_CheckResult.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[1];
@@ -80,15 +83,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "mixer/adapter/model/v1beta1/check.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "mixer/adapter/model/v1beta1/check.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, NULL, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -121,8 +123,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -165,16 +167,14 @@ const int CheckResult::kValidUseCountFieldNumber;
 
 CheckResult::CheckResult()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fcheck_2eproto::InitDefaultsCheckResult();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fcheck_2eproto::scc_info_CheckResult.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.adapter.model.v1beta1.CheckResult)
 }
 CheckResult::CheckResult(const CheckResult& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_status()) {
     status_ = new ::google::rpc::Status(*from.status_);
@@ -194,7 +194,6 @@ void CheckResult::SharedCtor() {
   ::memset(&status_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&valid_use_count_) -
       reinterpret_cast<char*>(&status_)) + sizeof(valid_use_count_));
-  _cached_size_ = 0;
 }
 
 CheckResult::~CheckResult() {
@@ -208,9 +207,7 @@ void CheckResult::SharedDtor() {
 }
 
 void CheckResult::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* CheckResult::descriptor() {
   ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fcheck_2eproto::protobuf_AssignDescriptorsOnce();
@@ -218,17 +215,10 @@ const ::google::protobuf::Descriptor* CheckResult::descriptor() {
 }
 
 const CheckResult& CheckResult::default_instance() {
-  ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fcheck_2eproto::InitDefaultsCheckResult();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fcheck_2eproto::scc_info_CheckResult.base);
   return *internal_default_instance();
 }
 
-CheckResult* CheckResult::New(::google::protobuf::Arena* arena) const {
-  CheckResult* n = new CheckResult;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void CheckResult::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.adapter.model.v1beta1.CheckResult)
@@ -254,7 +244,7 @@ bool CheckResult::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.adapter.model.v1beta1.CheckResult)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -325,13 +315,13 @@ void CheckResult::SerializeWithCachedSizes(
   // .google.rpc.Status status = 1 [(.gogoproto.nullable) = false];
   if (this->has_status()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->status_, output);
+      1, this->_internal_status(), output);
   }
 
   // .google.protobuf.Duration valid_duration = 2 [(.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];
   if (this->has_valid_duration()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, *this->valid_duration_, output);
+      2, this->_internal_valid_duration(), output);
   }
 
   // int32 valid_use_count = 3;
@@ -357,14 +347,14 @@ void CheckResult::SerializeWithCachedSizes(
   if (this->has_status()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->status_, deterministic, target);
+        1, this->_internal_status(), deterministic, target);
   }
 
   // .google.protobuf.Duration valid_duration = 2 [(.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];
   if (this->has_valid_duration()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, *this->valid_duration_, deterministic, target);
+        2, this->_internal_valid_duration(), deterministic, target);
   }
 
   // int32 valid_use_count = 3;
@@ -393,14 +383,14 @@ size_t CheckResult::ByteSizeLong() const {
   if (this->has_status()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->status_);
+        *status_);
   }
 
   // .google.protobuf.Duration valid_duration = 2 [(.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];
   if (this->has_valid_duration()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->valid_duration_);
+        *valid_duration_);
   }
 
   // int32 valid_use_count = 3;
@@ -411,9 +401,7 @@ size_t CheckResult::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -478,7 +466,6 @@ void CheckResult::InternalSwap(CheckResult* other) {
   swap(valid_duration_, other->valid_duration_);
   swap(valid_use_count_, other->valid_use_count_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CheckResult::GetMetadata() const {
@@ -493,5 +480,12 @@ void CheckResult::InternalSwap(CheckResult* other) {
 }  // namespace adapter
 }  // namespace mixer
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::adapter::model::v1beta1::CheckResult* Arena::CreateMaybeMessage< ::istio::mixer::adapter::model::v1beta1::CheckResult >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::adapter::model::v1beta1::CheckResult >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

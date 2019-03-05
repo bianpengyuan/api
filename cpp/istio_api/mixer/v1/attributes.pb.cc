@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,29 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_google_2fprotobuf_2fduration_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fduration_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Duration;
+}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
+namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2ftimestamp_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Timestamp;
+}  // namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto
+namespace protobuf_mixer_2fv1_2fattributes_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Attributes_StringMap_EntriesEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_BoolsEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_BytesEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_DoublesEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_Int64sEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_StringsEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StringMap_EntriesEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Attributes_AttributesEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Attributes_StringMap;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CompressedAttributes_DurationsEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CompressedAttributes_StringMapsEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CompressedAttributes_TimestampsEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_StringMap;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_Attributes_AttributeValue;
+}  // namespace protobuf_mixer_2fv1_2fattributes_2eproto
 namespace istio {
 namespace mixer {
 namespace v1 {
@@ -114,15 +136,9 @@ class StringMapDefaultTypeInternal {
 }  // namespace mixer
 }  // namespace istio
 namespace protobuf_mixer_2fv1_2fattributes_2eproto {
-void InitDefaultsAttributes_AttributesEntry_DoNotUseImpl() {
+static void InitDefaultsAttributes_AttributesEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_AttributeValue();
   {
     void* ptr = &::istio::mixer::v1::_Attributes_AttributesEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::Attributes_AttributesEntry_DoNotUse();
@@ -130,22 +146,13 @@ void InitDefaultsAttributes_AttributesEntry_DoNotUseImpl() {
   ::istio::mixer::v1::Attributes_AttributesEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsAttributes_AttributesEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAttributes_AttributesEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_Attributes_AttributesEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAttributes_AttributesEntry_DoNotUse}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_AttributeValue.base,}};
 
-void InitDefaultsAttributes_AttributeValueImpl() {
+static void InitDefaultsAttributes_AttributeValue() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2ftimestamp_2eproto::InitDefaultsTimestamp();
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_StringMap();
   {
     void* ptr = &::istio::mixer::v1::_Attributes_AttributeValue_default_instance_;
     new (ptr) ::istio::mixer::v1::Attributes_AttributeValue();
@@ -154,19 +161,15 @@ void InitDefaultsAttributes_AttributeValueImpl() {
   ::istio::mixer::v1::Attributes_AttributeValue::InitAsDefaultInstance();
 }
 
-void InitDefaultsAttributes_AttributeValue() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAttributes_AttributeValueImpl);
-}
+::google::protobuf::internal::SCCInfo<3> scc_info_Attributes_AttributeValue =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsAttributes_AttributeValue}, {
+      &protobuf_google_2fprotobuf_2ftimestamp_2eproto::scc_info_Timestamp.base,
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_StringMap.base,}};
 
-void InitDefaultsAttributes_StringMap_EntriesEntry_DoNotUseImpl() {
+static void InitDefaultsAttributes_StringMap_EntriesEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_Attributes_StringMap_EntriesEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::Attributes_StringMap_EntriesEntry_DoNotUse();
@@ -174,20 +177,12 @@ void InitDefaultsAttributes_StringMap_EntriesEntry_DoNotUseImpl() {
   ::istio::mixer::v1::Attributes_StringMap_EntriesEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsAttributes_StringMap_EntriesEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAttributes_StringMap_EntriesEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_Attributes_StringMap_EntriesEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAttributes_StringMap_EntriesEntry_DoNotUse}, {}};
 
-void InitDefaultsAttributes_StringMapImpl() {
+static void InitDefaultsAttributes_StringMap() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_StringMap_EntriesEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::v1::_Attributes_StringMap_default_instance_;
     new (ptr) ::istio::mixer::v1::Attributes_StringMap();
@@ -196,20 +191,13 @@ void InitDefaultsAttributes_StringMapImpl() {
   ::istio::mixer::v1::Attributes_StringMap::InitAsDefaultInstance();
 }
 
-void InitDefaultsAttributes_StringMap() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAttributes_StringMapImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_Attributes_StringMap =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAttributes_StringMap}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_StringMap_EntriesEntry_DoNotUse.base,}};
 
-void InitDefaultsAttributesImpl() {
+static void InitDefaultsAttributes() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_AttributesEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::v1::_Attributes_default_instance_;
     new (ptr) ::istio::mixer::v1::Attributes();
@@ -218,19 +206,13 @@ void InitDefaultsAttributesImpl() {
   ::istio::mixer::v1::Attributes::InitAsDefaultInstance();
 }
 
-void InitDefaultsAttributes() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAttributesImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_Attributes =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAttributes}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_AttributesEntry_DoNotUse.base,}};
 
-void InitDefaultsCompressedAttributes_StringsEntry_DoNotUseImpl() {
+static void InitDefaultsCompressedAttributes_StringsEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_CompressedAttributes_StringsEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CompressedAttributes_StringsEntry_DoNotUse();
@@ -238,19 +220,12 @@ void InitDefaultsCompressedAttributes_StringsEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CompressedAttributes_StringsEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCompressedAttributes_StringsEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCompressedAttributes_StringsEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_StringsEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCompressedAttributes_StringsEntry_DoNotUse}, {}};
 
-void InitDefaultsCompressedAttributes_Int64sEntry_DoNotUseImpl() {
+static void InitDefaultsCompressedAttributes_Int64sEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_CompressedAttributes_Int64sEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CompressedAttributes_Int64sEntry_DoNotUse();
@@ -258,19 +233,12 @@ void InitDefaultsCompressedAttributes_Int64sEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CompressedAttributes_Int64sEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCompressedAttributes_Int64sEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCompressedAttributes_Int64sEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_Int64sEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCompressedAttributes_Int64sEntry_DoNotUse}, {}};
 
-void InitDefaultsCompressedAttributes_DoublesEntry_DoNotUseImpl() {
+static void InitDefaultsCompressedAttributes_DoublesEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_CompressedAttributes_DoublesEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CompressedAttributes_DoublesEntry_DoNotUse();
@@ -278,19 +246,12 @@ void InitDefaultsCompressedAttributes_DoublesEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CompressedAttributes_DoublesEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCompressedAttributes_DoublesEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCompressedAttributes_DoublesEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_DoublesEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCompressedAttributes_DoublesEntry_DoNotUse}, {}};
 
-void InitDefaultsCompressedAttributes_BoolsEntry_DoNotUseImpl() {
+static void InitDefaultsCompressedAttributes_BoolsEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_CompressedAttributes_BoolsEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CompressedAttributes_BoolsEntry_DoNotUse();
@@ -298,20 +259,12 @@ void InitDefaultsCompressedAttributes_BoolsEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CompressedAttributes_BoolsEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCompressedAttributes_BoolsEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCompressedAttributes_BoolsEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_BoolsEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCompressedAttributes_BoolsEntry_DoNotUse}, {}};
 
-void InitDefaultsCompressedAttributes_TimestampsEntry_DoNotUseImpl() {
+static void InitDefaultsCompressedAttributes_TimestampsEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2ftimestamp_2eproto::InitDefaultsTimestamp();
   {
     void* ptr = &::istio::mixer::v1::_CompressedAttributes_TimestampsEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CompressedAttributes_TimestampsEntry_DoNotUse();
@@ -319,20 +272,13 @@ void InitDefaultsCompressedAttributes_TimestampsEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CompressedAttributes_TimestampsEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCompressedAttributes_TimestampsEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCompressedAttributes_TimestampsEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_CompressedAttributes_TimestampsEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCompressedAttributes_TimestampsEntry_DoNotUse}, {
+      &protobuf_google_2fprotobuf_2ftimestamp_2eproto::scc_info_Timestamp.base,}};
 
-void InitDefaultsCompressedAttributes_DurationsEntry_DoNotUseImpl() {
+static void InitDefaultsCompressedAttributes_DurationsEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
   {
     void* ptr = &::istio::mixer::v1::_CompressedAttributes_DurationsEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CompressedAttributes_DurationsEntry_DoNotUse();
@@ -340,19 +286,13 @@ void InitDefaultsCompressedAttributes_DurationsEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CompressedAttributes_DurationsEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCompressedAttributes_DurationsEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCompressedAttributes_DurationsEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_CompressedAttributes_DurationsEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCompressedAttributes_DurationsEntry_DoNotUse}, {
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,}};
 
-void InitDefaultsCompressedAttributes_BytesEntry_DoNotUseImpl() {
+static void InitDefaultsCompressedAttributes_BytesEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_CompressedAttributes_BytesEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CompressedAttributes_BytesEntry_DoNotUse();
@@ -360,20 +300,12 @@ void InitDefaultsCompressedAttributes_BytesEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CompressedAttributes_BytesEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCompressedAttributes_BytesEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCompressedAttributes_BytesEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_CompressedAttributes_BytesEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCompressedAttributes_BytesEntry_DoNotUse}, {}};
 
-void InitDefaultsCompressedAttributes_StringMapsEntry_DoNotUseImpl() {
+static void InitDefaultsCompressedAttributes_StringMapsEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsStringMap();
   {
     void* ptr = &::istio::mixer::v1::_CompressedAttributes_StringMapsEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CompressedAttributes_StringMapsEntry_DoNotUse();
@@ -381,27 +313,13 @@ void InitDefaultsCompressedAttributes_StringMapsEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CompressedAttributes_StringMapsEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCompressedAttributes_StringMapsEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCompressedAttributes_StringMapsEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_CompressedAttributes_StringMapsEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCompressedAttributes_StringMapsEntry_DoNotUse}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_StringMap.base,}};
 
-void InitDefaultsCompressedAttributesImpl() {
+static void InitDefaultsCompressedAttributes() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes_StringsEntry_DoNotUse();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes_Int64sEntry_DoNotUse();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes_DoublesEntry_DoNotUse();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes_BoolsEntry_DoNotUse();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes_TimestampsEntry_DoNotUse();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes_DurationsEntry_DoNotUse();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes_BytesEntry_DoNotUse();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes_StringMapsEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::v1::_CompressedAttributes_default_instance_;
     new (ptr) ::istio::mixer::v1::CompressedAttributes();
@@ -410,19 +328,20 @@ void InitDefaultsCompressedAttributesImpl() {
   ::istio::mixer::v1::CompressedAttributes::InitAsDefaultInstance();
 }
 
-void InitDefaultsCompressedAttributes() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCompressedAttributesImpl);
-}
+::google::protobuf::internal::SCCInfo<8> scc_info_CompressedAttributes =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 8, InitDefaultsCompressedAttributes}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes_StringsEntry_DoNotUse.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes_Int64sEntry_DoNotUse.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes_DoublesEntry_DoNotUse.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes_BoolsEntry_DoNotUse.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes_TimestampsEntry_DoNotUse.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes_DurationsEntry_DoNotUse.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes_BytesEntry_DoNotUse.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes_StringMapsEntry_DoNotUse.base,}};
 
-void InitDefaultsStringMap_EntriesEntry_DoNotUseImpl() {
+static void InitDefaultsStringMap_EntriesEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_StringMap_EntriesEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::StringMap_EntriesEntry_DoNotUse();
@@ -430,20 +349,12 @@ void InitDefaultsStringMap_EntriesEntry_DoNotUseImpl() {
   ::istio::mixer::v1::StringMap_EntriesEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsStringMap_EntriesEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsStringMap_EntriesEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_StringMap_EntriesEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStringMap_EntriesEntry_DoNotUse}, {}};
 
-void InitDefaultsStringMapImpl() {
+static void InitDefaultsStringMap() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsStringMap_EntriesEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::v1::_StringMap_default_instance_;
     new (ptr) ::istio::mixer::v1::StringMap();
@@ -452,9 +363,27 @@ void InitDefaultsStringMapImpl() {
   ::istio::mixer::v1::StringMap::InitAsDefaultInstance();
 }
 
-void InitDefaultsStringMap() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsStringMapImpl);
+::google::protobuf::internal::SCCInfo<1> scc_info_StringMap =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStringMap}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_StringMap_EntriesEntry_DoNotUse.base,}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_Attributes_AttributesEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Attributes_AttributeValue.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Attributes_StringMap_EntriesEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Attributes_StringMap.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Attributes.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CompressedAttributes_StringsEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CompressedAttributes_Int64sEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CompressedAttributes_DoublesEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CompressedAttributes_BoolsEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CompressedAttributes_TimestampsEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CompressedAttributes_DurationsEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CompressedAttributes_BytesEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CompressedAttributes_StringMapsEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CompressedAttributes.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StringMap_EntriesEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StringMap.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[16];
@@ -646,15 +575,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "mixer/v1/attributes.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "mixer/v1/attributes.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, NULL, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -728,8 +656,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -781,7 +709,7 @@ void Attributes_AttributeValue::set_allocated_timestamp_value(::google::protobuf
   clear_value();
   if (timestamp_value) {
     ::google::protobuf::Arena* submessage_arena =
-      reinterpret_cast< ::google::protobuf::MessageLite*>(timestamp_value)->GetArena();
+      reinterpret_cast<::google::protobuf::MessageLite*>(timestamp_value)->GetArena();
     if (message_arena != submessage_arena) {
       timestamp_value = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, timestamp_value, submessage_arena);
@@ -804,7 +732,7 @@ void Attributes_AttributeValue::set_allocated_duration_value(::google::protobuf:
   clear_value();
   if (duration_value) {
     ::google::protobuf::Arena* submessage_arena =
-      reinterpret_cast< ::google::protobuf::MessageLite*>(duration_value)->GetArena();
+      reinterpret_cast<::google::protobuf::MessageLite*>(duration_value)->GetArena();
     if (message_arena != submessage_arena) {
       duration_value = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, duration_value, submessage_arena);
@@ -850,24 +778,22 @@ const int Attributes_AttributeValue::kStringMapValueFieldNumber;
 
 Attributes_AttributeValue::Attributes_AttributeValue()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_AttributeValue();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_AttributeValue.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.Attributes.AttributeValue)
 }
 Attributes_AttributeValue::Attributes_AttributeValue(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_AttributeValue();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_AttributeValue.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.Attributes.AttributeValue)
 }
 Attributes_AttributeValue::Attributes_AttributeValue(const Attributes_AttributeValue& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   clear_has_value();
   switch (from.value_case()) {
@@ -912,7 +838,6 @@ Attributes_AttributeValue::Attributes_AttributeValue(const Attributes_AttributeV
 
 void Attributes_AttributeValue::SharedCtor() {
   clear_has_value();
-  _cached_size_ = 0;
 }
 
 Attributes_AttributeValue::~Attributes_AttributeValue() {
@@ -934,9 +859,7 @@ void Attributes_AttributeValue::ArenaDtor(void* object) {
 void Attributes_AttributeValue::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void Attributes_AttributeValue::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* Attributes_AttributeValue::descriptor() {
   ::protobuf_mixer_2fv1_2fattributes_2eproto::protobuf_AssignDescriptorsOnce();
@@ -944,13 +867,10 @@ const ::google::protobuf::Descriptor* Attributes_AttributeValue::descriptor() {
 }
 
 const Attributes_AttributeValue& Attributes_AttributeValue::default_instance() {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_AttributeValue();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_AttributeValue.base);
   return *internal_default_instance();
 }
 
-Attributes_AttributeValue* Attributes_AttributeValue::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<Attributes_AttributeValue>(arena);
-}
 
 void Attributes_AttributeValue::clear_value() {
 // @@protoc_insertion_point(one_of_clear_start:istio.mixer.v1.Attributes.AttributeValue)
@@ -1019,7 +939,7 @@ bool Attributes_AttributeValue::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.Attributes.AttributeValue)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1192,19 +1112,19 @@ void Attributes_AttributeValue::SerializeWithCachedSizes(
   // .google.protobuf.Timestamp timestamp_value = 7;
   if (has_timestamp_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, *value_.timestamp_value_, output);
+      7, this->_internal_timestamp_value(), output);
   }
 
   // .google.protobuf.Duration duration_value = 8;
   if (has_duration_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, *value_.duration_value_, output);
+      8, this->_internal_duration_value(), output);
   }
 
   // .istio.mixer.v1.Attributes.StringMap string_map_value = 9;
   if (has_string_map_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, *value_.string_map_value_, output);
+      9, this->_internal_string_map_value(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1258,21 +1178,21 @@ void Attributes_AttributeValue::SerializeWithCachedSizes(
   if (has_timestamp_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, *value_.timestamp_value_, deterministic, target);
+        7, this->_internal_timestamp_value(), deterministic, target);
   }
 
   // .google.protobuf.Duration duration_value = 8;
   if (has_duration_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        8, *value_.duration_value_, deterministic, target);
+        8, this->_internal_duration_value(), deterministic, target);
   }
 
   // .istio.mixer.v1.Attributes.StringMap string_map_value = 9;
   if (has_string_map_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        9, *value_.string_map_value_, deterministic, target);
+        9, this->_internal_string_map_value(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1350,9 +1270,7 @@ size_t Attributes_AttributeValue::ByteSizeLong() const {
     }
   }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1459,7 +1377,6 @@ void Attributes_AttributeValue::InternalSwap(Attributes_AttributeValue* other) {
   swap(value_, other->value_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Attributes_AttributeValue::GetMetadata() const {
@@ -1495,9 +1412,8 @@ const int Attributes_StringMap::kEntriesFieldNumber;
 
 Attributes_StringMap::Attributes_StringMap()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_StringMap();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_StringMap.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.Attributes.StringMap)
 }
@@ -1505,22 +1421,20 @@ Attributes_StringMap::Attributes_StringMap(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   entries_(arena) {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_StringMap();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_StringMap.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.Attributes.StringMap)
 }
 Attributes_StringMap::Attributes_StringMap(const Attributes_StringMap& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   entries_.MergeFrom(from.entries_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.Attributes.StringMap)
 }
 
 void Attributes_StringMap::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 Attributes_StringMap::~Attributes_StringMap() {
@@ -1539,9 +1453,7 @@ void Attributes_StringMap::ArenaDtor(void* object) {
 void Attributes_StringMap::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void Attributes_StringMap::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* Attributes_StringMap::descriptor() {
   ::protobuf_mixer_2fv1_2fattributes_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1549,13 +1461,10 @@ const ::google::protobuf::Descriptor* Attributes_StringMap::descriptor() {
 }
 
 const Attributes_StringMap& Attributes_StringMap::default_instance() {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes_StringMap();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes_StringMap.base);
   return *internal_default_instance();
 }
 
-Attributes_StringMap* Attributes_StringMap::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<Attributes_StringMap>(arena);
-}
 
 void Attributes_StringMap::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.Attributes.StringMap)
@@ -1573,7 +1482,7 @@ bool Attributes_StringMap::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.Attributes.StringMap)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1651,7 +1560,7 @@ void Attributes_StringMap::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->entries().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->entries().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
       size_type n = 0;
@@ -1661,7 +1570,7 @@ void Attributes_StringMap::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
+      ::std::unique_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(entries_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -1673,7 +1582,7 @@ void Attributes_StringMap::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
+      ::std::unique_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
           it = this->entries().begin();
           it != this->entries().end(); ++it) {
@@ -1724,7 +1633,7 @@ void Attributes_StringMap::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->entries().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->entries().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
       size_type n = 0;
@@ -1734,7 +1643,7 @@ void Attributes_StringMap::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
+      ::std::unique_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(entries_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -1748,7 +1657,7 @@ void Attributes_StringMap::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
+      ::std::unique_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
           it = this->entries().begin();
           it != this->entries().end(); ++it) {
@@ -1787,7 +1696,7 @@ size_t Attributes_StringMap::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->entries_size());
   {
-    ::google::protobuf::scoped_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
+    ::std::unique_ptr<Attributes_StringMap_EntriesEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
         it = this->entries().begin();
         it != this->entries().end(); ++it) {
@@ -1804,9 +1713,7 @@ size_t Attributes_StringMap::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1876,7 +1783,6 @@ void Attributes_StringMap::InternalSwap(Attributes_StringMap* other) {
   using std::swap;
   entries_.Swap(&other->entries_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Attributes_StringMap::GetMetadata() const {
@@ -1895,9 +1801,8 @@ const int Attributes::kAttributesFieldNumber;
 
 Attributes::Attributes()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.Attributes)
 }
@@ -1905,22 +1810,20 @@ Attributes::Attributes(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   attributes_(arena) {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.Attributes)
 }
 Attributes::Attributes(const Attributes& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   attributes_.MergeFrom(from.attributes_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.Attributes)
 }
 
 void Attributes::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 Attributes::~Attributes() {
@@ -1939,9 +1842,7 @@ void Attributes::ArenaDtor(void* object) {
 void Attributes::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void Attributes::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* Attributes::descriptor() {
   ::protobuf_mixer_2fv1_2fattributes_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1949,13 +1850,10 @@ const ::google::protobuf::Descriptor* Attributes::descriptor() {
 }
 
 const Attributes& Attributes::default_instance() {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes.base);
   return *internal_default_instance();
 }
 
-Attributes* Attributes::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<Attributes>(arena);
-}
 
 void Attributes::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.Attributes)
@@ -1973,7 +1871,7 @@ bool Attributes::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.Attributes)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2043,7 +1941,7 @@ void Attributes::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->attributes().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->attributes().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::Attributes_AttributeValue >::size_type size_type;
       size_type n = 0;
@@ -2053,7 +1951,7 @@ void Attributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<Attributes_AttributesEntry_DoNotUse> entry;
+      ::std::unique_ptr<Attributes_AttributesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(attributes_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -2065,7 +1963,7 @@ void Attributes::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<Attributes_AttributesEntry_DoNotUse> entry;
+      ::std::unique_ptr<Attributes_AttributesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::Attributes_AttributeValue >::const_iterator
           it = this->attributes().begin();
           it != this->attributes().end(); ++it) {
@@ -2112,7 +2010,7 @@ void Attributes::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->attributes().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->attributes().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::Attributes_AttributeValue >::size_type size_type;
       size_type n = 0;
@@ -2122,7 +2020,7 @@ void Attributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<Attributes_AttributesEntry_DoNotUse> entry;
+      ::std::unique_ptr<Attributes_AttributesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(attributes_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -2136,7 +2034,7 @@ void Attributes::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<Attributes_AttributesEntry_DoNotUse> entry;
+      ::std::unique_ptr<Attributes_AttributesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::Attributes_AttributeValue >::const_iterator
           it = this->attributes().begin();
           it != this->attributes().end(); ++it) {
@@ -2175,7 +2073,7 @@ size_t Attributes::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->attributes_size());
   {
-    ::google::protobuf::scoped_ptr<Attributes_AttributesEntry_DoNotUse> entry;
+    ::std::unique_ptr<Attributes_AttributesEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::Attributes_AttributeValue >::const_iterator
         it = this->attributes().begin();
         it != this->attributes().end(); ++it) {
@@ -2192,9 +2090,7 @@ size_t Attributes::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2264,7 +2160,6 @@ void Attributes::InternalSwap(Attributes* other) {
   using std::swap;
   attributes_.Swap(&other->attributes_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Attributes::GetMetadata() const {
@@ -2433,9 +2328,8 @@ const int CompressedAttributes::kStringMapsFieldNumber;
 
 CompressedAttributes::CompressedAttributes()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.CompressedAttributes)
 }
@@ -2451,7 +2345,7 @@ CompressedAttributes::CompressedAttributes(::google::protobuf::Arena* arena)
   durations_(arena),
   bytes_(arena),
   string_maps_(arena) {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.CompressedAttributes)
@@ -2459,8 +2353,7 @@ CompressedAttributes::CompressedAttributes(::google::protobuf::Arena* arena)
 CompressedAttributes::CompressedAttributes(const CompressedAttributes& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      words_(from.words_),
-      _cached_size_(0) {
+      words_(from.words_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   strings_.MergeFrom(from.strings_);
   int64s_.MergeFrom(from.int64s_);
@@ -2474,7 +2367,6 @@ CompressedAttributes::CompressedAttributes(const CompressedAttributes& from)
 }
 
 void CompressedAttributes::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 CompressedAttributes::~CompressedAttributes() {
@@ -2493,9 +2385,7 @@ void CompressedAttributes::ArenaDtor(void* object) {
 void CompressedAttributes::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void CompressedAttributes::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* CompressedAttributes::descriptor() {
   ::protobuf_mixer_2fv1_2fattributes_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2503,13 +2393,10 @@ const ::google::protobuf::Descriptor* CompressedAttributes::descriptor() {
 }
 
 const CompressedAttributes& CompressedAttributes::default_instance() {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes.base);
   return *internal_default_instance();
 }
 
-CompressedAttributes* CompressedAttributes::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<CompressedAttributes>(arena);
-}
 
 void CompressedAttributes::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.CompressedAttributes)
@@ -2535,7 +2422,7 @@ bool CompressedAttributes::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.CompressedAttributes)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2753,7 +2640,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->strings().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->strings().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::size_type size_type;
       size_type n = 0;
@@ -2763,7 +2650,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(strings_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -2774,7 +2661,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::const_iterator
           it = this->strings().begin();
           it != this->strings().end(); ++it) {
@@ -2798,7 +2685,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->int64s().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->int64s().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int64 >::size_type size_type;
       size_type n = 0;
@@ -2808,7 +2695,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(int64s_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -2819,7 +2706,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int64 >::const_iterator
           it = this->int64s().begin();
           it != this->int64s().end(); ++it) {
@@ -2843,7 +2730,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->doubles().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->doubles().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, double >::size_type size_type;
       size_type n = 0;
@@ -2853,7 +2740,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(doubles_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -2864,7 +2751,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, double >::const_iterator
           it = this->doubles().begin();
           it != this->doubles().end(); ++it) {
@@ -2888,7 +2775,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->bools().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->bools().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, bool >::size_type size_type;
       size_type n = 0;
@@ -2898,7 +2785,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(bools_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -2909,7 +2796,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, bool >::const_iterator
           it = this->bools().begin();
           it != this->bools().end(); ++it) {
@@ -2933,7 +2820,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->timestamps().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->timestamps().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Timestamp >::size_type size_type;
       size_type n = 0;
@@ -2943,7 +2830,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(timestamps_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -2954,7 +2841,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Timestamp >::const_iterator
           it = this->timestamps().begin();
           it != this->timestamps().end(); ++it) {
@@ -2978,7 +2865,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->durations().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->durations().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Duration >::size_type size_type;
       size_type n = 0;
@@ -2988,7 +2875,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(durations_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -2999,7 +2886,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Duration >::const_iterator
           it = this->durations().begin();
           it != this->durations().end(); ++it) {
@@ -3023,7 +2910,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->bytes().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->bytes().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::std::string >::size_type size_type;
       size_type n = 0;
@@ -3033,7 +2920,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(bytes_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3044,7 +2931,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::std::string >::const_iterator
           it = this->bytes().begin();
           it != this->bytes().end(); ++it) {
@@ -3068,7 +2955,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->string_maps().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->string_maps().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::istio::mixer::v1::StringMap >::size_type size_type;
       size_type n = 0;
@@ -3078,7 +2965,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(string_maps_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3089,7 +2976,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::istio::mixer::v1::StringMap >::const_iterator
           it = this->string_maps().begin();
           it != this->string_maps().end(); ++it) {
@@ -3137,7 +3024,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->strings().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->strings().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::size_type size_type;
       size_type n = 0;
@@ -3147,7 +3034,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(strings_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3160,7 +3047,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::const_iterator
           it = this->strings().begin();
           it != this->strings().end(); ++it) {
@@ -3186,7 +3073,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->int64s().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->int64s().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int64 >::size_type size_type;
       size_type n = 0;
@@ -3196,7 +3083,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(int64s_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3209,7 +3096,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int64 >::const_iterator
           it = this->int64s().begin();
           it != this->int64s().end(); ++it) {
@@ -3235,7 +3122,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->doubles().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->doubles().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, double >::size_type size_type;
       size_type n = 0;
@@ -3245,7 +3132,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(doubles_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3258,7 +3145,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, double >::const_iterator
           it = this->doubles().begin();
           it != this->doubles().end(); ++it) {
@@ -3284,7 +3171,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->bools().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->bools().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, bool >::size_type size_type;
       size_type n = 0;
@@ -3294,7 +3181,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(bools_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3307,7 +3194,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, bool >::const_iterator
           it = this->bools().begin();
           it != this->bools().end(); ++it) {
@@ -3333,7 +3220,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->timestamps().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->timestamps().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Timestamp >::size_type size_type;
       size_type n = 0;
@@ -3343,7 +3230,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(timestamps_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3356,7 +3243,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Timestamp >::const_iterator
           it = this->timestamps().begin();
           it != this->timestamps().end(); ++it) {
@@ -3382,7 +3269,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->durations().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->durations().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Duration >::size_type size_type;
       size_type n = 0;
@@ -3392,7 +3279,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(durations_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3405,7 +3292,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Duration >::const_iterator
           it = this->durations().begin();
           it != this->durations().end(); ++it) {
@@ -3431,7 +3318,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->bytes().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->bytes().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::std::string >::size_type size_type;
       size_type n = 0;
@@ -3441,7 +3328,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(bytes_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3454,7 +3341,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::std::string >::const_iterator
           it = this->bytes().begin();
           it != this->bytes().end(); ++it) {
@@ -3480,7 +3367,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->string_maps().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->string_maps().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::istio::mixer::v1::StringMap >::size_type size_type;
       size_type n = 0;
@@ -3490,7 +3377,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(string_maps_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3503,7 +3390,7 @@ void CompressedAttributes::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
+      ::std::unique_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::istio::mixer::v1::StringMap >::const_iterator
           it = this->string_maps().begin();
           it != this->string_maps().end(); ++it) {
@@ -3549,7 +3436,7 @@ size_t CompressedAttributes::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->strings_size());
   {
-    ::google::protobuf::scoped_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
+    ::std::unique_ptr<CompressedAttributes_StringsEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::const_iterator
         it = this->strings().begin();
         it != this->strings().end(); ++it) {
@@ -3569,7 +3456,7 @@ size_t CompressedAttributes::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->int64s_size());
   {
-    ::google::protobuf::scoped_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
+    ::std::unique_ptr<CompressedAttributes_Int64sEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int64 >::const_iterator
         it = this->int64s().begin();
         it != this->int64s().end(); ++it) {
@@ -3589,7 +3476,7 @@ size_t CompressedAttributes::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->doubles_size());
   {
-    ::google::protobuf::scoped_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
+    ::std::unique_ptr<CompressedAttributes_DoublesEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::google::protobuf::int32, double >::const_iterator
         it = this->doubles().begin();
         it != this->doubles().end(); ++it) {
@@ -3609,7 +3496,7 @@ size_t CompressedAttributes::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->bools_size());
   {
-    ::google::protobuf::scoped_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
+    ::std::unique_ptr<CompressedAttributes_BoolsEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::google::protobuf::int32, bool >::const_iterator
         it = this->bools().begin();
         it != this->bools().end(); ++it) {
@@ -3629,7 +3516,7 @@ size_t CompressedAttributes::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->timestamps_size());
   {
-    ::google::protobuf::scoped_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
+    ::std::unique_ptr<CompressedAttributes_TimestampsEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Timestamp >::const_iterator
         it = this->timestamps().begin();
         it != this->timestamps().end(); ++it) {
@@ -3649,7 +3536,7 @@ size_t CompressedAttributes::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->durations_size());
   {
-    ::google::protobuf::scoped_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
+    ::std::unique_ptr<CompressedAttributes_DurationsEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::Duration >::const_iterator
         it = this->durations().begin();
         it != this->durations().end(); ++it) {
@@ -3669,7 +3556,7 @@ size_t CompressedAttributes::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->bytes_size());
   {
-    ::google::protobuf::scoped_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
+    ::std::unique_ptr<CompressedAttributes_BytesEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::google::protobuf::int32, ::std::string >::const_iterator
         it = this->bytes().begin();
         it != this->bytes().end(); ++it) {
@@ -3689,7 +3576,7 @@ size_t CompressedAttributes::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->string_maps_size());
   {
-    ::google::protobuf::scoped_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
+    ::std::unique_ptr<CompressedAttributes_StringMapsEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::google::protobuf::int32, ::istio::mixer::v1::StringMap >::const_iterator
         it = this->string_maps().begin();
         it != this->string_maps().end(); ++it) {
@@ -3706,9 +3593,7 @@ size_t CompressedAttributes::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -3784,7 +3669,7 @@ void CompressedAttributes::UnsafeArenaSwap(CompressedAttributes* other) {
 }
 void CompressedAttributes::InternalSwap(CompressedAttributes* other) {
   using std::swap;
-  words_.InternalSwap(&other->words_);
+  words_.InternalSwap(CastToBase(&other->words_));
   strings_.Swap(&other->strings_);
   int64s_.Swap(&other->int64s_);
   doubles_.Swap(&other->doubles_);
@@ -3794,7 +3679,6 @@ void CompressedAttributes::InternalSwap(CompressedAttributes* other) {
   bytes_.Swap(&other->bytes_);
   string_maps_.Swap(&other->string_maps_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CompressedAttributes::GetMetadata() const {
@@ -3830,9 +3714,8 @@ const int StringMap::kEntriesFieldNumber;
 
 StringMap::StringMap()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsStringMap();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_StringMap.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.StringMap)
 }
@@ -3840,22 +3723,20 @@ StringMap::StringMap(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   entries_(arena) {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsStringMap();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_StringMap.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.StringMap)
 }
 StringMap::StringMap(const StringMap& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   entries_.MergeFrom(from.entries_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.StringMap)
 }
 
 void StringMap::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 StringMap::~StringMap() {
@@ -3874,9 +3755,7 @@ void StringMap::ArenaDtor(void* object) {
 void StringMap::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void StringMap::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* StringMap::descriptor() {
   ::protobuf_mixer_2fv1_2fattributes_2eproto::protobuf_AssignDescriptorsOnce();
@@ -3884,13 +3763,10 @@ const ::google::protobuf::Descriptor* StringMap::descriptor() {
 }
 
 const StringMap& StringMap::default_instance() {
-  ::protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsStringMap();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_StringMap.base);
   return *internal_default_instance();
 }
 
-StringMap* StringMap::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<StringMap>(arena);
-}
 
 void StringMap::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.StringMap)
@@ -3908,7 +3784,7 @@ bool StringMap::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.StringMap)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -3966,7 +3842,7 @@ void StringMap::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->entries().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->entries().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::size_type size_type;
       size_type n = 0;
@@ -3976,7 +3852,7 @@ void StringMap::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<StringMap_EntriesEntry_DoNotUse> entry;
+      ::std::unique_ptr<StringMap_EntriesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(entries_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -3987,7 +3863,7 @@ void StringMap::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<StringMap_EntriesEntry_DoNotUse> entry;
+      ::std::unique_ptr<StringMap_EntriesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::const_iterator
           it = this->entries().begin();
           it != this->entries().end(); ++it) {
@@ -4025,7 +3901,7 @@ void StringMap::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->entries().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->entries().size()]);
       typedef ::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::size_type size_type;
       size_type n = 0;
@@ -4035,7 +3911,7 @@ void StringMap::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<StringMap_EntriesEntry_DoNotUse> entry;
+      ::std::unique_ptr<StringMap_EntriesEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(entries_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)].second->first, items[static_cast<ptrdiff_t>(i)].second->second));
@@ -4048,7 +3924,7 @@ void StringMap::SerializeWithCachedSizes(
         }
       }
     } else {
-      ::google::protobuf::scoped_ptr<StringMap_EntriesEntry_DoNotUse> entry;
+      ::std::unique_ptr<StringMap_EntriesEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::const_iterator
           it = this->entries().begin();
           it != this->entries().end(); ++it) {
@@ -4086,7 +3962,7 @@ size_t StringMap::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->entries_size());
   {
-    ::google::protobuf::scoped_ptr<StringMap_EntriesEntry_DoNotUse> entry;
+    ::std::unique_ptr<StringMap_EntriesEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::google::protobuf::int32, ::google::protobuf::int32 >::const_iterator
         it = this->entries().begin();
         it != this->entries().end(); ++it) {
@@ -4103,9 +3979,7 @@ size_t StringMap::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -4175,7 +4049,6 @@ void StringMap::InternalSwap(StringMap* other) {
   using std::swap;
   entries_.Swap(&other->entries_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata StringMap::GetMetadata() const {
@@ -4188,5 +4061,57 @@ void StringMap::InternalSwap(StringMap* other) {
 }  // namespace v1
 }  // namespace mixer
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::Attributes_AttributesEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::Attributes_AttributesEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::Attributes_AttributesEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::Attributes_AttributeValue* Arena::CreateMaybeMessage< ::istio::mixer::v1::Attributes_AttributeValue >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::Attributes_AttributeValue >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::Attributes_StringMap_EntriesEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::Attributes_StringMap_EntriesEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::Attributes_StringMap_EntriesEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::Attributes_StringMap* Arena::CreateMaybeMessage< ::istio::mixer::v1::Attributes_StringMap >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::Attributes_StringMap >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::Attributes* Arena::CreateMaybeMessage< ::istio::mixer::v1::Attributes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::Attributes >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CompressedAttributes_StringsEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CompressedAttributes_StringsEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CompressedAttributes_StringsEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CompressedAttributes_Int64sEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CompressedAttributes_Int64sEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CompressedAttributes_Int64sEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CompressedAttributes_DoublesEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CompressedAttributes_DoublesEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CompressedAttributes_DoublesEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CompressedAttributes_BoolsEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CompressedAttributes_BoolsEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CompressedAttributes_BoolsEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CompressedAttributes_TimestampsEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CompressedAttributes_TimestampsEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CompressedAttributes_TimestampsEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CompressedAttributes_DurationsEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CompressedAttributes_DurationsEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CompressedAttributes_DurationsEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CompressedAttributes_BytesEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CompressedAttributes_BytesEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CompressedAttributes_BytesEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CompressedAttributes_StringMapsEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CompressedAttributes_StringMapsEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CompressedAttributes_StringMapsEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CompressedAttributes* Arena::CreateMaybeMessage< ::istio::mixer::v1::CompressedAttributes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CompressedAttributes >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::StringMap_EntriesEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::StringMap_EntriesEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::StringMap_EntriesEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::StringMap* Arena::CreateMaybeMessage< ::istio::mixer::v1::StringMap >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::StringMap >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

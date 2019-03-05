@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,18 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_mixer_2fv1_2fattributes_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Attributes;
+}  // namespace protobuf_mixer_2fv1_2fattributes_2eproto
+namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_APIKey;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HTTPAPISpecReference;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_HTTPAPISpecPattern;
+}  // namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto
+namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_IstioService;
+}  // namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto
 namespace istio {
 namespace mixer {
 namespace v1 {
@@ -60,17 +71,9 @@ class HTTPAPISpecBindingDefaultTypeInternal {
 }  // namespace mixer
 }  // namespace istio
 namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto {
-void InitDefaultsHTTPAPISpecImpl() {
+static void InitDefaultsHTTPAPISpec() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpecPattern();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsAPIKey();
   {
     void* ptr = &::istio::mixer::v1::config::client::_HTTPAPISpec_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::HTTPAPISpec();
@@ -79,20 +82,15 @@ void InitDefaultsHTTPAPISpecImpl() {
   ::istio::mixer::v1::config::client::HTTPAPISpec::InitAsDefaultInstance();
 }
 
-void InitDefaultsHTTPAPISpec() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHTTPAPISpecImpl);
-}
+::google::protobuf::internal::SCCInfo<3> scc_info_HTTPAPISpec =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsHTTPAPISpec}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpecPattern.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_APIKey.base,}};
 
-void InitDefaultsHTTPAPISpecPatternImpl() {
+static void InitDefaultsHTTPAPISpecPattern() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes();
   {
     void* ptr = &::istio::mixer::v1::config::client::_HTTPAPISpecPattern_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::HTTPAPISpecPattern();
@@ -101,19 +99,13 @@ void InitDefaultsHTTPAPISpecPatternImpl() {
   ::istio::mixer::v1::config::client::HTTPAPISpecPattern::InitAsDefaultInstance();
 }
 
-void InitDefaultsHTTPAPISpecPattern() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHTTPAPISpecPatternImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_HTTPAPISpecPattern =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsHTTPAPISpecPattern}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes.base,}};
 
-void InitDefaultsAPIKeyImpl() {
+static void InitDefaultsAPIKey() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::config::client::_APIKey_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::APIKey();
@@ -122,19 +114,12 @@ void InitDefaultsAPIKeyImpl() {
   ::istio::mixer::v1::config::client::APIKey::InitAsDefaultInstance();
 }
 
-void InitDefaultsAPIKey() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAPIKeyImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_APIKey =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAPIKey}, {}};
 
-void InitDefaultsHTTPAPISpecReferenceImpl() {
+static void InitDefaultsHTTPAPISpecReference() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::config::client::_HTTPAPISpecReference_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::HTTPAPISpecReference();
@@ -143,21 +128,12 @@ void InitDefaultsHTTPAPISpecReferenceImpl() {
   ::istio::mixer::v1::config::client::HTTPAPISpecReference::InitAsDefaultInstance();
 }
 
-void InitDefaultsHTTPAPISpecReference() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHTTPAPISpecReferenceImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_HTTPAPISpecReference =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsHTTPAPISpecReference}, {}};
 
-void InitDefaultsHTTPAPISpecBindingImpl() {
+static void InitDefaultsHTTPAPISpecBinding() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::InitDefaultsIstioService();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpecReference();
   {
     void* ptr = &::istio::mixer::v1::config::client::_HTTPAPISpecBinding_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::HTTPAPISpecBinding();
@@ -166,9 +142,17 @@ void InitDefaultsHTTPAPISpecBindingImpl() {
   ::istio::mixer::v1::config::client::HTTPAPISpecBinding::InitAsDefaultInstance();
 }
 
-void InitDefaultsHTTPAPISpecBinding() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHTTPAPISpecBindingImpl);
+::google::protobuf::internal::SCCInfo<2> scc_info_HTTPAPISpecBinding =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsHTTPAPISpecBinding}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::scc_info_IstioService.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpecReference.base,}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_HTTPAPISpec.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HTTPAPISpecPattern.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_APIKey.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HTTPAPISpecReference.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HTTPAPISpecBinding.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[5];
@@ -234,15 +218,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "mixer/v1/config/client/api_spec.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "mixer/v1/config/client/api_spec.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, NULL, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -286,8 +269,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -322,9 +305,8 @@ const int HTTPAPISpec::kApiKeysFieldNumber;
 
 HTTPAPISpec::HTTPAPISpec()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpec();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpec.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.HTTPAPISpec)
 }
@@ -332,8 +314,7 @@ HTTPAPISpec::HTTPAPISpec(const HTTPAPISpec& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       patterns_(from.patterns_),
-      api_keys_(from.api_keys_),
-      _cached_size_(0) {
+      api_keys_(from.api_keys_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_attributes()) {
     attributes_ = new ::istio::mixer::v1::Attributes(*from.attributes_);
@@ -345,7 +326,6 @@ HTTPAPISpec::HTTPAPISpec(const HTTPAPISpec& from)
 
 void HTTPAPISpec::SharedCtor() {
   attributes_ = NULL;
-  _cached_size_ = 0;
 }
 
 HTTPAPISpec::~HTTPAPISpec() {
@@ -358,9 +338,7 @@ void HTTPAPISpec::SharedDtor() {
 }
 
 void HTTPAPISpec::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* HTTPAPISpec::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::protobuf_AssignDescriptorsOnce();
@@ -368,17 +346,10 @@ const ::google::protobuf::Descriptor* HTTPAPISpec::descriptor() {
 }
 
 const HTTPAPISpec& HTTPAPISpec::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpec();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpec.base);
   return *internal_default_instance();
 }
 
-HTTPAPISpec* HTTPAPISpec::New(::google::protobuf::Arena* arena) const {
-  HTTPAPISpec* n = new HTTPAPISpec;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void HTTPAPISpec::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.HTTPAPISpec)
@@ -401,7 +372,7 @@ bool HTTPAPISpec::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.HTTPAPISpec)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -421,7 +392,8 @@ bool HTTPAPISpec::MergePartialFromCodedStream(
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_patterns()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_patterns()));
         } else {
           goto handle_unusual;
         }
@@ -432,7 +404,8 @@ bool HTTPAPISpec::MergePartialFromCodedStream(
       case 3: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_api_keys()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_api_keys()));
         } else {
           goto handle_unusual;
         }
@@ -468,21 +441,25 @@ void HTTPAPISpec::SerializeWithCachedSizes(
   // .istio.mixer.v1.Attributes attributes = 1;
   if (this->has_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->attributes_, output);
+      1, this->_internal_attributes(), output);
   }
 
   // repeated .istio.mixer.v1.config.client.HTTPAPISpecPattern patterns = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->patterns_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->patterns(static_cast<int>(i)), output);
+      2,
+      this->patterns(static_cast<int>(i)),
+      output);
   }
 
   // repeated .istio.mixer.v1.config.client.APIKey api_keys = 3;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->api_keys_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->api_keys(static_cast<int>(i)), output);
+      3,
+      this->api_keys(static_cast<int>(i)),
+      output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -503,7 +480,7 @@ void HTTPAPISpec::SerializeWithCachedSizes(
   if (this->has_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->attributes_, deterministic, target);
+        1, this->_internal_attributes(), deterministic, target);
   }
 
   // repeated .istio.mixer.v1.config.client.HTTPAPISpecPattern patterns = 2;
@@ -565,13 +542,11 @@ size_t HTTPAPISpec::ByteSizeLong() const {
   if (this->has_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->attributes_);
+        *attributes_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -628,11 +603,10 @@ void HTTPAPISpec::Swap(HTTPAPISpec* other) {
 }
 void HTTPAPISpec::InternalSwap(HTTPAPISpec* other) {
   using std::swap;
-  patterns_.InternalSwap(&other->patterns_);
-  api_keys_.InternalSwap(&other->api_keys_);
+  CastToBase(&patterns_)->InternalSwap(CastToBase(&other->patterns_));
+  CastToBase(&api_keys_)->InternalSwap(CastToBase(&other->api_keys_));
   swap(attributes_, other->attributes_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HTTPAPISpec::GetMetadata() const {
@@ -666,16 +640,14 @@ const int HTTPAPISpecPattern::kRegexFieldNumber;
 
 HTTPAPISpecPattern::HTTPAPISpecPattern()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpecPattern();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpecPattern.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.HTTPAPISpecPattern)
 }
 HTTPAPISpecPattern::HTTPAPISpecPattern(const HTTPAPISpecPattern& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   http_method_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.http_method().size() > 0) {
@@ -707,7 +679,6 @@ void HTTPAPISpecPattern::SharedCtor() {
   http_method_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   attributes_ = NULL;
   clear_has_pattern();
-  _cached_size_ = 0;
 }
 
 HTTPAPISpecPattern::~HTTPAPISpecPattern() {
@@ -724,9 +695,7 @@ void HTTPAPISpecPattern::SharedDtor() {
 }
 
 void HTTPAPISpecPattern::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* HTTPAPISpecPattern::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::protobuf_AssignDescriptorsOnce();
@@ -734,17 +703,10 @@ const ::google::protobuf::Descriptor* HTTPAPISpecPattern::descriptor() {
 }
 
 const HTTPAPISpecPattern& HTTPAPISpecPattern::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpecPattern();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpecPattern.base);
   return *internal_default_instance();
 }
 
-HTTPAPISpecPattern* HTTPAPISpecPattern::New(::google::protobuf::Arena* arena) const {
-  HTTPAPISpecPattern* n = new HTTPAPISpecPattern;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void HTTPAPISpecPattern::clear_pattern() {
 // @@protoc_insertion_point(one_of_clear_start:istio.mixer.v1.config.client.HTTPAPISpecPattern)
@@ -786,7 +748,7 @@ bool HTTPAPISpecPattern::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.HTTPAPISpecPattern)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -879,7 +841,7 @@ void HTTPAPISpecPattern::SerializeWithCachedSizes(
   // .istio.mixer.v1.Attributes attributes = 1;
   if (this->has_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->attributes_, output);
+      1, this->_internal_attributes(), output);
   }
 
   // string http_method = 2;
@@ -930,7 +892,7 @@ void HTTPAPISpecPattern::SerializeWithCachedSizes(
   if (this->has_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->attributes_, deterministic, target);
+        1, this->_internal_attributes(), deterministic, target);
   }
 
   // string http_method = 2;
@@ -994,7 +956,7 @@ size_t HTTPAPISpecPattern::ByteSizeLong() const {
   if (this->has_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->attributes_);
+        *attributes_);
   }
 
   switch (pattern_case()) {
@@ -1017,9 +979,7 @@ size_t HTTPAPISpecPattern::ByteSizeLong() const {
     }
   }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1091,12 +1051,12 @@ void HTTPAPISpecPattern::Swap(HTTPAPISpecPattern* other) {
 }
 void HTTPAPISpecPattern::InternalSwap(HTTPAPISpecPattern* other) {
   using std::swap;
-  http_method_.Swap(&other->http_method_);
+  http_method_.Swap(&other->http_method_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(attributes_, other->attributes_);
   swap(pattern_, other->pattern_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HTTPAPISpecPattern::GetMetadata() const {
@@ -1123,16 +1083,14 @@ const int APIKey::kCookieFieldNumber;
 
 APIKey::APIKey()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsAPIKey();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_APIKey.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.APIKey)
 }
 APIKey::APIKey(const APIKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   clear_has_key();
   switch (from.key_case()) {
@@ -1157,7 +1115,6 @@ APIKey::APIKey(const APIKey& from)
 
 void APIKey::SharedCtor() {
   clear_has_key();
-  _cached_size_ = 0;
 }
 
 APIKey::~APIKey() {
@@ -1172,9 +1129,7 @@ void APIKey::SharedDtor() {
 }
 
 void APIKey::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* APIKey::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1182,17 +1137,10 @@ const ::google::protobuf::Descriptor* APIKey::descriptor() {
 }
 
 const APIKey& APIKey::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsAPIKey();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_APIKey.base);
   return *internal_default_instance();
 }
 
-APIKey* APIKey::New(::google::protobuf::Arena* arena) const {
-  APIKey* n = new APIKey;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void APIKey::clear_key() {
 // @@protoc_insertion_point(one_of_clear_start:istio.mixer.v1.config.client.APIKey)
@@ -1233,7 +1181,7 @@ bool APIKey::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.APIKey)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1432,9 +1380,7 @@ size_t APIKey::ByteSizeLong() const {
     }
   }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1506,7 +1452,6 @@ void APIKey::InternalSwap(APIKey* other) {
   swap(key_, other->key_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata APIKey::GetMetadata() const {
@@ -1526,16 +1471,14 @@ const int HTTPAPISpecReference::kNamespaceFieldNumber;
 
 HTTPAPISpecReference::HTTPAPISpecReference()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpecReference();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpecReference.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.HTTPAPISpecReference)
 }
 HTTPAPISpecReference::HTTPAPISpecReference(const HTTPAPISpecReference& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.name().size() > 0) {
@@ -1551,7 +1494,6 @@ HTTPAPISpecReference::HTTPAPISpecReference(const HTTPAPISpecReference& from)
 void HTTPAPISpecReference::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 HTTPAPISpecReference::~HTTPAPISpecReference() {
@@ -1565,9 +1507,7 @@ void HTTPAPISpecReference::SharedDtor() {
 }
 
 void HTTPAPISpecReference::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* HTTPAPISpecReference::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1575,17 +1515,10 @@ const ::google::protobuf::Descriptor* HTTPAPISpecReference::descriptor() {
 }
 
 const HTTPAPISpecReference& HTTPAPISpecReference::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpecReference();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpecReference.base);
   return *internal_default_instance();
 }
 
-HTTPAPISpecReference* HTTPAPISpecReference::New(::google::protobuf::Arena* arena) const {
-  HTTPAPISpecReference* n = new HTTPAPISpecReference;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void HTTPAPISpecReference::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.HTTPAPISpecReference)
@@ -1604,7 +1537,7 @@ bool HTTPAPISpecReference::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.HTTPAPISpecReference)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1754,9 +1687,7 @@ size_t HTTPAPISpecReference::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1816,10 +1747,11 @@ void HTTPAPISpecReference::Swap(HTTPAPISpecReference* other) {
 }
 void HTTPAPISpecReference::InternalSwap(HTTPAPISpecReference* other) {
   using std::swap;
-  name_.Swap(&other->name_);
-  namespace__.Swap(&other->namespace__);
+  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  namespace__.Swap(&other->namespace__, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HTTPAPISpecReference::GetMetadata() const {
@@ -1842,9 +1774,8 @@ const int HTTPAPISpecBinding::kApiSpecsFieldNumber;
 
 HTTPAPISpecBinding::HTTPAPISpecBinding()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpecBinding();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpecBinding.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.HTTPAPISpecBinding)
 }
@@ -1852,14 +1783,12 @@ HTTPAPISpecBinding::HTTPAPISpecBinding(const HTTPAPISpecBinding& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       services_(from.services_),
-      api_specs_(from.api_specs_),
-      _cached_size_(0) {
+      api_specs_(from.api_specs_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.config.client.HTTPAPISpecBinding)
 }
 
 void HTTPAPISpecBinding::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 HTTPAPISpecBinding::~HTTPAPISpecBinding() {
@@ -1871,9 +1800,7 @@ void HTTPAPISpecBinding::SharedDtor() {
 }
 
 void HTTPAPISpecBinding::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* HTTPAPISpecBinding::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1881,17 +1808,10 @@ const ::google::protobuf::Descriptor* HTTPAPISpecBinding::descriptor() {
 }
 
 const HTTPAPISpecBinding& HTTPAPISpecBinding::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpecBinding();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpecBinding.base);
   return *internal_default_instance();
 }
 
-HTTPAPISpecBinding* HTTPAPISpecBinding::New(::google::protobuf::Arena* arena) const {
-  HTTPAPISpecBinding* n = new HTTPAPISpecBinding;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void HTTPAPISpecBinding::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.HTTPAPISpecBinding)
@@ -1910,7 +1830,7 @@ bool HTTPAPISpecBinding::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.HTTPAPISpecBinding)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1918,7 +1838,8 @@ bool HTTPAPISpecBinding::MergePartialFromCodedStream(
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_services()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_services()));
         } else {
           goto handle_unusual;
         }
@@ -1929,7 +1850,8 @@ bool HTTPAPISpecBinding::MergePartialFromCodedStream(
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_api_specs()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_api_specs()));
         } else {
           goto handle_unusual;
         }
@@ -1966,14 +1888,18 @@ void HTTPAPISpecBinding::SerializeWithCachedSizes(
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->services_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->services(static_cast<int>(i)), output);
+      1,
+      this->services(static_cast<int>(i)),
+      output);
   }
 
   // repeated .istio.mixer.v1.config.client.HTTPAPISpecReference api_specs = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->api_specs_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->api_specs(static_cast<int>(i)), output);
+      2,
+      this->api_specs(static_cast<int>(i)),
+      output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2046,9 +1972,7 @@ size_t HTTPAPISpecBinding::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2102,10 +2026,9 @@ void HTTPAPISpecBinding::Swap(HTTPAPISpecBinding* other) {
 }
 void HTTPAPISpecBinding::InternalSwap(HTTPAPISpecBinding* other) {
   using std::swap;
-  services_.InternalSwap(&other->services_);
-  api_specs_.InternalSwap(&other->api_specs_);
+  CastToBase(&services_)->InternalSwap(CastToBase(&other->services_));
+  CastToBase(&api_specs_)->InternalSwap(CastToBase(&other->api_specs_));
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HTTPAPISpecBinding::GetMetadata() const {
@@ -2120,5 +2043,24 @@ void HTTPAPISpecBinding::InternalSwap(HTTPAPISpecBinding* other) {
 }  // namespace v1
 }  // namespace mixer
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::HTTPAPISpec* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::HTTPAPISpec >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::HTTPAPISpec >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::HTTPAPISpecPattern* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::HTTPAPISpecPattern >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::HTTPAPISpecPattern >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::APIKey* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::APIKey >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::APIKey >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::HTTPAPISpecReference* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::HTTPAPISpecReference >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::HTTPAPISpecReference >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::HTTPAPISpecBinding* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::HTTPAPISpecBinding >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::HTTPAPISpecBinding >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

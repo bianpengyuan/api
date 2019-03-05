@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,21 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_google_2fprotobuf_2fduration_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fduration_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Duration;
+}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
+namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2ftimestamp_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Timestamp;
+}  // namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto
+namespace protobuf_policy_2fv1beta1_2ftype_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_policy_2fv1beta1_2ftype_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_DNSName;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_policy_2fv1beta1_2ftype_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EmailAddress;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_policy_2fv1beta1_2ftype_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_IPAddress;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_policy_2fv1beta1_2ftype_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Uri;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_policy_2fv1beta1_2ftype_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Duration;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_policy_2fv1beta1_2ftype_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TimeStamp;
+}  // namespace protobuf_policy_2fv1beta1_2ftype_2eproto
 namespace istio {
 namespace policy {
 namespace v1beta1 {
@@ -71,20 +85,9 @@ class UriDefaultTypeInternal {
 }  // namespace policy
 }  // namespace istio
 namespace protobuf_policy_2fv1beta1_2ftype_2eproto {
-void InitDefaultsValueImpl() {
+static void InitDefaultsValue() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsIPAddress();
-  protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsTimeStamp();
-  protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsDuration();
-  protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsEmailAddress();
-  protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsDNSName();
-  protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsUri();
   {
     void* ptr = &::istio::policy::v1beta1::_Value_default_instance_;
     new (ptr) ::istio::policy::v1beta1::Value();
@@ -93,19 +96,18 @@ void InitDefaultsValueImpl() {
   ::istio::policy::v1beta1::Value::InitAsDefaultInstance();
 }
 
-void InitDefaultsValue() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsValueImpl);
-}
+::google::protobuf::internal::SCCInfo<6> scc_info_Value =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 6, InitDefaultsValue}, {
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_IPAddress.base,
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_TimeStamp.base,
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_Duration.base,
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_EmailAddress.base,
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_DNSName.base,
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_Uri.base,}};
 
-void InitDefaultsIPAddressImpl() {
+static void InitDefaultsIPAddress() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::policy::v1beta1::_IPAddress_default_instance_;
     new (ptr) ::istio::policy::v1beta1::IPAddress();
@@ -114,20 +116,12 @@ void InitDefaultsIPAddressImpl() {
   ::istio::policy::v1beta1::IPAddress::InitAsDefaultInstance();
 }
 
-void InitDefaultsIPAddress() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsIPAddressImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_IPAddress =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsIPAddress}, {}};
 
-void InitDefaultsDurationImpl() {
+static void InitDefaultsDuration() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
   {
     void* ptr = &::istio::policy::v1beta1::_Duration_default_instance_;
     new (ptr) ::istio::policy::v1beta1::Duration();
@@ -136,20 +130,13 @@ void InitDefaultsDurationImpl() {
   ::istio::policy::v1beta1::Duration::InitAsDefaultInstance();
 }
 
-void InitDefaultsDuration() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsDurationImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_Duration =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsDuration}, {
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,}};
 
-void InitDefaultsTimeStampImpl() {
+static void InitDefaultsTimeStamp() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2ftimestamp_2eproto::InitDefaultsTimestamp();
   {
     void* ptr = &::istio::policy::v1beta1::_TimeStamp_default_instance_;
     new (ptr) ::istio::policy::v1beta1::TimeStamp();
@@ -158,19 +145,13 @@ void InitDefaultsTimeStampImpl() {
   ::istio::policy::v1beta1::TimeStamp::InitAsDefaultInstance();
 }
 
-void InitDefaultsTimeStamp() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsTimeStampImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_TimeStamp =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTimeStamp}, {
+      &protobuf_google_2fprotobuf_2ftimestamp_2eproto::scc_info_Timestamp.base,}};
 
-void InitDefaultsDNSNameImpl() {
+static void InitDefaultsDNSName() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::policy::v1beta1::_DNSName_default_instance_;
     new (ptr) ::istio::policy::v1beta1::DNSName();
@@ -179,19 +160,12 @@ void InitDefaultsDNSNameImpl() {
   ::istio::policy::v1beta1::DNSName::InitAsDefaultInstance();
 }
 
-void InitDefaultsDNSName() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsDNSNameImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_DNSName =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsDNSName}, {}};
 
-void InitDefaultsEmailAddressImpl() {
+static void InitDefaultsEmailAddress() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::policy::v1beta1::_EmailAddress_default_instance_;
     new (ptr) ::istio::policy::v1beta1::EmailAddress();
@@ -200,19 +174,12 @@ void InitDefaultsEmailAddressImpl() {
   ::istio::policy::v1beta1::EmailAddress::InitAsDefaultInstance();
 }
 
-void InitDefaultsEmailAddress() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsEmailAddressImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_EmailAddress =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEmailAddress}, {}};
 
-void InitDefaultsUriImpl() {
+static void InitDefaultsUri() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::policy::v1beta1::_Uri_default_instance_;
     new (ptr) ::istio::policy::v1beta1::Uri();
@@ -221,9 +188,17 @@ void InitDefaultsUriImpl() {
   ::istio::policy::v1beta1::Uri::InitAsDefaultInstance();
 }
 
-void InitDefaultsUri() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsUriImpl);
+::google::protobuf::internal::SCCInfo<0> scc_info_Uri =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsUri}, {}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_Value.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_IPAddress.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Duration.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TimeStamp.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_DNSName.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EmailAddress.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Uri.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[7];
@@ -304,15 +279,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "policy/v1beta1/type.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "policy/v1beta1/type.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, NULL, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -355,8 +329,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -489,16 +463,14 @@ const int Value::kUriValueFieldNumber;
 
 Value::Value()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsValue();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_Value.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.policy.v1beta1.Value)
 }
 Value::Value(const Value& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   clear_has_value();
   switch (from.value_case()) {
@@ -551,7 +523,6 @@ Value::Value(const Value& from)
 
 void Value::SharedCtor() {
   clear_has_value();
-  _cached_size_ = 0;
 }
 
 Value::~Value() {
@@ -566,9 +537,7 @@ void Value::SharedDtor() {
 }
 
 void Value::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* Value::descriptor() {
   ::protobuf_policy_2fv1beta1_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
@@ -576,17 +545,10 @@ const ::google::protobuf::Descriptor* Value::descriptor() {
 }
 
 const Value& Value::default_instance() {
-  ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsValue();
+  ::google::protobuf::internal::InitSCC(&protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_Value.base);
   return *internal_default_instance();
 }
 
-Value* Value::New(::google::protobuf::Arena* arena) const {
-  Value* n = new Value;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void Value::clear_value() {
 // @@protoc_insertion_point(one_of_clear_start:istio.policy.v1beta1.Value)
@@ -655,7 +617,7 @@ bool Value::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.policy.v1beta1.Value)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -846,37 +808,37 @@ void Value::SerializeWithCachedSizes(
   // .istio.policy.v1beta1.IPAddress ip_address_value = 5;
   if (has_ip_address_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, *value_.ip_address_value_, output);
+      5, this->_internal_ip_address_value(), output);
   }
 
   // .istio.policy.v1beta1.TimeStamp timestamp_value = 6;
   if (has_timestamp_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, *value_.timestamp_value_, output);
+      6, this->_internal_timestamp_value(), output);
   }
 
   // .istio.policy.v1beta1.Duration duration_value = 7;
   if (has_duration_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, *value_.duration_value_, output);
+      7, this->_internal_duration_value(), output);
   }
 
   // .istio.policy.v1beta1.EmailAddress email_address_value = 8;
   if (has_email_address_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, *value_.email_address_value_, output);
+      8, this->_internal_email_address_value(), output);
   }
 
   // .istio.policy.v1beta1.DNSName dns_name_value = 9;
   if (has_dns_name_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, *value_.dns_name_value_, output);
+      9, this->_internal_dns_name_value(), output);
   }
 
   // .istio.policy.v1beta1.Uri uri_value = 10;
   if (has_uri_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      10, *value_.uri_value_, output);
+      10, this->_internal_uri_value(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -923,42 +885,42 @@ void Value::SerializeWithCachedSizes(
   if (has_ip_address_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, *value_.ip_address_value_, deterministic, target);
+        5, this->_internal_ip_address_value(), deterministic, target);
   }
 
   // .istio.policy.v1beta1.TimeStamp timestamp_value = 6;
   if (has_timestamp_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, *value_.timestamp_value_, deterministic, target);
+        6, this->_internal_timestamp_value(), deterministic, target);
   }
 
   // .istio.policy.v1beta1.Duration duration_value = 7;
   if (has_duration_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, *value_.duration_value_, deterministic, target);
+        7, this->_internal_duration_value(), deterministic, target);
   }
 
   // .istio.policy.v1beta1.EmailAddress email_address_value = 8;
   if (has_email_address_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        8, *value_.email_address_value_, deterministic, target);
+        8, this->_internal_email_address_value(), deterministic, target);
   }
 
   // .istio.policy.v1beta1.DNSName dns_name_value = 9;
   if (has_dns_name_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        9, *value_.dns_name_value_, deterministic, target);
+        9, this->_internal_dns_name_value(), deterministic, target);
   }
 
   // .istio.policy.v1beta1.Uri uri_value = 10;
   if (has_uri_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        10, *value_.uri_value_, deterministic, target);
+        10, this->_internal_uri_value(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1050,9 +1012,7 @@ size_t Value::ByteSizeLong() const {
     }
   }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1152,7 +1112,6 @@ void Value::InternalSwap(Value* other) {
   swap(value_, other->value_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Value::GetMetadata() const {
@@ -1171,16 +1130,14 @@ const int IPAddress::kValueFieldNumber;
 
 IPAddress::IPAddress()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsIPAddress();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_IPAddress.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.policy.v1beta1.IPAddress)
 }
 IPAddress::IPAddress(const IPAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.value().size() > 0) {
@@ -1191,7 +1148,6 @@ IPAddress::IPAddress(const IPAddress& from)
 
 void IPAddress::SharedCtor() {
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 IPAddress::~IPAddress() {
@@ -1204,9 +1160,7 @@ void IPAddress::SharedDtor() {
 }
 
 void IPAddress::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* IPAddress::descriptor() {
   ::protobuf_policy_2fv1beta1_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1214,17 +1168,10 @@ const ::google::protobuf::Descriptor* IPAddress::descriptor() {
 }
 
 const IPAddress& IPAddress::default_instance() {
-  ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsIPAddress();
+  ::google::protobuf::internal::InitSCC(&protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_IPAddress.base);
   return *internal_default_instance();
 }
 
-IPAddress* IPAddress::New(::google::protobuf::Arena* arena) const {
-  IPAddress* n = new IPAddress;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void IPAddress::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.policy.v1beta1.IPAddress)
@@ -1242,7 +1189,7 @@ bool IPAddress::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.policy.v1beta1.IPAddress)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1336,9 +1283,7 @@ size_t IPAddress::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1394,9 +1339,9 @@ void IPAddress::Swap(IPAddress* other) {
 }
 void IPAddress::InternalSwap(IPAddress* other) {
   using std::swap;
-  value_.Swap(&other->value_);
+  value_.Swap(&other->value_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata IPAddress::GetMetadata() const {
@@ -1423,16 +1368,14 @@ const int Duration::kValueFieldNumber;
 
 Duration::Duration()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsDuration();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_Duration.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.policy.v1beta1.Duration)
 }
 Duration::Duration(const Duration& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_value()) {
     value_ = new ::google::protobuf::Duration(*from.value_);
@@ -1444,7 +1387,6 @@ Duration::Duration(const Duration& from)
 
 void Duration::SharedCtor() {
   value_ = NULL;
-  _cached_size_ = 0;
 }
 
 Duration::~Duration() {
@@ -1457,9 +1399,7 @@ void Duration::SharedDtor() {
 }
 
 void Duration::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* Duration::descriptor() {
   ::protobuf_policy_2fv1beta1_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1467,17 +1407,10 @@ const ::google::protobuf::Descriptor* Duration::descriptor() {
 }
 
 const Duration& Duration::default_instance() {
-  ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsDuration();
+  ::google::protobuf::internal::InitSCC(&protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_Duration.base);
   return *internal_default_instance();
 }
 
-Duration* Duration::New(::google::protobuf::Arena* arena) const {
-  Duration* n = new Duration;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void Duration::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.policy.v1beta1.Duration)
@@ -1498,7 +1431,7 @@ bool Duration::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.policy.v1beta1.Duration)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1543,7 +1476,7 @@ void Duration::SerializeWithCachedSizes(
   // .google.protobuf.Duration value = 1;
   if (this->has_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->value_, output);
+      1, this->_internal_value(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1564,7 +1497,7 @@ void Duration::SerializeWithCachedSizes(
   if (this->has_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->value_, deterministic, target);
+        1, this->_internal_value(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1588,13 +1521,11 @@ size_t Duration::ByteSizeLong() const {
   if (this->has_value()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->value_);
+        *value_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1651,7 +1582,6 @@ void Duration::InternalSwap(Duration* other) {
   using std::swap;
   swap(value_, other->value_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Duration::GetMetadata() const {
@@ -1678,16 +1608,14 @@ const int TimeStamp::kValueFieldNumber;
 
 TimeStamp::TimeStamp()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsTimeStamp();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_TimeStamp.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.policy.v1beta1.TimeStamp)
 }
 TimeStamp::TimeStamp(const TimeStamp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_value()) {
     value_ = new ::google::protobuf::Timestamp(*from.value_);
@@ -1699,7 +1627,6 @@ TimeStamp::TimeStamp(const TimeStamp& from)
 
 void TimeStamp::SharedCtor() {
   value_ = NULL;
-  _cached_size_ = 0;
 }
 
 TimeStamp::~TimeStamp() {
@@ -1712,9 +1639,7 @@ void TimeStamp::SharedDtor() {
 }
 
 void TimeStamp::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* TimeStamp::descriptor() {
   ::protobuf_policy_2fv1beta1_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1722,17 +1647,10 @@ const ::google::protobuf::Descriptor* TimeStamp::descriptor() {
 }
 
 const TimeStamp& TimeStamp::default_instance() {
-  ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsTimeStamp();
+  ::google::protobuf::internal::InitSCC(&protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_TimeStamp.base);
   return *internal_default_instance();
 }
 
-TimeStamp* TimeStamp::New(::google::protobuf::Arena* arena) const {
-  TimeStamp* n = new TimeStamp;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void TimeStamp::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.policy.v1beta1.TimeStamp)
@@ -1753,7 +1671,7 @@ bool TimeStamp::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.policy.v1beta1.TimeStamp)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1798,7 +1716,7 @@ void TimeStamp::SerializeWithCachedSizes(
   // .google.protobuf.Timestamp value = 1;
   if (this->has_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->value_, output);
+      1, this->_internal_value(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1819,7 +1737,7 @@ void TimeStamp::SerializeWithCachedSizes(
   if (this->has_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->value_, deterministic, target);
+        1, this->_internal_value(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1843,13 +1761,11 @@ size_t TimeStamp::ByteSizeLong() const {
   if (this->has_value()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->value_);
+        *value_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1906,7 +1822,6 @@ void TimeStamp::InternalSwap(TimeStamp* other) {
   using std::swap;
   swap(value_, other->value_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TimeStamp::GetMetadata() const {
@@ -1925,16 +1840,14 @@ const int DNSName::kValueFieldNumber;
 
 DNSName::DNSName()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsDNSName();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_DNSName.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.policy.v1beta1.DNSName)
 }
 DNSName::DNSName(const DNSName& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.value().size() > 0) {
@@ -1945,7 +1858,6 @@ DNSName::DNSName(const DNSName& from)
 
 void DNSName::SharedCtor() {
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 DNSName::~DNSName() {
@@ -1958,9 +1870,7 @@ void DNSName::SharedDtor() {
 }
 
 void DNSName::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* DNSName::descriptor() {
   ::protobuf_policy_2fv1beta1_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1968,17 +1878,10 @@ const ::google::protobuf::Descriptor* DNSName::descriptor() {
 }
 
 const DNSName& DNSName::default_instance() {
-  ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsDNSName();
+  ::google::protobuf::internal::InitSCC(&protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_DNSName.base);
   return *internal_default_instance();
 }
 
-DNSName* DNSName::New(::google::protobuf::Arena* arena) const {
-  DNSName* n = new DNSName;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void DNSName::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.policy.v1beta1.DNSName)
@@ -1996,7 +1899,7 @@ bool DNSName::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.policy.v1beta1.DNSName)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2102,9 +2005,7 @@ size_t DNSName::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2160,9 +2061,9 @@ void DNSName::Swap(DNSName* other) {
 }
 void DNSName::InternalSwap(DNSName* other) {
   using std::swap;
-  value_.Swap(&other->value_);
+  value_.Swap(&other->value_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DNSName::GetMetadata() const {
@@ -2181,16 +2082,14 @@ const int EmailAddress::kValueFieldNumber;
 
 EmailAddress::EmailAddress()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsEmailAddress();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_EmailAddress.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.policy.v1beta1.EmailAddress)
 }
 EmailAddress::EmailAddress(const EmailAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.value().size() > 0) {
@@ -2201,7 +2100,6 @@ EmailAddress::EmailAddress(const EmailAddress& from)
 
 void EmailAddress::SharedCtor() {
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 EmailAddress::~EmailAddress() {
@@ -2214,9 +2112,7 @@ void EmailAddress::SharedDtor() {
 }
 
 void EmailAddress::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* EmailAddress::descriptor() {
   ::protobuf_policy_2fv1beta1_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2224,17 +2120,10 @@ const ::google::protobuf::Descriptor* EmailAddress::descriptor() {
 }
 
 const EmailAddress& EmailAddress::default_instance() {
-  ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsEmailAddress();
+  ::google::protobuf::internal::InitSCC(&protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_EmailAddress.base);
   return *internal_default_instance();
 }
 
-EmailAddress* EmailAddress::New(::google::protobuf::Arena* arena) const {
-  EmailAddress* n = new EmailAddress;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void EmailAddress::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.policy.v1beta1.EmailAddress)
@@ -2252,7 +2141,7 @@ bool EmailAddress::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.policy.v1beta1.EmailAddress)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2358,9 +2247,7 @@ size_t EmailAddress::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2416,9 +2303,9 @@ void EmailAddress::Swap(EmailAddress* other) {
 }
 void EmailAddress::InternalSwap(EmailAddress* other) {
   using std::swap;
-  value_.Swap(&other->value_);
+  value_.Swap(&other->value_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata EmailAddress::GetMetadata() const {
@@ -2437,16 +2324,14 @@ const int Uri::kValueFieldNumber;
 
 Uri::Uri()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsUri();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_Uri.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.policy.v1beta1.Uri)
 }
 Uri::Uri(const Uri& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.value().size() > 0) {
@@ -2457,7 +2342,6 @@ Uri::Uri(const Uri& from)
 
 void Uri::SharedCtor() {
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 Uri::~Uri() {
@@ -2470,9 +2354,7 @@ void Uri::SharedDtor() {
 }
 
 void Uri::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* Uri::descriptor() {
   ::protobuf_policy_2fv1beta1_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2480,17 +2362,10 @@ const ::google::protobuf::Descriptor* Uri::descriptor() {
 }
 
 const Uri& Uri::default_instance() {
-  ::protobuf_policy_2fv1beta1_2ftype_2eproto::InitDefaultsUri();
+  ::google::protobuf::internal::InitSCC(&protobuf_policy_2fv1beta1_2ftype_2eproto::scc_info_Uri.base);
   return *internal_default_instance();
 }
 
-Uri* Uri::New(::google::protobuf::Arena* arena) const {
-  Uri* n = new Uri;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void Uri::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.policy.v1beta1.Uri)
@@ -2508,7 +2383,7 @@ bool Uri::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.policy.v1beta1.Uri)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2614,9 +2489,7 @@ size_t Uri::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2672,9 +2545,9 @@ void Uri::Swap(Uri* other) {
 }
 void Uri::InternalSwap(Uri* other) {
   using std::swap;
-  value_.Swap(&other->value_);
+  value_.Swap(&other->value_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Uri::GetMetadata() const {
@@ -2687,5 +2560,30 @@ void Uri::InternalSwap(Uri* other) {
 }  // namespace v1beta1
 }  // namespace policy
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::policy::v1beta1::Value* Arena::CreateMaybeMessage< ::istio::policy::v1beta1::Value >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::policy::v1beta1::Value >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::policy::v1beta1::IPAddress* Arena::CreateMaybeMessage< ::istio::policy::v1beta1::IPAddress >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::policy::v1beta1::IPAddress >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::policy::v1beta1::Duration* Arena::CreateMaybeMessage< ::istio::policy::v1beta1::Duration >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::policy::v1beta1::Duration >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::policy::v1beta1::TimeStamp* Arena::CreateMaybeMessage< ::istio::policy::v1beta1::TimeStamp >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::policy::v1beta1::TimeStamp >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::policy::v1beta1::DNSName* Arena::CreateMaybeMessage< ::istio::policy::v1beta1::DNSName >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::policy::v1beta1::DNSName >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::policy::v1beta1::EmailAddress* Arena::CreateMaybeMessage< ::istio::policy::v1beta1::EmailAddress >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::policy::v1beta1::EmailAddress >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::policy::v1beta1::Uri* Arena::CreateMaybeMessage< ::istio::policy::v1beta1::Uri >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::policy::v1beta1::Uri >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,18 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Quota;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_QuotaSpecBinding_QuotaSpecReference;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StringMatch;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_AttributeMatch;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_AttributeMatch_ClauseEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_QuotaRule;
+}  // namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto
+namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_IstioService;
+}  // namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto
 namespace istio {
 namespace mixer {
 namespace v1 {
@@ -73,15 +84,9 @@ class QuotaSpecBindingDefaultTypeInternal {
 }  // namespace mixer
 }  // namespace istio
 namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto {
-void InitDefaultsQuotaSpecImpl() {
+static void InitDefaultsQuotaSpec() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaRule();
   {
     void* ptr = &::istio::mixer::v1::config::client::_QuotaSpec_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::QuotaSpec();
@@ -90,21 +95,13 @@ void InitDefaultsQuotaSpecImpl() {
   ::istio::mixer::v1::config::client::QuotaSpec::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaSpec() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaSpecImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_QuotaSpec =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsQuotaSpec}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaRule.base,}};
 
-void InitDefaultsQuotaRuleImpl() {
+static void InitDefaultsQuotaRule() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsAttributeMatch();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuota();
   {
     void* ptr = &::istio::mixer::v1::config::client::_QuotaRule_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::QuotaRule();
@@ -113,19 +110,14 @@ void InitDefaultsQuotaRuleImpl() {
   ::istio::mixer::v1::config::client::QuotaRule::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaRule() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaRuleImpl);
-}
+::google::protobuf::internal::SCCInfo<2> scc_info_QuotaRule =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsQuotaRule}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_AttributeMatch.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_Quota.base,}};
 
-void InitDefaultsStringMatchImpl() {
+static void InitDefaultsStringMatch() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::config::client::_StringMatch_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::StringMatch();
@@ -134,20 +126,12 @@ void InitDefaultsStringMatchImpl() {
   ::istio::mixer::v1::config::client::StringMatch::InitAsDefaultInstance();
 }
 
-void InitDefaultsStringMatch() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsStringMatchImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_StringMatch =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStringMatch}, {}};
 
-void InitDefaultsAttributeMatch_ClauseEntry_DoNotUseImpl() {
+static void InitDefaultsAttributeMatch_ClauseEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsStringMatch();
   {
     void* ptr = &::istio::mixer::v1::config::client::_AttributeMatch_ClauseEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::AttributeMatch_ClauseEntry_DoNotUse();
@@ -155,20 +139,13 @@ void InitDefaultsAttributeMatch_ClauseEntry_DoNotUseImpl() {
   ::istio::mixer::v1::config::client::AttributeMatch_ClauseEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsAttributeMatch_ClauseEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAttributeMatch_ClauseEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_AttributeMatch_ClauseEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAttributeMatch_ClauseEntry_DoNotUse}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_StringMatch.base,}};
 
-void InitDefaultsAttributeMatchImpl() {
+static void InitDefaultsAttributeMatch() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsAttributeMatch_ClauseEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::v1::config::client::_AttributeMatch_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::AttributeMatch();
@@ -177,19 +154,13 @@ void InitDefaultsAttributeMatchImpl() {
   ::istio::mixer::v1::config::client::AttributeMatch::InitAsDefaultInstance();
 }
 
-void InitDefaultsAttributeMatch() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsAttributeMatchImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_AttributeMatch =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsAttributeMatch}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_AttributeMatch_ClauseEntry_DoNotUse.base,}};
 
-void InitDefaultsQuotaImpl() {
+static void InitDefaultsQuota() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::config::client::_Quota_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::Quota();
@@ -198,19 +169,12 @@ void InitDefaultsQuotaImpl() {
   ::istio::mixer::v1::config::client::Quota::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuota() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_Quota =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsQuota}, {}};
 
-void InitDefaultsQuotaSpecBinding_QuotaSpecReferenceImpl() {
+static void InitDefaultsQuotaSpecBinding_QuotaSpecReference() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::config::client::_QuotaSpecBinding_QuotaSpecReference_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::QuotaSpecBinding_QuotaSpecReference();
@@ -219,21 +183,12 @@ void InitDefaultsQuotaSpecBinding_QuotaSpecReferenceImpl() {
   ::istio::mixer::v1::config::client::QuotaSpecBinding_QuotaSpecReference::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaSpecBinding_QuotaSpecReference() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaSpecBinding_QuotaSpecReferenceImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_QuotaSpecBinding_QuotaSpecReference =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsQuotaSpecBinding_QuotaSpecReference}, {}};
 
-void InitDefaultsQuotaSpecBindingImpl() {
+static void InitDefaultsQuotaSpecBinding() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::InitDefaultsIstioService();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaSpecBinding_QuotaSpecReference();
   {
     void* ptr = &::istio::mixer::v1::config::client::_QuotaSpecBinding_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::QuotaSpecBinding();
@@ -242,9 +197,20 @@ void InitDefaultsQuotaSpecBindingImpl() {
   ::istio::mixer::v1::config::client::QuotaSpecBinding::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaSpecBinding() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaSpecBindingImpl);
+::google::protobuf::internal::SCCInfo<2> scc_info_QuotaSpecBinding =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsQuotaSpecBinding}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::scc_info_IstioService.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaSpecBinding_QuotaSpecReference.base,}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaSpec.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaRule.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StringMatch.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AttributeMatch_ClauseEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_AttributeMatch.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Quota.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaSpecBinding_QuotaSpecReference.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaSpecBinding.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[8];
@@ -333,15 +299,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "mixer/v1/config/client/quota.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "mixer/v1/config/client/quota.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, NULL, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -386,8 +351,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -412,23 +377,20 @@ const int QuotaSpec::kRulesFieldNumber;
 
 QuotaSpec::QuotaSpec()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaSpec();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaSpec.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.QuotaSpec)
 }
 QuotaSpec::QuotaSpec(const QuotaSpec& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      rules_(from.rules_),
-      _cached_size_(0) {
+      rules_(from.rules_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.config.client.QuotaSpec)
 }
 
 void QuotaSpec::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 QuotaSpec::~QuotaSpec() {
@@ -440,9 +402,7 @@ void QuotaSpec::SharedDtor() {
 }
 
 void QuotaSpec::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* QuotaSpec::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -450,17 +410,10 @@ const ::google::protobuf::Descriptor* QuotaSpec::descriptor() {
 }
 
 const QuotaSpec& QuotaSpec::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaSpec();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaSpec.base);
   return *internal_default_instance();
 }
 
-QuotaSpec* QuotaSpec::New(::google::protobuf::Arena* arena) const {
-  QuotaSpec* n = new QuotaSpec;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void QuotaSpec::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.QuotaSpec)
@@ -478,7 +431,7 @@ bool QuotaSpec::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.QuotaSpec)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -486,7 +439,8 @@ bool QuotaSpec::MergePartialFromCodedStream(
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_rules()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_rules()));
         } else {
           goto handle_unusual;
         }
@@ -523,7 +477,9 @@ void QuotaSpec::SerializeWithCachedSizes(
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->rules_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->rules(static_cast<int>(i)), output);
+      1,
+      this->rules(static_cast<int>(i)),
+      output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -577,9 +533,7 @@ size_t QuotaSpec::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -632,9 +586,8 @@ void QuotaSpec::Swap(QuotaSpec* other) {
 }
 void QuotaSpec::InternalSwap(QuotaSpec* other) {
   using std::swap;
-  rules_.InternalSwap(&other->rules_);
+  CastToBase(&rules_)->InternalSwap(CastToBase(&other->rules_));
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QuotaSpec::GetMetadata() const {
@@ -654,9 +607,8 @@ const int QuotaRule::kQuotasFieldNumber;
 
 QuotaRule::QuotaRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaRule();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaRule.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.QuotaRule)
 }
@@ -664,14 +616,12 @@ QuotaRule::QuotaRule(const QuotaRule& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       match_(from.match_),
-      quotas_(from.quotas_),
-      _cached_size_(0) {
+      quotas_(from.quotas_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.config.client.QuotaRule)
 }
 
 void QuotaRule::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 QuotaRule::~QuotaRule() {
@@ -683,9 +633,7 @@ void QuotaRule::SharedDtor() {
 }
 
 void QuotaRule::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* QuotaRule::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -693,17 +641,10 @@ const ::google::protobuf::Descriptor* QuotaRule::descriptor() {
 }
 
 const QuotaRule& QuotaRule::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaRule();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaRule.base);
   return *internal_default_instance();
 }
 
-QuotaRule* QuotaRule::New(::google::protobuf::Arena* arena) const {
-  QuotaRule* n = new QuotaRule;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void QuotaRule::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.QuotaRule)
@@ -722,7 +663,7 @@ bool QuotaRule::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.QuotaRule)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -730,7 +671,8 @@ bool QuotaRule::MergePartialFromCodedStream(
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_match()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_match()));
         } else {
           goto handle_unusual;
         }
@@ -741,7 +683,8 @@ bool QuotaRule::MergePartialFromCodedStream(
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_quotas()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_quotas()));
         } else {
           goto handle_unusual;
         }
@@ -778,14 +721,18 @@ void QuotaRule::SerializeWithCachedSizes(
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->match_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->match(static_cast<int>(i)), output);
+      1,
+      this->match(static_cast<int>(i)),
+      output);
   }
 
   // repeated .istio.mixer.v1.config.client.Quota quotas = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->quotas_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->quotas(static_cast<int>(i)), output);
+      2,
+      this->quotas(static_cast<int>(i)),
+      output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -858,9 +805,7 @@ size_t QuotaRule::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -914,10 +859,9 @@ void QuotaRule::Swap(QuotaRule* other) {
 }
 void QuotaRule::InternalSwap(QuotaRule* other) {
   using std::swap;
-  match_.InternalSwap(&other->match_);
-  quotas_.InternalSwap(&other->quotas_);
+  CastToBase(&match_)->InternalSwap(CastToBase(&other->match_));
+  CastToBase(&quotas_)->InternalSwap(CastToBase(&other->quotas_));
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QuotaRule::GetMetadata() const {
@@ -944,16 +888,14 @@ const int StringMatch::kRegexFieldNumber;
 
 StringMatch::StringMatch()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsStringMatch();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_StringMatch.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.StringMatch)
 }
 StringMatch::StringMatch(const StringMatch& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   clear_has_match_type();
   switch (from.match_type_case()) {
@@ -978,7 +920,6 @@ StringMatch::StringMatch(const StringMatch& from)
 
 void StringMatch::SharedCtor() {
   clear_has_match_type();
-  _cached_size_ = 0;
 }
 
 StringMatch::~StringMatch() {
@@ -993,9 +934,7 @@ void StringMatch::SharedDtor() {
 }
 
 void StringMatch::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* StringMatch::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1003,17 +942,10 @@ const ::google::protobuf::Descriptor* StringMatch::descriptor() {
 }
 
 const StringMatch& StringMatch::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsStringMatch();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_StringMatch.base);
   return *internal_default_instance();
 }
 
-StringMatch* StringMatch::New(::google::protobuf::Arena* arena) const {
-  StringMatch* n = new StringMatch;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void StringMatch::clear_match_type() {
 // @@protoc_insertion_point(one_of_clear_start:istio.mixer.v1.config.client.StringMatch)
@@ -1054,7 +986,7 @@ bool StringMatch::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.StringMatch)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1253,9 +1185,7 @@ size_t StringMatch::ByteSizeLong() const {
     }
   }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1327,7 +1257,6 @@ void StringMatch::InternalSwap(StringMatch* other) {
   swap(match_type_, other->match_type_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata StringMatch::GetMetadata() const {
@@ -1363,23 +1292,20 @@ const int AttributeMatch::kClauseFieldNumber;
 
 AttributeMatch::AttributeMatch()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsAttributeMatch();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_AttributeMatch.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.AttributeMatch)
 }
 AttributeMatch::AttributeMatch(const AttributeMatch& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   clause_.MergeFrom(from.clause_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.config.client.AttributeMatch)
 }
 
 void AttributeMatch::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 AttributeMatch::~AttributeMatch() {
@@ -1391,9 +1317,7 @@ void AttributeMatch::SharedDtor() {
 }
 
 void AttributeMatch::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* AttributeMatch::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1401,17 +1325,10 @@ const ::google::protobuf::Descriptor* AttributeMatch::descriptor() {
 }
 
 const AttributeMatch& AttributeMatch::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsAttributeMatch();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_AttributeMatch.base);
   return *internal_default_instance();
 }
 
-AttributeMatch* AttributeMatch::New(::google::protobuf::Arena* arena) const {
-  AttributeMatch* n = new AttributeMatch;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void AttributeMatch::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.AttributeMatch)
@@ -1429,7 +1346,7 @@ bool AttributeMatch::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.AttributeMatch)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1499,7 +1416,7 @@ void AttributeMatch::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->clause().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->clause().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::StringMatch >::size_type size_type;
       size_type n = 0;
@@ -1509,7 +1426,7 @@ void AttributeMatch::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
+      ::std::unique_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(clause_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -1518,7 +1435,7 @@ void AttributeMatch::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
+      ::std::unique_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::StringMatch >::const_iterator
           it = this->clause().begin();
           it != this->clause().end(); ++it) {
@@ -1562,7 +1479,7 @@ void AttributeMatch::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->clause().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->clause().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::StringMatch >::size_type size_type;
       size_type n = 0;
@@ -1572,7 +1489,7 @@ void AttributeMatch::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
+      ::std::unique_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(clause_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -1583,7 +1500,7 @@ void AttributeMatch::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
+      ::std::unique_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::StringMatch >::const_iterator
           it = this->clause().begin();
           it != this->clause().end(); ++it) {
@@ -1619,7 +1536,7 @@ size_t AttributeMatch::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->clause_size());
   {
-    ::google::protobuf::scoped_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
+    ::std::unique_ptr<AttributeMatch_ClauseEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::StringMatch >::const_iterator
         it = this->clause().begin();
         it != this->clause().end(); ++it) {
@@ -1630,9 +1547,7 @@ size_t AttributeMatch::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1687,7 +1602,6 @@ void AttributeMatch::InternalSwap(AttributeMatch* other) {
   using std::swap;
   clause_.Swap(&other->clause_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AttributeMatch::GetMetadata() const {
@@ -1707,16 +1621,14 @@ const int Quota::kChargeFieldNumber;
 
 Quota::Quota()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuota();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_Quota.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.Quota)
 }
 Quota::Quota(const Quota& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   quota_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.quota().size() > 0) {
@@ -1729,7 +1641,6 @@ Quota::Quota(const Quota& from)
 void Quota::SharedCtor() {
   quota_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   charge_ = GOOGLE_LONGLONG(0);
-  _cached_size_ = 0;
 }
 
 Quota::~Quota() {
@@ -1742,9 +1653,7 @@ void Quota::SharedDtor() {
 }
 
 void Quota::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* Quota::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1752,17 +1661,10 @@ const ::google::protobuf::Descriptor* Quota::descriptor() {
 }
 
 const Quota& Quota::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuota();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_Quota.base);
   return *internal_default_instance();
 }
 
-Quota* Quota::New(::google::protobuf::Arena* arena) const {
-  Quota* n = new Quota;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void Quota::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.Quota)
@@ -1781,7 +1683,7 @@ bool Quota::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.Quota)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1918,9 +1820,7 @@ size_t Quota::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1979,10 +1879,10 @@ void Quota::Swap(Quota* other) {
 }
 void Quota::InternalSwap(Quota* other) {
   using std::swap;
-  quota_.Swap(&other->quota_);
+  quota_.Swap(&other->quota_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(charge_, other->charge_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Quota::GetMetadata() const {
@@ -2002,16 +1902,14 @@ const int QuotaSpecBinding_QuotaSpecReference::kNamespaceFieldNumber;
 
 QuotaSpecBinding_QuotaSpecReference::QuotaSpecBinding_QuotaSpecReference()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaSpecBinding_QuotaSpecReference();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaSpecBinding_QuotaSpecReference.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.QuotaSpecBinding.QuotaSpecReference)
 }
 QuotaSpecBinding_QuotaSpecReference::QuotaSpecBinding_QuotaSpecReference(const QuotaSpecBinding_QuotaSpecReference& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.name().size() > 0) {
@@ -2027,7 +1925,6 @@ QuotaSpecBinding_QuotaSpecReference::QuotaSpecBinding_QuotaSpecReference(const Q
 void QuotaSpecBinding_QuotaSpecReference::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 QuotaSpecBinding_QuotaSpecReference::~QuotaSpecBinding_QuotaSpecReference() {
@@ -2041,9 +1938,7 @@ void QuotaSpecBinding_QuotaSpecReference::SharedDtor() {
 }
 
 void QuotaSpecBinding_QuotaSpecReference::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* QuotaSpecBinding_QuotaSpecReference::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2051,17 +1946,10 @@ const ::google::protobuf::Descriptor* QuotaSpecBinding_QuotaSpecReference::descr
 }
 
 const QuotaSpecBinding_QuotaSpecReference& QuotaSpecBinding_QuotaSpecReference::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaSpecBinding_QuotaSpecReference();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaSpecBinding_QuotaSpecReference.base);
   return *internal_default_instance();
 }
 
-QuotaSpecBinding_QuotaSpecReference* QuotaSpecBinding_QuotaSpecReference::New(::google::protobuf::Arena* arena) const {
-  QuotaSpecBinding_QuotaSpecReference* n = new QuotaSpecBinding_QuotaSpecReference;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void QuotaSpecBinding_QuotaSpecReference::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.QuotaSpecBinding.QuotaSpecReference)
@@ -2080,7 +1968,7 @@ bool QuotaSpecBinding_QuotaSpecReference::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.QuotaSpecBinding.QuotaSpecReference)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2230,9 +2118,7 @@ size_t QuotaSpecBinding_QuotaSpecReference::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2292,10 +2178,11 @@ void QuotaSpecBinding_QuotaSpecReference::Swap(QuotaSpecBinding_QuotaSpecReferen
 }
 void QuotaSpecBinding_QuotaSpecReference::InternalSwap(QuotaSpecBinding_QuotaSpecReference* other) {
   using std::swap;
-  name_.Swap(&other->name_);
-  namespace__.Swap(&other->namespace__);
+  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  namespace__.Swap(&other->namespace__, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QuotaSpecBinding_QuotaSpecReference::GetMetadata() const {
@@ -2318,9 +2205,8 @@ const int QuotaSpecBinding::kQuotaSpecsFieldNumber;
 
 QuotaSpecBinding::QuotaSpecBinding()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaSpecBinding();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaSpecBinding.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.QuotaSpecBinding)
 }
@@ -2328,14 +2214,12 @@ QuotaSpecBinding::QuotaSpecBinding(const QuotaSpecBinding& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       services_(from.services_),
-      quota_specs_(from.quota_specs_),
-      _cached_size_(0) {
+      quota_specs_(from.quota_specs_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.config.client.QuotaSpecBinding)
 }
 
 void QuotaSpecBinding::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 QuotaSpecBinding::~QuotaSpecBinding() {
@@ -2347,9 +2231,7 @@ void QuotaSpecBinding::SharedDtor() {
 }
 
 void QuotaSpecBinding::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* QuotaSpecBinding::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2357,17 +2239,10 @@ const ::google::protobuf::Descriptor* QuotaSpecBinding::descriptor() {
 }
 
 const QuotaSpecBinding& QuotaSpecBinding::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaSpecBinding();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaSpecBinding.base);
   return *internal_default_instance();
 }
 
-QuotaSpecBinding* QuotaSpecBinding::New(::google::protobuf::Arena* arena) const {
-  QuotaSpecBinding* n = new QuotaSpecBinding;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void QuotaSpecBinding::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.QuotaSpecBinding)
@@ -2386,7 +2261,7 @@ bool QuotaSpecBinding::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.QuotaSpecBinding)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2394,7 +2269,8 @@ bool QuotaSpecBinding::MergePartialFromCodedStream(
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_services()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_services()));
         } else {
           goto handle_unusual;
         }
@@ -2405,7 +2281,8 @@ bool QuotaSpecBinding::MergePartialFromCodedStream(
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_quota_specs()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_quota_specs()));
         } else {
           goto handle_unusual;
         }
@@ -2442,14 +2319,18 @@ void QuotaSpecBinding::SerializeWithCachedSizes(
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->services_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->services(static_cast<int>(i)), output);
+      1,
+      this->services(static_cast<int>(i)),
+      output);
   }
 
   // repeated .istio.mixer.v1.config.client.QuotaSpecBinding.QuotaSpecReference quota_specs = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->quota_specs_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->quota_specs(static_cast<int>(i)), output);
+      2,
+      this->quota_specs(static_cast<int>(i)),
+      output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2522,9 +2403,7 @@ size_t QuotaSpecBinding::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2578,10 +2457,9 @@ void QuotaSpecBinding::Swap(QuotaSpecBinding* other) {
 }
 void QuotaSpecBinding::InternalSwap(QuotaSpecBinding* other) {
   using std::swap;
-  services_.InternalSwap(&other->services_);
-  quota_specs_.InternalSwap(&other->quota_specs_);
+  CastToBase(&services_)->InternalSwap(CastToBase(&other->services_));
+  CastToBase(&quota_specs_)->InternalSwap(CastToBase(&other->quota_specs_));
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QuotaSpecBinding::GetMetadata() const {
@@ -2596,5 +2474,33 @@ void QuotaSpecBinding::InternalSwap(QuotaSpecBinding* other) {
 }  // namespace v1
 }  // namespace mixer
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::QuotaSpec* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::QuotaSpec >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::QuotaSpec >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::QuotaRule* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::QuotaRule >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::QuotaRule >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::StringMatch* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::StringMatch >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::StringMatch >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::AttributeMatch_ClauseEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::AttributeMatch_ClauseEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::AttributeMatch_ClauseEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::AttributeMatch* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::AttributeMatch >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::AttributeMatch >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::Quota* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::Quota >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::Quota >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::QuotaSpecBinding_QuotaSpecReference* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::QuotaSpecBinding_QuotaSpecReference >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::QuotaSpecBinding_QuotaSpecReference >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::QuotaSpecBinding* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::QuotaSpecBinding >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::QuotaSpecBinding >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

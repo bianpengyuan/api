@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,16 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_google_2fprotobuf_2fduration_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fduration_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Duration;
+}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
+namespace protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_QuotaRequest_QuotaParams;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_QuotaRequest_QuotasEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_QuotaResult_QuotasEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_QuotaResult_Result;
+}  // namespace protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto
 namespace istio {
 namespace mixer {
 namespace adapter {
@@ -60,14 +69,9 @@ class QuotaResultDefaultTypeInternal {
 }  // namespace mixer
 }  // namespace istio
 namespace protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto {
-void InitDefaultsQuotaRequest_QuotaParamsImpl() {
+static void InitDefaultsQuotaRequest_QuotaParams() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::adapter::model::v1beta1::_QuotaRequest_QuotaParams_default_instance_;
     new (ptr) ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams();
@@ -76,20 +80,12 @@ void InitDefaultsQuotaRequest_QuotaParamsImpl() {
   ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaRequest_QuotaParams() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaRequest_QuotaParamsImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_QuotaRequest_QuotaParams =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsQuotaRequest_QuotaParams}, {}};
 
-void InitDefaultsQuotaRequest_QuotasEntry_DoNotUseImpl() {
+static void InitDefaultsQuotaRequest_QuotasEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaRequest_QuotaParams();
   {
     void* ptr = &::istio::mixer::adapter::model::v1beta1::_QuotaRequest_QuotasEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotasEntry_DoNotUse();
@@ -97,20 +93,13 @@ void InitDefaultsQuotaRequest_QuotasEntry_DoNotUseImpl() {
   ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotasEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaRequest_QuotasEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaRequest_QuotasEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_QuotaRequest_QuotasEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsQuotaRequest_QuotasEntry_DoNotUse}, {
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaRequest_QuotaParams.base,}};
 
-void InitDefaultsQuotaRequestImpl() {
+static void InitDefaultsQuotaRequest() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaRequest_QuotasEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::adapter::model::v1beta1::_QuotaRequest_default_instance_;
     new (ptr) ::istio::mixer::adapter::model::v1beta1::QuotaRequest();
@@ -119,20 +108,13 @@ void InitDefaultsQuotaRequestImpl() {
   ::istio::mixer::adapter::model::v1beta1::QuotaRequest::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaRequest() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaRequestImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_QuotaRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsQuotaRequest}, {
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaRequest_QuotasEntry_DoNotUse.base,}};
 
-void InitDefaultsQuotaResult_ResultImpl() {
+static void InitDefaultsQuotaResult_Result() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
   {
     void* ptr = &::istio::mixer::adapter::model::v1beta1::_QuotaResult_Result_default_instance_;
     new (ptr) ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result();
@@ -141,20 +123,13 @@ void InitDefaultsQuotaResult_ResultImpl() {
   ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaResult_Result() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaResult_ResultImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_QuotaResult_Result =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsQuotaResult_Result}, {
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,}};
 
-void InitDefaultsQuotaResult_QuotasEntry_DoNotUseImpl() {
+static void InitDefaultsQuotaResult_QuotasEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaResult_Result();
   {
     void* ptr = &::istio::mixer::adapter::model::v1beta1::_QuotaResult_QuotasEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::adapter::model::v1beta1::QuotaResult_QuotasEntry_DoNotUse();
@@ -162,20 +137,13 @@ void InitDefaultsQuotaResult_QuotasEntry_DoNotUseImpl() {
   ::istio::mixer::adapter::model::v1beta1::QuotaResult_QuotasEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaResult_QuotasEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaResult_QuotasEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_QuotaResult_QuotasEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsQuotaResult_QuotasEntry_DoNotUse}, {
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaResult_Result.base,}};
 
-void InitDefaultsQuotaResultImpl() {
+static void InitDefaultsQuotaResult() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaResult_QuotasEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::adapter::model::v1beta1::_QuotaResult_default_instance_;
     new (ptr) ::istio::mixer::adapter::model::v1beta1::QuotaResult();
@@ -184,9 +152,17 @@ void InitDefaultsQuotaResultImpl() {
   ::istio::mixer::adapter::model::v1beta1::QuotaResult::InitAsDefaultInstance();
 }
 
-void InitDefaultsQuotaResult() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsQuotaResultImpl);
+::google::protobuf::internal::SCCInfo<1> scc_info_QuotaResult =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsQuotaResult}, {
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaResult_QuotasEntry_DoNotUse.base,}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaRequest_QuotaParams.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaRequest_QuotasEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaResult_Result.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaResult_QuotasEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_QuotaResult.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[6];
@@ -257,15 +233,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "mixer/adapter/model/v1beta1/quota.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "mixer/adapter/model/v1beta1/quota.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, NULL, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -306,8 +281,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -333,16 +308,14 @@ const int QuotaRequest_QuotaParams::kBestEffortFieldNumber;
 
 QuotaRequest_QuotaParams::QuotaRequest_QuotaParams()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaRequest_QuotaParams();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaRequest_QuotaParams.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.adapter.model.v1beta1.QuotaRequest.QuotaParams)
 }
 QuotaRequest_QuotaParams::QuotaRequest_QuotaParams(const QuotaRequest_QuotaParams& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&amount_, &from.amount_,
     static_cast<size_t>(reinterpret_cast<char*>(&best_effort_) -
@@ -354,7 +327,6 @@ void QuotaRequest_QuotaParams::SharedCtor() {
   ::memset(&amount_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&best_effort_) -
       reinterpret_cast<char*>(&amount_)) + sizeof(best_effort_));
-  _cached_size_ = 0;
 }
 
 QuotaRequest_QuotaParams::~QuotaRequest_QuotaParams() {
@@ -366,9 +338,7 @@ void QuotaRequest_QuotaParams::SharedDtor() {
 }
 
 void QuotaRequest_QuotaParams::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* QuotaRequest_QuotaParams::descriptor() {
   ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -376,17 +346,10 @@ const ::google::protobuf::Descriptor* QuotaRequest_QuotaParams::descriptor() {
 }
 
 const QuotaRequest_QuotaParams& QuotaRequest_QuotaParams::default_instance() {
-  ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaRequest_QuotaParams();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaRequest_QuotaParams.base);
   return *internal_default_instance();
 }
 
-QuotaRequest_QuotaParams* QuotaRequest_QuotaParams::New(::google::protobuf::Arena* arena) const {
-  QuotaRequest_QuotaParams* n = new QuotaRequest_QuotaParams;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void QuotaRequest_QuotaParams::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.adapter.model.v1beta1.QuotaRequest.QuotaParams)
@@ -406,7 +369,7 @@ bool QuotaRequest_QuotaParams::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.adapter.model.v1beta1.QuotaRequest.QuotaParams)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -528,9 +491,7 @@ size_t QuotaRequest_QuotaParams::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -591,7 +552,6 @@ void QuotaRequest_QuotaParams::InternalSwap(QuotaRequest_QuotaParams* other) {
   swap(amount_, other->amount_);
   swap(best_effort_, other->best_effort_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QuotaRequest_QuotaParams::GetMetadata() const {
@@ -627,23 +587,20 @@ const int QuotaRequest::kQuotasFieldNumber;
 
 QuotaRequest::QuotaRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaRequest();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaRequest.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.adapter.model.v1beta1.QuotaRequest)
 }
 QuotaRequest::QuotaRequest(const QuotaRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   quotas_.MergeFrom(from.quotas_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.adapter.model.v1beta1.QuotaRequest)
 }
 
 void QuotaRequest::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 QuotaRequest::~QuotaRequest() {
@@ -655,9 +612,7 @@ void QuotaRequest::SharedDtor() {
 }
 
 void QuotaRequest::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* QuotaRequest::descriptor() {
   ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -665,17 +620,10 @@ const ::google::protobuf::Descriptor* QuotaRequest::descriptor() {
 }
 
 const QuotaRequest& QuotaRequest::default_instance() {
-  ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaRequest();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaRequest.base);
   return *internal_default_instance();
 }
 
-QuotaRequest* QuotaRequest::New(::google::protobuf::Arena* arena) const {
-  QuotaRequest* n = new QuotaRequest;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void QuotaRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.adapter.model.v1beta1.QuotaRequest)
@@ -693,7 +641,7 @@ bool QuotaRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.adapter.model.v1beta1.QuotaRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -763,7 +711,7 @@ void QuotaRequest::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->quotas().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->quotas().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams >::size_type size_type;
       size_type n = 0;
@@ -773,7 +721,7 @@ void QuotaRequest::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(quotas_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -782,7 +730,7 @@ void QuotaRequest::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams >::const_iterator
           it = this->quotas().begin();
           it != this->quotas().end(); ++it) {
@@ -826,7 +774,7 @@ void QuotaRequest::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->quotas().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->quotas().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams >::size_type size_type;
       size_type n = 0;
@@ -836,7 +784,7 @@ void QuotaRequest::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(quotas_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -847,7 +795,7 @@ void QuotaRequest::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams >::const_iterator
           it = this->quotas().begin();
           it != this->quotas().end(); ++it) {
@@ -883,7 +831,7 @@ size_t QuotaRequest::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->quotas_size());
   {
-    ::google::protobuf::scoped_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
+    ::std::unique_ptr<QuotaRequest_QuotasEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams >::const_iterator
         it = this->quotas().begin();
         it != this->quotas().end(); ++it) {
@@ -894,9 +842,7 @@ size_t QuotaRequest::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -951,7 +897,6 @@ void QuotaRequest::InternalSwap(QuotaRequest* other) {
   using std::swap;
   quotas_.Swap(&other->quotas_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QuotaRequest::GetMetadata() const {
@@ -979,16 +924,14 @@ const int QuotaResult_Result::kGrantedAmountFieldNumber;
 
 QuotaResult_Result::QuotaResult_Result()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaResult_Result();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaResult_Result.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.adapter.model.v1beta1.QuotaResult.Result)
 }
 QuotaResult_Result::QuotaResult_Result(const QuotaResult_Result& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_valid_duration()) {
     valid_duration_ = new ::google::protobuf::Duration(*from.valid_duration_);
@@ -1003,7 +946,6 @@ void QuotaResult_Result::SharedCtor() {
   ::memset(&valid_duration_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&granted_amount_) -
       reinterpret_cast<char*>(&valid_duration_)) + sizeof(granted_amount_));
-  _cached_size_ = 0;
 }
 
 QuotaResult_Result::~QuotaResult_Result() {
@@ -1016,9 +958,7 @@ void QuotaResult_Result::SharedDtor() {
 }
 
 void QuotaResult_Result::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* QuotaResult_Result::descriptor() {
   ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1026,17 +966,10 @@ const ::google::protobuf::Descriptor* QuotaResult_Result::descriptor() {
 }
 
 const QuotaResult_Result& QuotaResult_Result::default_instance() {
-  ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaResult_Result();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaResult_Result.base);
   return *internal_default_instance();
 }
 
-QuotaResult_Result* QuotaResult_Result::New(::google::protobuf::Arena* arena) const {
-  QuotaResult_Result* n = new QuotaResult_Result;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void QuotaResult_Result::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.adapter.model.v1beta1.QuotaResult.Result)
@@ -1058,7 +991,7 @@ bool QuotaResult_Result::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.adapter.model.v1beta1.QuotaResult.Result)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1117,7 +1050,7 @@ void QuotaResult_Result::SerializeWithCachedSizes(
   // .google.protobuf.Duration valid_duration = 2 [(.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];
   if (this->has_valid_duration()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, *this->valid_duration_, output);
+      2, this->_internal_valid_duration(), output);
   }
 
   // int64 granted_amount = 3;
@@ -1143,7 +1076,7 @@ void QuotaResult_Result::SerializeWithCachedSizes(
   if (this->has_valid_duration()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, *this->valid_duration_, deterministic, target);
+        2, this->_internal_valid_duration(), deterministic, target);
   }
 
   // int64 granted_amount = 3;
@@ -1172,7 +1105,7 @@ size_t QuotaResult_Result::ByteSizeLong() const {
   if (this->has_valid_duration()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->valid_duration_);
+        *valid_duration_);
   }
 
   // int64 granted_amount = 3;
@@ -1183,9 +1116,7 @@ size_t QuotaResult_Result::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1246,7 +1177,6 @@ void QuotaResult_Result::InternalSwap(QuotaResult_Result* other) {
   swap(valid_duration_, other->valid_duration_);
   swap(granted_amount_, other->granted_amount_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QuotaResult_Result::GetMetadata() const {
@@ -1282,23 +1212,20 @@ const int QuotaResult::kQuotasFieldNumber;
 
 QuotaResult::QuotaResult()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaResult();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaResult.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.adapter.model.v1beta1.QuotaResult)
 }
 QuotaResult::QuotaResult(const QuotaResult& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   quotas_.MergeFrom(from.quotas_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.adapter.model.v1beta1.QuotaResult)
 }
 
 void QuotaResult::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 QuotaResult::~QuotaResult() {
@@ -1310,9 +1237,7 @@ void QuotaResult::SharedDtor() {
 }
 
 void QuotaResult::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* QuotaResult::descriptor() {
   ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1320,17 +1245,10 @@ const ::google::protobuf::Descriptor* QuotaResult::descriptor() {
 }
 
 const QuotaResult& QuotaResult::default_instance() {
-  ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::InitDefaultsQuotaResult();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2fquota_2eproto::scc_info_QuotaResult.base);
   return *internal_default_instance();
 }
 
-QuotaResult* QuotaResult::New(::google::protobuf::Arena* arena) const {
-  QuotaResult* n = new QuotaResult;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void QuotaResult::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.adapter.model.v1beta1.QuotaResult)
@@ -1348,7 +1266,7 @@ bool QuotaResult::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.adapter.model.v1beta1.QuotaResult)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1418,7 +1336,7 @@ void QuotaResult::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->quotas().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->quotas().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result >::size_type size_type;
       size_type n = 0;
@@ -1428,7 +1346,7 @@ void QuotaResult::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(quotas_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -1437,7 +1355,7 @@ void QuotaResult::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result >::const_iterator
           it = this->quotas().begin();
           it != this->quotas().end(); ++it) {
@@ -1481,7 +1399,7 @@ void QuotaResult::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->quotas().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->quotas().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result >::size_type size_type;
       size_type n = 0;
@@ -1491,7 +1409,7 @@ void QuotaResult::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(quotas_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -1502,7 +1420,7 @@ void QuotaResult::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result >::const_iterator
           it = this->quotas().begin();
           it != this->quotas().end(); ++it) {
@@ -1538,7 +1456,7 @@ size_t QuotaResult::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->quotas_size());
   {
-    ::google::protobuf::scoped_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
+    ::std::unique_ptr<QuotaResult_QuotasEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result >::const_iterator
         it = this->quotas().begin();
         it != this->quotas().end(); ++it) {
@@ -1549,9 +1467,7 @@ size_t QuotaResult::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1606,7 +1522,6 @@ void QuotaResult::InternalSwap(QuotaResult* other) {
   using std::swap;
   quotas_.Swap(&other->quotas_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QuotaResult::GetMetadata() const {
@@ -1621,5 +1536,27 @@ void QuotaResult::InternalSwap(QuotaResult* other) {
 }  // namespace adapter
 }  // namespace mixer
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams* Arena::CreateMaybeMessage< ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotaParams >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotasEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotasEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::adapter::model::v1beta1::QuotaRequest_QuotasEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::adapter::model::v1beta1::QuotaRequest* Arena::CreateMaybeMessage< ::istio::mixer::adapter::model::v1beta1::QuotaRequest >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::adapter::model::v1beta1::QuotaRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result* Arena::CreateMaybeMessage< ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::adapter::model::v1beta1::QuotaResult_Result >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::adapter::model::v1beta1::QuotaResult_QuotasEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::adapter::model::v1beta1::QuotaResult_QuotasEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::adapter::model::v1beta1::QuotaResult_QuotasEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::adapter::model::v1beta1::QuotaResult* Arena::CreateMaybeMessage< ::istio::mixer::adapter::model::v1beta1::QuotaResult >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::adapter::model::v1beta1::QuotaResult >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

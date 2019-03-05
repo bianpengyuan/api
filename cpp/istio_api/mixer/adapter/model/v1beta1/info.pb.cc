@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,7 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
 namespace istio {
 namespace mixer {
 namespace adapter {
@@ -35,14 +35,9 @@ class InfoDefaultTypeInternal {
 }  // namespace mixer
 }  // namespace istio
 namespace protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2finfo_2eproto {
-void InitDefaultsInfoImpl() {
+static void InitDefaultsInfo() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::adapter::model::v1beta1::_Info_default_instance_;
     new (ptr) ::istio::mixer::adapter::model::v1beta1::Info();
@@ -51,9 +46,11 @@ void InitDefaultsInfoImpl() {
   ::istio::mixer::adapter::model::v1beta1::Info::InitAsDefaultInstance();
 }
 
-void InitDefaultsInfo() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsInfoImpl);
+::google::protobuf::internal::SCCInfo<0> scc_info_Info =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsInfo}, {}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_Info.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[1];
@@ -80,15 +77,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "mixer/adapter/model/v1beta1/info.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "mixer/adapter/model/v1beta1/info.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, NULL, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -114,8 +110,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -144,17 +140,15 @@ const int Info::kSessionBasedFieldNumber;
 
 Info::Info()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2finfo_2eproto::InitDefaultsInfo();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2finfo_2eproto::scc_info_Info.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.adapter.model.v1beta1.Info)
 }
 Info::Info(const Info& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
-      templates_(from.templates_),
-      _cached_size_(0) {
+      templates_(from.templates_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.name().size() > 0) {
@@ -177,7 +171,6 @@ void Info::SharedCtor() {
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   config_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   session_based_ = false;
-  _cached_size_ = 0;
 }
 
 Info::~Info() {
@@ -192,9 +185,7 @@ void Info::SharedDtor() {
 }
 
 void Info::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* Info::descriptor() {
   ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2finfo_2eproto::protobuf_AssignDescriptorsOnce();
@@ -202,17 +193,10 @@ const ::google::protobuf::Descriptor* Info::descriptor() {
 }
 
 const Info& Info::default_instance() {
-  ::protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2finfo_2eproto::InitDefaultsInfo();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fadapter_2fmodel_2fv1beta1_2finfo_2eproto::scc_info_Info.base);
   return *internal_default_instance();
 }
 
-Info* Info::New(::google::protobuf::Arena* arena) const {
-  Info* n = new Info;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void Info::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.adapter.model.v1beta1.Info)
@@ -234,7 +218,7 @@ bool Info::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.adapter.model.v1beta1.Info)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -502,9 +486,7 @@ size_t Info::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -572,13 +554,15 @@ void Info::Swap(Info* other) {
 }
 void Info::InternalSwap(Info* other) {
   using std::swap;
-  templates_.InternalSwap(&other->templates_);
-  name_.Swap(&other->name_);
-  description_.Swap(&other->description_);
-  config_.Swap(&other->config_);
+  templates_.InternalSwap(CastToBase(&other->templates_));
+  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  description_.Swap(&other->description_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  config_.Swap(&other->config_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(session_based_, other->session_based_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Info::GetMetadata() const {
@@ -593,5 +577,12 @@ void Info::InternalSwap(Info* other) {
 }  // namespace adapter
 }  // namespace mixer
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::adapter::model::v1beta1::Info* Arena::CreateMaybeMessage< ::istio::mixer::adapter::model::v1beta1::Info >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::adapter::model::v1beta1::Info >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,25 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_google_2fprotobuf_2fduration_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fduration_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Duration;
+}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
+namespace protobuf_mixer_2fv1_2fattributes_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Attributes;
+}  // namespace protobuf_mixer_2fv1_2fattributes_2eproto
+namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_HTTPAPISpec;
+}  // namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto
+namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_HttpClientConfig_ServiceConfigsEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_NetworkFailPolicy;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_TransportConfig;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_ServiceConfig;
+}  // namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto
+namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_QuotaSpec;
+}  // namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto
 namespace istio {
 namespace mixer {
 namespace v1 {
@@ -60,15 +78,9 @@ class TcpClientConfigDefaultTypeInternal {
 }  // namespace mixer
 }  // namespace istio
 namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto {
-void InitDefaultsNetworkFailPolicyImpl() {
+static void InitDefaultsNetworkFailPolicy() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
   {
     void* ptr = &::istio::mixer::v1::config::client::_NetworkFailPolicy_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::NetworkFailPolicy();
@@ -77,23 +89,13 @@ void InitDefaultsNetworkFailPolicyImpl() {
   ::istio::mixer::v1::config::client::NetworkFailPolicy::InitAsDefaultInstance();
 }
 
-void InitDefaultsNetworkFailPolicy() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsNetworkFailPolicyImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_NetworkFailPolicy =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsNetworkFailPolicy}, {
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,}};
 
-void InitDefaultsServiceConfigImpl() {
+static void InitDefaultsServiceConfig() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::InitDefaultsHTTPAPISpec();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaSpec();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsNetworkFailPolicy();
   {
     void* ptr = &::istio::mixer::v1::config::client::_ServiceConfig_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::ServiceConfig();
@@ -102,22 +104,16 @@ void InitDefaultsServiceConfigImpl() {
   ::istio::mixer::v1::config::client::ServiceConfig::InitAsDefaultInstance();
 }
 
-void InitDefaultsServiceConfig() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsServiceConfigImpl);
-}
+::google::protobuf::internal::SCCInfo<4> scc_info_ServiceConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsServiceConfig}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fapi_5fspec_2eproto::scc_info_HTTPAPISpec.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaSpec.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_NetworkFailPolicy.base,}};
 
-void InitDefaultsTransportConfigImpl() {
+static void InitDefaultsTransportConfig() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsNetworkFailPolicy();
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes();
   {
     void* ptr = &::istio::mixer::v1::config::client::_TransportConfig_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::TransportConfig();
@@ -126,20 +122,15 @@ void InitDefaultsTransportConfigImpl() {
   ::istio::mixer::v1::config::client::TransportConfig::InitAsDefaultInstance();
 }
 
-void InitDefaultsTransportConfig() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsTransportConfigImpl);
-}
+::google::protobuf::internal::SCCInfo<3> scc_info_TransportConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsTransportConfig}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_NetworkFailPolicy.base,
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes.base,}};
 
-void InitDefaultsHttpClientConfig_ServiceConfigsEntry_DoNotUseImpl() {
+static void InitDefaultsHttpClientConfig_ServiceConfigsEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsServiceConfig();
   {
     void* ptr = &::istio::mixer::v1::config::client::_HttpClientConfig_ServiceConfigsEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::HttpClientConfig_ServiceConfigsEntry_DoNotUse();
@@ -147,22 +138,13 @@ void InitDefaultsHttpClientConfig_ServiceConfigsEntry_DoNotUseImpl() {
   ::istio::mixer::v1::config::client::HttpClientConfig_ServiceConfigsEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsHttpClientConfig_ServiceConfigsEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHttpClientConfig_ServiceConfigsEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_HttpClientConfig_ServiceConfigsEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsHttpClientConfig_ServiceConfigsEntry_DoNotUse}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_ServiceConfig.base,}};
 
-void InitDefaultsHttpClientConfigImpl() {
+static void InitDefaultsHttpClientConfig() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsTransportConfig();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsHttpClientConfig_ServiceConfigsEntry_DoNotUse();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes();
   {
     void* ptr = &::istio::mixer::v1::config::client::_HttpClientConfig_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::HttpClientConfig();
@@ -171,23 +153,15 @@ void InitDefaultsHttpClientConfigImpl() {
   ::istio::mixer::v1::config::client::HttpClientConfig::InitAsDefaultInstance();
 }
 
-void InitDefaultsHttpClientConfig() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHttpClientConfigImpl);
-}
+::google::protobuf::internal::SCCInfo<3> scc_info_HttpClientConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsHttpClientConfig}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_TransportConfig.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_HttpClientConfig_ServiceConfigsEntry_DoNotUse.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes.base,}};
 
-void InitDefaultsTcpClientConfigImpl() {
+static void InitDefaultsTcpClientConfig() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsTransportConfig();
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsAttributes();
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::InitDefaultsQuotaSpec();
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
   {
     void* ptr = &::istio::mixer::v1::config::client::_TcpClientConfig_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::TcpClientConfig();
@@ -196,9 +170,20 @@ void InitDefaultsTcpClientConfigImpl() {
   ::istio::mixer::v1::config::client::TcpClientConfig::InitAsDefaultInstance();
 }
 
-void InitDefaultsTcpClientConfig() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsTcpClientConfigImpl);
+::google::protobuf::internal::SCCInfo<4> scc_info_TcpClientConfig =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsTcpClientConfig}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_TransportConfig.base,
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_Attributes.base,
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fquota_2eproto::scc_info_QuotaSpec.base,
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_NetworkFailPolicy.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ServiceConfig.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TransportConfig.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HttpClientConfig_ServiceConfigsEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HttpClientConfig.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TcpClientConfig.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[6];
@@ -290,15 +275,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "mixer/v1/config/client/client_config.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "mixer/v1/config/client/client_config.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, file_level_enum_descriptors, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -375,8 +359,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -441,16 +425,14 @@ const int NetworkFailPolicy::kMaxRetryWaitFieldNumber;
 
 NetworkFailPolicy::NetworkFailPolicy()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsNetworkFailPolicy();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_NetworkFailPolicy.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.NetworkFailPolicy)
 }
 NetworkFailPolicy::NetworkFailPolicy(const NetworkFailPolicy& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_base_retry_wait()) {
     base_retry_wait_ = new ::google::protobuf::Duration(*from.base_retry_wait_);
@@ -472,7 +454,6 @@ void NetworkFailPolicy::SharedCtor() {
   ::memset(&base_retry_wait_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&max_retry_) -
       reinterpret_cast<char*>(&base_retry_wait_)) + sizeof(max_retry_));
-  _cached_size_ = 0;
 }
 
 NetworkFailPolicy::~NetworkFailPolicy() {
@@ -486,9 +467,7 @@ void NetworkFailPolicy::SharedDtor() {
 }
 
 void NetworkFailPolicy::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* NetworkFailPolicy::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::protobuf_AssignDescriptorsOnce();
@@ -496,17 +475,10 @@ const ::google::protobuf::Descriptor* NetworkFailPolicy::descriptor() {
 }
 
 const NetworkFailPolicy& NetworkFailPolicy::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsNetworkFailPolicy();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_NetworkFailPolicy.base);
   return *internal_default_instance();
 }
 
-NetworkFailPolicy* NetworkFailPolicy::New(::google::protobuf::Arena* arena) const {
-  NetworkFailPolicy* n = new NetworkFailPolicy;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void NetworkFailPolicy::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.NetworkFailPolicy)
@@ -534,7 +506,7 @@ bool NetworkFailPolicy::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.NetworkFailPolicy)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -631,13 +603,13 @@ void NetworkFailPolicy::SerializeWithCachedSizes(
   // .google.protobuf.Duration base_retry_wait = 3;
   if (this->has_base_retry_wait()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, *this->base_retry_wait_, output);
+      3, this->_internal_base_retry_wait(), output);
   }
 
   // .google.protobuf.Duration max_retry_wait = 4;
   if (this->has_max_retry_wait()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, *this->max_retry_wait_, output);
+      4, this->_internal_max_retry_wait(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -669,14 +641,14 @@ void NetworkFailPolicy::SerializeWithCachedSizes(
   if (this->has_base_retry_wait()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, *this->base_retry_wait_, deterministic, target);
+        3, this->_internal_base_retry_wait(), deterministic, target);
   }
 
   // .google.protobuf.Duration max_retry_wait = 4;
   if (this->has_max_retry_wait()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, *this->max_retry_wait_, deterministic, target);
+        4, this->_internal_max_retry_wait(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -700,14 +672,14 @@ size_t NetworkFailPolicy::ByteSizeLong() const {
   if (this->has_base_retry_wait()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->base_retry_wait_);
+        *base_retry_wait_);
   }
 
   // .google.protobuf.Duration max_retry_wait = 4;
   if (this->has_max_retry_wait()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->max_retry_wait_);
+        *max_retry_wait_);
   }
 
   // .istio.mixer.v1.config.client.NetworkFailPolicy.FailPolicy policy = 1;
@@ -724,9 +696,7 @@ size_t NetworkFailPolicy::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -795,7 +765,6 @@ void NetworkFailPolicy::InternalSwap(NetworkFailPolicy* other) {
   swap(policy_, other->policy_);
   swap(max_retry_, other->max_retry_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata NetworkFailPolicy::GetMetadata() const {
@@ -844,9 +813,8 @@ const int ServiceConfig::kForwardAttributesFieldNumber;
 
 ServiceConfig::ServiceConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsServiceConfig();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_ServiceConfig.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.ServiceConfig)
 }
@@ -854,8 +822,7 @@ ServiceConfig::ServiceConfig(const ServiceConfig& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       http_api_spec_(from.http_api_spec_),
-      quota_spec_(from.quota_spec_),
-      _cached_size_(0) {
+      quota_spec_(from.quota_spec_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_mixer_attributes()) {
     mixer_attributes_ = new ::istio::mixer::v1::Attributes(*from.mixer_attributes_);
@@ -882,7 +849,6 @@ void ServiceConfig::SharedCtor() {
   ::memset(&mixer_attributes_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&disable_report_calls_) -
       reinterpret_cast<char*>(&mixer_attributes_)) + sizeof(disable_report_calls_));
-  _cached_size_ = 0;
 }
 
 ServiceConfig::~ServiceConfig() {
@@ -897,9 +863,7 @@ void ServiceConfig::SharedDtor() {
 }
 
 void ServiceConfig::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* ServiceConfig::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::protobuf_AssignDescriptorsOnce();
@@ -907,17 +871,10 @@ const ::google::protobuf::Descriptor* ServiceConfig::descriptor() {
 }
 
 const ServiceConfig& ServiceConfig::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsServiceConfig();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_ServiceConfig.base);
   return *internal_default_instance();
 }
 
-ServiceConfig* ServiceConfig::New(::google::protobuf::Arena* arena) const {
-  ServiceConfig* n = new ServiceConfig;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void ServiceConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.ServiceConfig)
@@ -951,7 +908,7 @@ bool ServiceConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.ServiceConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -999,7 +956,8 @@ bool ServiceConfig::MergePartialFromCodedStream(
       case 4: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_http_api_spec()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_http_api_spec()));
         } else {
           goto handle_unusual;
         }
@@ -1010,7 +968,8 @@ bool ServiceConfig::MergePartialFromCodedStream(
       case 5: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_quota_spec()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_quota_spec()));
         } else {
           goto handle_unusual;
         }
@@ -1080,33 +1039,37 @@ void ServiceConfig::SerializeWithCachedSizes(
   // .istio.mixer.v1.Attributes mixer_attributes = 3;
   if (this->has_mixer_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, *this->mixer_attributes_, output);
+      3, this->_internal_mixer_attributes(), output);
   }
 
   // repeated .istio.mixer.v1.config.client.HTTPAPISpec http_api_spec = 4;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->http_api_spec_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->http_api_spec(static_cast<int>(i)), output);
+      4,
+      this->http_api_spec(static_cast<int>(i)),
+      output);
   }
 
   // repeated .istio.mixer.v1.config.client.QuotaSpec quota_spec = 5;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->quota_spec_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->quota_spec(static_cast<int>(i)), output);
+      5,
+      this->quota_spec(static_cast<int>(i)),
+      output);
   }
 
   // .istio.mixer.v1.config.client.NetworkFailPolicy network_fail_policy = 7;
   if (this->has_network_fail_policy()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, *this->network_fail_policy_, output);
+      7, this->_internal_network_fail_policy(), output);
   }
 
   // .istio.mixer.v1.Attributes forward_attributes = 8;
   if (this->has_forward_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, *this->forward_attributes_, output);
+      8, this->_internal_forward_attributes(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1137,7 +1100,7 @@ void ServiceConfig::SerializeWithCachedSizes(
   if (this->has_mixer_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, *this->mixer_attributes_, deterministic, target);
+        3, this->_internal_mixer_attributes(), deterministic, target);
   }
 
   // repeated .istio.mixer.v1.config.client.HTTPAPISpec http_api_spec = 4;
@@ -1160,14 +1123,14 @@ void ServiceConfig::SerializeWithCachedSizes(
   if (this->has_network_fail_policy()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, *this->network_fail_policy_, deterministic, target);
+        7, this->_internal_network_fail_policy(), deterministic, target);
   }
 
   // .istio.mixer.v1.Attributes forward_attributes = 8;
   if (this->has_forward_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        8, *this->forward_attributes_, deterministic, target);
+        8, this->_internal_forward_attributes(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1213,21 +1176,21 @@ size_t ServiceConfig::ByteSizeLong() const {
   if (this->has_mixer_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->mixer_attributes_);
+        *mixer_attributes_);
   }
 
   // .istio.mixer.v1.config.client.NetworkFailPolicy network_fail_policy = 7;
   if (this->has_network_fail_policy()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->network_fail_policy_);
+        *network_fail_policy_);
   }
 
   // .istio.mixer.v1.Attributes forward_attributes = 8;
   if (this->has_forward_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->forward_attributes_);
+        *forward_attributes_);
   }
 
   // bool disable_check_calls = 1;
@@ -1241,9 +1204,7 @@ size_t ServiceConfig::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1312,15 +1273,14 @@ void ServiceConfig::Swap(ServiceConfig* other) {
 }
 void ServiceConfig::InternalSwap(ServiceConfig* other) {
   using std::swap;
-  http_api_spec_.InternalSwap(&other->http_api_spec_);
-  quota_spec_.InternalSwap(&other->quota_spec_);
+  CastToBase(&http_api_spec_)->InternalSwap(CastToBase(&other->http_api_spec_));
+  CastToBase(&quota_spec_)->InternalSwap(CastToBase(&other->quota_spec_));
   swap(mixer_attributes_, other->mixer_attributes_);
   swap(network_fail_policy_, other->network_fail_policy_);
   swap(forward_attributes_, other->forward_attributes_);
   swap(disable_check_calls_, other->disable_check_calls_);
   swap(disable_report_calls_, other->disable_report_calls_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ServiceConfig::GetMetadata() const {
@@ -1364,16 +1324,14 @@ const int TransportConfig::kAttributesForMixerProxyFieldNumber;
 
 TransportConfig::TransportConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsTransportConfig();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_TransportConfig.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.TransportConfig)
 }
 TransportConfig::TransportConfig(const TransportConfig& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   check_cluster_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.check_cluster().size() > 0) {
@@ -1410,7 +1368,6 @@ void TransportConfig::SharedCtor() {
   ::memset(&network_fail_policy_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&disable_report_batch_) -
       reinterpret_cast<char*>(&network_fail_policy_)) + sizeof(disable_report_batch_));
-  _cached_size_ = 0;
 }
 
 TransportConfig::~TransportConfig() {
@@ -1427,9 +1384,7 @@ void TransportConfig::SharedDtor() {
 }
 
 void TransportConfig::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* TransportConfig::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1437,17 +1392,10 @@ const ::google::protobuf::Descriptor* TransportConfig::descriptor() {
 }
 
 const TransportConfig& TransportConfig::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsTransportConfig();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_TransportConfig.base);
   return *internal_default_instance();
 }
 
-TransportConfig* TransportConfig::New(::google::protobuf::Arena* arena) const {
-  TransportConfig* n = new TransportConfig;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void TransportConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.TransportConfig)
@@ -1481,7 +1429,7 @@ bool TransportConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.TransportConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1639,13 +1587,13 @@ void TransportConfig::SerializeWithCachedSizes(
   // .istio.mixer.v1.config.client.NetworkFailPolicy network_fail_policy = 4;
   if (this->has_network_fail_policy()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, *this->network_fail_policy_, output);
+      4, this->_internal_network_fail_policy(), output);
   }
 
   // .google.protobuf.Duration stats_update_interval = 5;
   if (this->has_stats_update_interval()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, *this->stats_update_interval_, output);
+      5, this->_internal_stats_update_interval(), output);
   }
 
   // string check_cluster = 6;
@@ -1671,7 +1619,7 @@ void TransportConfig::SerializeWithCachedSizes(
   // .istio.mixer.v1.Attributes attributes_for_mixer_proxy = 8;
   if (this->has_attributes_for_mixer_proxy()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, *this->attributes_for_mixer_proxy_, output);
+      8, this->_internal_attributes_for_mixer_proxy(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1707,14 +1655,14 @@ void TransportConfig::SerializeWithCachedSizes(
   if (this->has_network_fail_policy()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, *this->network_fail_policy_, deterministic, target);
+        4, this->_internal_network_fail_policy(), deterministic, target);
   }
 
   // .google.protobuf.Duration stats_update_interval = 5;
   if (this->has_stats_update_interval()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, *this->stats_update_interval_, deterministic, target);
+        5, this->_internal_stats_update_interval(), deterministic, target);
   }
 
   // string check_cluster = 6;
@@ -1743,7 +1691,7 @@ void TransportConfig::SerializeWithCachedSizes(
   if (this->has_attributes_for_mixer_proxy()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        8, *this->attributes_for_mixer_proxy_, deterministic, target);
+        8, this->_internal_attributes_for_mixer_proxy(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1781,21 +1729,21 @@ size_t TransportConfig::ByteSizeLong() const {
   if (this->has_network_fail_policy()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->network_fail_policy_);
+        *network_fail_policy_);
   }
 
   // .google.protobuf.Duration stats_update_interval = 5;
   if (this->has_stats_update_interval()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->stats_update_interval_);
+        *stats_update_interval_);
   }
 
   // .istio.mixer.v1.Attributes attributes_for_mixer_proxy = 8;
   if (this->has_attributes_for_mixer_proxy()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->attributes_for_mixer_proxy_);
+        *attributes_for_mixer_proxy_);
   }
 
   // bool disable_check_cache = 1;
@@ -1814,9 +1762,7 @@ size_t TransportConfig::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1894,8 +1840,10 @@ void TransportConfig::Swap(TransportConfig* other) {
 }
 void TransportConfig::InternalSwap(TransportConfig* other) {
   using std::swap;
-  check_cluster_.Swap(&other->check_cluster_);
-  report_cluster_.Swap(&other->report_cluster_);
+  check_cluster_.Swap(&other->check_cluster_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  report_cluster_.Swap(&other->report_cluster_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(network_fail_policy_, other->network_fail_policy_);
   swap(stats_update_interval_, other->stats_update_interval_);
   swap(attributes_for_mixer_proxy_, other->attributes_for_mixer_proxy_);
@@ -1903,7 +1851,6 @@ void TransportConfig::InternalSwap(TransportConfig* other) {
   swap(disable_quota_cache_, other->disable_quota_cache_);
   swap(disable_report_batch_, other->disable_report_batch_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TransportConfig::GetMetadata() const {
@@ -1961,16 +1908,14 @@ const int HttpClientConfig::kForwardAttributesFieldNumber;
 
 HttpClientConfig::HttpClientConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsHttpClientConfig();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_HttpClientConfig.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.HttpClientConfig)
 }
 HttpClientConfig::HttpClientConfig(const HttpClientConfig& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   service_configs_.MergeFrom(from.service_configs_);
   default_destination_service_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2000,7 +1945,6 @@ void HttpClientConfig::SharedCtor() {
   ::memset(&transport_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&forward_attributes_) -
       reinterpret_cast<char*>(&transport_)) + sizeof(forward_attributes_));
-  _cached_size_ = 0;
 }
 
 HttpClientConfig::~HttpClientConfig() {
@@ -2016,9 +1960,7 @@ void HttpClientConfig::SharedDtor() {
 }
 
 void HttpClientConfig::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* HttpClientConfig::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2026,17 +1968,10 @@ const ::google::protobuf::Descriptor* HttpClientConfig::descriptor() {
 }
 
 const HttpClientConfig& HttpClientConfig::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsHttpClientConfig();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_HttpClientConfig.base);
   return *internal_default_instance();
 }
 
-HttpClientConfig* HttpClientConfig::New(::google::protobuf::Arena* arena) const {
-  HttpClientConfig* n = new HttpClientConfig;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void HttpClientConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.HttpClientConfig)
@@ -2067,7 +2002,7 @@ bool HttpClientConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.HttpClientConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2175,7 +2110,7 @@ void HttpClientConfig::SerializeWithCachedSizes(
   // .istio.mixer.v1.config.client.TransportConfig transport = 1;
   if (this->has_transport()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->transport_, output);
+      1, this->_internal_transport(), output);
   }
 
   // map<string, .istio.mixer.v1.config.client.ServiceConfig> service_configs = 2;
@@ -2195,7 +2130,7 @@ void HttpClientConfig::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->service_configs().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->service_configs().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::ServiceConfig >::size_type size_type;
       size_type n = 0;
@@ -2205,7 +2140,7 @@ void HttpClientConfig::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
+      ::std::unique_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(service_configs_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -2214,7 +2149,7 @@ void HttpClientConfig::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
+      ::std::unique_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::ServiceConfig >::const_iterator
           it = this->service_configs().begin();
           it != this->service_configs().end(); ++it) {
@@ -2240,13 +2175,13 @@ void HttpClientConfig::SerializeWithCachedSizes(
   // .istio.mixer.v1.Attributes mixer_attributes = 4;
   if (this->has_mixer_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, *this->mixer_attributes_, output);
+      4, this->_internal_mixer_attributes(), output);
   }
 
   // .istio.mixer.v1.Attributes forward_attributes = 5;
   if (this->has_forward_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, *this->forward_attributes_, output);
+      5, this->_internal_forward_attributes(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2267,7 +2202,7 @@ void HttpClientConfig::SerializeWithCachedSizes(
   if (this->has_transport()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->transport_, deterministic, target);
+        1, this->_internal_transport(), deterministic, target);
   }
 
   // map<string, .istio.mixer.v1.config.client.ServiceConfig> service_configs = 2;
@@ -2287,7 +2222,7 @@ void HttpClientConfig::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->service_configs().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->service_configs().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::ServiceConfig >::size_type size_type;
       size_type n = 0;
@@ -2297,7 +2232,7 @@ void HttpClientConfig::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
+      ::std::unique_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(service_configs_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -2308,7 +2243,7 @@ void HttpClientConfig::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
+      ::std::unique_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::ServiceConfig >::const_iterator
           it = this->service_configs().begin();
           it != this->service_configs().end(); ++it) {
@@ -2338,14 +2273,14 @@ void HttpClientConfig::SerializeWithCachedSizes(
   if (this->has_mixer_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, *this->mixer_attributes_, deterministic, target);
+        4, this->_internal_mixer_attributes(), deterministic, target);
   }
 
   // .istio.mixer.v1.Attributes forward_attributes = 5;
   if (this->has_forward_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, *this->forward_attributes_, deterministic, target);
+        5, this->_internal_forward_attributes(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2369,7 +2304,7 @@ size_t HttpClientConfig::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->service_configs_size());
   {
-    ::google::protobuf::scoped_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
+    ::std::unique_ptr<HttpClientConfig_ServiceConfigsEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::config::client::ServiceConfig >::const_iterator
         it = this->service_configs().begin();
         it != this->service_configs().end(); ++it) {
@@ -2390,27 +2325,25 @@ size_t HttpClientConfig::ByteSizeLong() const {
   if (this->has_transport()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->transport_);
+        *transport_);
   }
 
   // .istio.mixer.v1.Attributes mixer_attributes = 4;
   if (this->has_mixer_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->mixer_attributes_);
+        *mixer_attributes_);
   }
 
   // .istio.mixer.v1.Attributes forward_attributes = 5;
   if (this->has_forward_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->forward_attributes_);
+        *forward_attributes_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2477,12 +2410,12 @@ void HttpClientConfig::Swap(HttpClientConfig* other) {
 void HttpClientConfig::InternalSwap(HttpClientConfig* other) {
   using std::swap;
   service_configs_.Swap(&other->service_configs_);
-  default_destination_service_.Swap(&other->default_destination_service_);
+  default_destination_service_.Swap(&other->default_destination_service_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(transport_, other->transport_);
   swap(mixer_attributes_, other->mixer_attributes_);
   swap(forward_attributes_, other->forward_attributes_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HttpClientConfig::GetMetadata() const {
@@ -2532,16 +2465,14 @@ const int TcpClientConfig::kReportIntervalFieldNumber;
 
 TcpClientConfig::TcpClientConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsTcpClientConfig();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_TcpClientConfig.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.TcpClientConfig)
 }
 TcpClientConfig::TcpClientConfig(const TcpClientConfig& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_transport()) {
     transport_ = new ::istio::mixer::v1::config::client::TransportConfig(*from.transport_);
@@ -2573,7 +2504,6 @@ void TcpClientConfig::SharedCtor() {
   ::memset(&transport_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&disable_report_calls_) -
       reinterpret_cast<char*>(&transport_)) + sizeof(disable_report_calls_));
-  _cached_size_ = 0;
 }
 
 TcpClientConfig::~TcpClientConfig() {
@@ -2589,9 +2519,7 @@ void TcpClientConfig::SharedDtor() {
 }
 
 void TcpClientConfig::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* TcpClientConfig::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2599,17 +2527,10 @@ const ::google::protobuf::Descriptor* TcpClientConfig::descriptor() {
 }
 
 const TcpClientConfig& TcpClientConfig::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::InitDefaultsTcpClientConfig();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fclient_5fconfig_2eproto::scc_info_TcpClientConfig.base);
   return *internal_default_instance();
 }
 
-TcpClientConfig* TcpClientConfig::New(::google::protobuf::Arena* arena) const {
-  TcpClientConfig* n = new TcpClientConfig;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void TcpClientConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.TcpClientConfig)
@@ -2645,7 +2566,7 @@ bool TcpClientConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.TcpClientConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2754,13 +2675,13 @@ void TcpClientConfig::SerializeWithCachedSizes(
   // .istio.mixer.v1.config.client.TransportConfig transport = 1;
   if (this->has_transport()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->transport_, output);
+      1, this->_internal_transport(), output);
   }
 
   // .istio.mixer.v1.Attributes mixer_attributes = 2;
   if (this->has_mixer_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, *this->mixer_attributes_, output);
+      2, this->_internal_mixer_attributes(), output);
   }
 
   // bool disable_check_calls = 3;
@@ -2776,13 +2697,13 @@ void TcpClientConfig::SerializeWithCachedSizes(
   // .istio.mixer.v1.config.client.QuotaSpec connection_quota_spec = 5;
   if (this->has_connection_quota_spec()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, *this->connection_quota_spec_, output);
+      5, this->_internal_connection_quota_spec(), output);
   }
 
   // .google.protobuf.Duration report_interval = 6;
   if (this->has_report_interval()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, *this->report_interval_, output);
+      6, this->_internal_report_interval(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2803,14 +2724,14 @@ void TcpClientConfig::SerializeWithCachedSizes(
   if (this->has_transport()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->transport_, deterministic, target);
+        1, this->_internal_transport(), deterministic, target);
   }
 
   // .istio.mixer.v1.Attributes mixer_attributes = 2;
   if (this->has_mixer_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, *this->mixer_attributes_, deterministic, target);
+        2, this->_internal_mixer_attributes(), deterministic, target);
   }
 
   // bool disable_check_calls = 3;
@@ -2827,14 +2748,14 @@ void TcpClientConfig::SerializeWithCachedSizes(
   if (this->has_connection_quota_spec()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, *this->connection_quota_spec_, deterministic, target);
+        5, this->_internal_connection_quota_spec(), deterministic, target);
   }
 
   // .google.protobuf.Duration report_interval = 6;
   if (this->has_report_interval()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, *this->report_interval_, deterministic, target);
+        6, this->_internal_report_interval(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2858,28 +2779,28 @@ size_t TcpClientConfig::ByteSizeLong() const {
   if (this->has_transport()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->transport_);
+        *transport_);
   }
 
   // .istio.mixer.v1.Attributes mixer_attributes = 2;
   if (this->has_mixer_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->mixer_attributes_);
+        *mixer_attributes_);
   }
 
   // .istio.mixer.v1.config.client.QuotaSpec connection_quota_spec = 5;
   if (this->has_connection_quota_spec()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->connection_quota_spec_);
+        *connection_quota_spec_);
   }
 
   // .google.protobuf.Duration report_interval = 6;
   if (this->has_report_interval()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->report_interval_);
+        *report_interval_);
   }
 
   // bool disable_check_calls = 3;
@@ -2893,9 +2814,7 @@ size_t TcpClientConfig::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2972,7 +2891,6 @@ void TcpClientConfig::InternalSwap(TcpClientConfig* other) {
   swap(disable_check_calls_, other->disable_check_calls_);
   swap(disable_report_calls_, other->disable_report_calls_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TcpClientConfig::GetMetadata() const {
@@ -2987,5 +2905,27 @@ void TcpClientConfig::InternalSwap(TcpClientConfig* other) {
 }  // namespace v1
 }  // namespace mixer
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::NetworkFailPolicy* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::NetworkFailPolicy >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::NetworkFailPolicy >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::ServiceConfig* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::ServiceConfig >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::ServiceConfig >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::TransportConfig* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::TransportConfig >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::TransportConfig >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::HttpClientConfig_ServiceConfigsEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::HttpClientConfig_ServiceConfigsEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::HttpClientConfig_ServiceConfigsEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::HttpClientConfig* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::HttpClientConfig >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::HttpClientConfig >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::TcpClientConfig* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::TcpClientConfig >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::TcpClientConfig >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

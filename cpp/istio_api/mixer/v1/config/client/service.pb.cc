@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,10 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_IstioService_LabelsEntry_DoNotUse;
+}  // namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto
 namespace istio {
 namespace mixer {
 namespace v1 {
@@ -40,14 +43,9 @@ class IstioServiceDefaultTypeInternal {
 }  // namespace mixer
 }  // namespace istio
 namespace protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto {
-void InitDefaultsIstioService_LabelsEntry_DoNotUseImpl() {
+static void InitDefaultsIstioService_LabelsEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::config::client::_IstioService_LabelsEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::IstioService_LabelsEntry_DoNotUse();
@@ -55,20 +53,12 @@ void InitDefaultsIstioService_LabelsEntry_DoNotUseImpl() {
   ::istio::mixer::v1::config::client::IstioService_LabelsEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsIstioService_LabelsEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsIstioService_LabelsEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_IstioService_LabelsEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsIstioService_LabelsEntry_DoNotUse}, {}};
 
-void InitDefaultsIstioServiceImpl() {
+static void InitDefaultsIstioService() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::InitDefaultsIstioService_LabelsEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::v1::config::client::_IstioService_default_instance_;
     new (ptr) ::istio::mixer::v1::config::client::IstioService();
@@ -77,9 +67,13 @@ void InitDefaultsIstioServiceImpl() {
   ::istio::mixer::v1::config::client::IstioService::InitAsDefaultInstance();
 }
 
-void InitDefaultsIstioService() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsIstioServiceImpl);
+::google::protobuf::internal::SCCInfo<1> scc_info_IstioService =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsIstioService}, {
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::scc_info_IstioService_LabelsEntry_DoNotUse.base,}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_IstioService_LabelsEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_IstioService.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[2];
@@ -117,15 +111,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "mixer/v1/config/client/service.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "mixer/v1/config/client/service.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, NULL, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -155,8 +148,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -202,16 +195,14 @@ const int IstioService::kLabelsFieldNumber;
 
 IstioService::IstioService()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::InitDefaultsIstioService();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::scc_info_IstioService.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.config.client.IstioService)
 }
 IstioService::IstioService(const IstioService& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   labels_.MergeFrom(from.labels_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -238,7 +229,6 @@ void IstioService::SharedCtor() {
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   domain_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   service_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 IstioService::~IstioService() {
@@ -254,9 +244,7 @@ void IstioService::SharedDtor() {
 }
 
 void IstioService::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* IstioService::descriptor() {
   ::protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::protobuf_AssignDescriptorsOnce();
@@ -264,17 +252,10 @@ const ::google::protobuf::Descriptor* IstioService::descriptor() {
 }
 
 const IstioService& IstioService::default_instance() {
-  ::protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::InitDefaultsIstioService();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fconfig_2fclient_2fservice_2eproto::scc_info_IstioService.base);
   return *internal_default_instance();
 }
 
-IstioService* IstioService::New(::google::protobuf::Arena* arena) const {
-  IstioService* n = new IstioService;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void IstioService::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.config.client.IstioService)
@@ -296,7 +277,7 @@ bool IstioService::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.config.client.IstioService)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -478,7 +459,7 @@ void IstioService::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->labels().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->labels().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
       size_type n = 0;
@@ -488,7 +469,7 @@ void IstioService::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<IstioService_LabelsEntry_DoNotUse> entry;
+      ::std::unique_ptr<IstioService_LabelsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(labels_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -497,7 +478,7 @@ void IstioService::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<IstioService_LabelsEntry_DoNotUse> entry;
+      ::std::unique_ptr<IstioService_LabelsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
           it = this->labels().begin();
           it != this->labels().end(); ++it) {
@@ -589,7 +570,7 @@ void IstioService::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->labels().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->labels().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
       size_type n = 0;
@@ -599,7 +580,7 @@ void IstioService::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<IstioService_LabelsEntry_DoNotUse> entry;
+      ::std::unique_ptr<IstioService_LabelsEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(labels_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -610,7 +591,7 @@ void IstioService::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<IstioService_LabelsEntry_DoNotUse> entry;
+      ::std::unique_ptr<IstioService_LabelsEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
           it = this->labels().begin();
           it != this->labels().end(); ++it) {
@@ -646,7 +627,7 @@ size_t IstioService::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->labels_size());
   {
-    ::google::protobuf::scoped_ptr<IstioService_LabelsEntry_DoNotUse> entry;
+    ::std::unique_ptr<IstioService_LabelsEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
         it = this->labels().begin();
         it != this->labels().end(); ++it) {
@@ -685,9 +666,7 @@ size_t IstioService::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -757,12 +736,15 @@ void IstioService::Swap(IstioService* other) {
 void IstioService::InternalSwap(IstioService* other) {
   using std::swap;
   labels_.Swap(&other->labels_);
-  name_.Swap(&other->name_);
-  namespace__.Swap(&other->namespace__);
-  domain_.Swap(&other->domain_);
-  service_.Swap(&other->service_);
+  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  namespace__.Swap(&other->namespace__, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  domain_.Swap(&other->domain_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  service_.Swap(&other->service_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata IstioService::GetMetadata() const {
@@ -777,5 +759,15 @@ void IstioService::InternalSwap(IstioService* other) {
 }  // namespace v1
 }  // namespace mixer
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::IstioService_LabelsEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::IstioService_LabelsEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::IstioService_LabelsEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::config::client::IstioService* Arena::CreateMaybeMessage< ::istio::mixer::v1::config::client::IstioService >(Arena* arena) {
+  return Arena::CreateInternal< ::istio::mixer::v1::config::client::IstioService >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,27 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
+namespace protobuf_google_2fprotobuf_2fduration_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2fprotobuf_2fduration_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_Duration;
+}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
+namespace protobuf_google_2frpc_2fstatus_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_google_2frpc_2fstatus_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_Status;
+}  // namespace protobuf_google_2frpc_2fstatus_2eproto
+namespace protobuf_mixer_2fv1_2fattributes_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fattributes_2eproto ::google::protobuf::internal::SCCInfo<8> scc_info_CompressedAttributes;
+}  // namespace protobuf_mixer_2fv1_2fattributes_2eproto
+namespace protobuf_mixer_2fv1_2fmixer_2eproto {
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fmixer_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CheckRequest_QuotaParams;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fmixer_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HeaderOperation;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fmixer_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ReferencedAttributes_AttributeMatch;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fmixer_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CheckRequest_QuotasEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fmixer_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_CheckResponse_QuotasEntry_DoNotUse;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fmixer_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_ReferencedAttributes;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fmixer_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_RouteDirective;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fmixer_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_CheckResponse_QuotaResult;
+extern PROTOBUF_INTERNAL_EXPORT_protobuf_mixer_2fv1_2fmixer_2eproto ::google::protobuf::internal::SCCInfo<4> scc_info_CheckResponse_PreconditionResult;
+}  // namespace protobuf_mixer_2fv1_2fmixer_2eproto
 namespace istio {
 namespace mixer {
 namespace v1 {
@@ -91,14 +111,9 @@ class ReportResponseDefaultTypeInternal {
 }  // namespace mixer
 }  // namespace istio
 namespace protobuf_mixer_2fv1_2fmixer_2eproto {
-void InitDefaultsCheckRequest_QuotaParamsImpl() {
+static void InitDefaultsCheckRequest_QuotaParams() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_CheckRequest_QuotaParams_default_instance_;
     new (ptr) ::istio::mixer::v1::CheckRequest_QuotaParams();
@@ -107,20 +122,12 @@ void InitDefaultsCheckRequest_QuotaParamsImpl() {
   ::istio::mixer::v1::CheckRequest_QuotaParams::InitAsDefaultInstance();
 }
 
-void InitDefaultsCheckRequest_QuotaParams() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCheckRequest_QuotaParamsImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_CheckRequest_QuotaParams =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCheckRequest_QuotaParams}, {}};
 
-void InitDefaultsCheckRequest_QuotasEntry_DoNotUseImpl() {
+static void InitDefaultsCheckRequest_QuotasEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckRequest_QuotaParams();
   {
     void* ptr = &::istio::mixer::v1::_CheckRequest_QuotasEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CheckRequest_QuotasEntry_DoNotUse();
@@ -128,21 +135,13 @@ void InitDefaultsCheckRequest_QuotasEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CheckRequest_QuotasEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCheckRequest_QuotasEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCheckRequest_QuotasEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_CheckRequest_QuotasEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCheckRequest_QuotasEntry_DoNotUse}, {
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckRequest_QuotaParams.base,}};
 
-void InitDefaultsCheckRequestImpl() {
+static void InitDefaultsCheckRequest() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes();
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckRequest_QuotasEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::v1::_CheckRequest_default_instance_;
     new (ptr) ::istio::mixer::v1::CheckRequest();
@@ -151,23 +150,14 @@ void InitDefaultsCheckRequestImpl() {
   ::istio::mixer::v1::CheckRequest::InitAsDefaultInstance();
 }
 
-void InitDefaultsCheckRequest() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCheckRequestImpl);
-}
+::google::protobuf::internal::SCCInfo<2> scc_info_CheckRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCheckRequest}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes.base,
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckRequest_QuotasEntry_DoNotUse.base,}};
 
-void InitDefaultsCheckResponse_PreconditionResultImpl() {
+static void InitDefaultsCheckResponse_PreconditionResult() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2frpc_2fstatus_2eproto::InitDefaultsStatus();
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReferencedAttributes();
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsRouteDirective();
   {
     void* ptr = &::istio::mixer::v1::_CheckResponse_PreconditionResult_default_instance_;
     new (ptr) ::istio::mixer::v1::CheckResponse_PreconditionResult();
@@ -176,21 +166,16 @@ void InitDefaultsCheckResponse_PreconditionResultImpl() {
   ::istio::mixer::v1::CheckResponse_PreconditionResult::InitAsDefaultInstance();
 }
 
-void InitDefaultsCheckResponse_PreconditionResult() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCheckResponse_PreconditionResultImpl);
-}
+::google::protobuf::internal::SCCInfo<4> scc_info_CheckResponse_PreconditionResult =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsCheckResponse_PreconditionResult}, {
+      &protobuf_google_2frpc_2fstatus_2eproto::scc_info_Status.base,
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReferencedAttributes.base,
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_RouteDirective.base,}};
 
-void InitDefaultsCheckResponse_QuotaResultImpl() {
+static void InitDefaultsCheckResponse_QuotaResult() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDuration();
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReferencedAttributes();
   {
     void* ptr = &::istio::mixer::v1::_CheckResponse_QuotaResult_default_instance_;
     new (ptr) ::istio::mixer::v1::CheckResponse_QuotaResult();
@@ -199,20 +184,14 @@ void InitDefaultsCheckResponse_QuotaResultImpl() {
   ::istio::mixer::v1::CheckResponse_QuotaResult::InitAsDefaultInstance();
 }
 
-void InitDefaultsCheckResponse_QuotaResult() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCheckResponse_QuotaResultImpl);
-}
+::google::protobuf::internal::SCCInfo<2> scc_info_CheckResponse_QuotaResult =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCheckResponse_QuotaResult}, {
+      &protobuf_google_2fprotobuf_2fduration_2eproto::scc_info_Duration.base,
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReferencedAttributes.base,}};
 
-void InitDefaultsCheckResponse_QuotasEntry_DoNotUseImpl() {
+static void InitDefaultsCheckResponse_QuotasEntry_DoNotUse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse_QuotaResult();
   {
     void* ptr = &::istio::mixer::v1::_CheckResponse_QuotasEntry_DoNotUse_default_instance_;
     new (ptr) ::istio::mixer::v1::CheckResponse_QuotasEntry_DoNotUse();
@@ -220,21 +199,13 @@ void InitDefaultsCheckResponse_QuotasEntry_DoNotUseImpl() {
   ::istio::mixer::v1::CheckResponse_QuotasEntry_DoNotUse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCheckResponse_QuotasEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCheckResponse_QuotasEntry_DoNotUseImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_CheckResponse_QuotasEntry_DoNotUse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCheckResponse_QuotasEntry_DoNotUse}, {
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse_QuotaResult.base,}};
 
-void InitDefaultsCheckResponseImpl() {
+static void InitDefaultsCheckResponse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse_PreconditionResult();
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse_QuotasEntry_DoNotUse();
   {
     void* ptr = &::istio::mixer::v1::_CheckResponse_default_instance_;
     new (ptr) ::istio::mixer::v1::CheckResponse();
@@ -243,19 +214,14 @@ void InitDefaultsCheckResponseImpl() {
   ::istio::mixer::v1::CheckResponse::InitAsDefaultInstance();
 }
 
-void InitDefaultsCheckResponse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsCheckResponseImpl);
-}
+::google::protobuf::internal::SCCInfo<2> scc_info_CheckResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCheckResponse}, {
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse_PreconditionResult.base,
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse_QuotasEntry_DoNotUse.base,}};
 
-void InitDefaultsReferencedAttributes_AttributeMatchImpl() {
+static void InitDefaultsReferencedAttributes_AttributeMatch() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_ReferencedAttributes_AttributeMatch_default_instance_;
     new (ptr) ::istio::mixer::v1::ReferencedAttributes_AttributeMatch();
@@ -264,20 +230,12 @@ void InitDefaultsReferencedAttributes_AttributeMatchImpl() {
   ::istio::mixer::v1::ReferencedAttributes_AttributeMatch::InitAsDefaultInstance();
 }
 
-void InitDefaultsReferencedAttributes_AttributeMatch() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsReferencedAttributes_AttributeMatchImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_ReferencedAttributes_AttributeMatch =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsReferencedAttributes_AttributeMatch}, {}};
 
-void InitDefaultsReferencedAttributesImpl() {
+static void InitDefaultsReferencedAttributes() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReferencedAttributes_AttributeMatch();
   {
     void* ptr = &::istio::mixer::v1::_ReferencedAttributes_default_instance_;
     new (ptr) ::istio::mixer::v1::ReferencedAttributes();
@@ -286,19 +244,13 @@ void InitDefaultsReferencedAttributesImpl() {
   ::istio::mixer::v1::ReferencedAttributes::InitAsDefaultInstance();
 }
 
-void InitDefaultsReferencedAttributes() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsReferencedAttributesImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_ReferencedAttributes =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsReferencedAttributes}, {
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReferencedAttributes_AttributeMatch.base,}};
 
-void InitDefaultsHeaderOperationImpl() {
+static void InitDefaultsHeaderOperation() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_HeaderOperation_default_instance_;
     new (ptr) ::istio::mixer::v1::HeaderOperation();
@@ -307,20 +259,12 @@ void InitDefaultsHeaderOperationImpl() {
   ::istio::mixer::v1::HeaderOperation::InitAsDefaultInstance();
 }
 
-void InitDefaultsHeaderOperation() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsHeaderOperationImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_HeaderOperation =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsHeaderOperation}, {}};
 
-void InitDefaultsRouteDirectiveImpl() {
+static void InitDefaultsRouteDirective() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsHeaderOperation();
   {
     void* ptr = &::istio::mixer::v1::_RouteDirective_default_instance_;
     new (ptr) ::istio::mixer::v1::RouteDirective();
@@ -329,20 +273,13 @@ void InitDefaultsRouteDirectiveImpl() {
   ::istio::mixer::v1::RouteDirective::InitAsDefaultInstance();
 }
 
-void InitDefaultsRouteDirective() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsRouteDirectiveImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_RouteDirective =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsRouteDirective}, {
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_HeaderOperation.base,}};
 
-void InitDefaultsReportRequestImpl() {
+static void InitDefaultsReportRequest() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_mixer_2fv1_2fattributes_2eproto::InitDefaultsCompressedAttributes();
   {
     void* ptr = &::istio::mixer::v1::_ReportRequest_default_instance_;
     new (ptr) ::istio::mixer::v1::ReportRequest();
@@ -351,19 +288,13 @@ void InitDefaultsReportRequestImpl() {
   ::istio::mixer::v1::ReportRequest::InitAsDefaultInstance();
 }
 
-void InitDefaultsReportRequest() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsReportRequestImpl);
-}
+::google::protobuf::internal::SCCInfo<1> scc_info_ReportRequest =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsReportRequest}, {
+      &protobuf_mixer_2fv1_2fattributes_2eproto::scc_info_CompressedAttributes.base,}};
 
-void InitDefaultsReportResponseImpl() {
+static void InitDefaultsReportResponse() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::istio::mixer::v1::_ReportResponse_default_instance_;
     new (ptr) ::istio::mixer::v1::ReportResponse();
@@ -372,9 +303,23 @@ void InitDefaultsReportResponseImpl() {
   ::istio::mixer::v1::ReportResponse::InitAsDefaultInstance();
 }
 
-void InitDefaultsReportResponse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsReportResponseImpl);
+::google::protobuf::internal::SCCInfo<0> scc_info_ReportResponse =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsReportResponse}, {}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_CheckRequest_QuotaParams.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CheckRequest_QuotasEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CheckRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CheckResponse_PreconditionResult.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CheckResponse_QuotaResult.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CheckResponse_QuotasEntry_DoNotUse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CheckResponse.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ReferencedAttributes_AttributeMatch.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ReferencedAttributes.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HeaderOperation.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RouteDirective.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ReportRequest.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ReportResponse.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[13];
@@ -523,15 +468,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "mixer/v1/mixer.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "mixer/v1/mixer.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, file_level_enum_descriptors, file_level_service_descriptors);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -617,8 +561,8 @@ void AddDescriptorsImpl() {
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -711,24 +655,22 @@ const int CheckRequest_QuotaParams::kBestEffortFieldNumber;
 
 CheckRequest_QuotaParams::CheckRequest_QuotaParams()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckRequest_QuotaParams();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckRequest_QuotaParams.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.CheckRequest.QuotaParams)
 }
 CheckRequest_QuotaParams::CheckRequest_QuotaParams(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckRequest_QuotaParams();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckRequest_QuotaParams.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.CheckRequest.QuotaParams)
 }
 CheckRequest_QuotaParams::CheckRequest_QuotaParams(const CheckRequest_QuotaParams& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&amount_, &from.amount_,
     static_cast<size_t>(reinterpret_cast<char*>(&best_effort_) -
@@ -740,7 +682,6 @@ void CheckRequest_QuotaParams::SharedCtor() {
   ::memset(&amount_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&best_effort_) -
       reinterpret_cast<char*>(&amount_)) + sizeof(best_effort_));
-  _cached_size_ = 0;
 }
 
 CheckRequest_QuotaParams::~CheckRequest_QuotaParams() {
@@ -759,9 +700,7 @@ void CheckRequest_QuotaParams::ArenaDtor(void* object) {
 void CheckRequest_QuotaParams::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void CheckRequest_QuotaParams::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* CheckRequest_QuotaParams::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -769,13 +708,10 @@ const ::google::protobuf::Descriptor* CheckRequest_QuotaParams::descriptor() {
 }
 
 const CheckRequest_QuotaParams& CheckRequest_QuotaParams::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckRequest_QuotaParams();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckRequest_QuotaParams.base);
   return *internal_default_instance();
 }
 
-CheckRequest_QuotaParams* CheckRequest_QuotaParams::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<CheckRequest_QuotaParams>(arena);
-}
 
 void CheckRequest_QuotaParams::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.CheckRequest.QuotaParams)
@@ -795,7 +731,7 @@ bool CheckRequest_QuotaParams::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.CheckRequest.QuotaParams)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -917,9 +853,7 @@ size_t CheckRequest_QuotaParams::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -995,7 +929,6 @@ void CheckRequest_QuotaParams::InternalSwap(CheckRequest_QuotaParams* other) {
   swap(amount_, other->amount_);
   swap(best_effort_, other->best_effort_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CheckRequest_QuotaParams::GetMetadata() const {
@@ -1027,10 +960,6 @@ void CheckRequest::InitAsDefaultInstance() {
   ::istio::mixer::v1::_CheckRequest_default_instance_._instance.get_mutable()->attributes_ = const_cast< ::istio::mixer::v1::CompressedAttributes*>(
       ::istio::mixer::v1::CompressedAttributes::internal_default_instance());
 }
-void CheckRequest::_slow_mutable_attributes() {
-  attributes_ = ::google::protobuf::Arena::CreateMessage< ::istio::mixer::v1::CompressedAttributes >(
-      GetArenaNoVirtual());
-}
 void CheckRequest::unsafe_arena_set_allocated_attributes(
     ::istio::mixer::v1::CompressedAttributes* attributes) {
   if (GetArenaNoVirtual() == NULL) {
@@ -1059,9 +988,8 @@ const int CheckRequest::kQuotasFieldNumber;
 
 CheckRequest::CheckRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckRequest();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckRequest.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.CheckRequest)
 }
@@ -1069,15 +997,14 @@ CheckRequest::CheckRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   quotas_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckRequest();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckRequest.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.CheckRequest)
 }
 CheckRequest::CheckRequest(const CheckRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   quotas_.MergeFrom(from.quotas_);
   deduplication_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1099,7 +1026,6 @@ void CheckRequest::SharedCtor() {
   ::memset(&attributes_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&global_word_count_) -
       reinterpret_cast<char*>(&attributes_)) + sizeof(global_word_count_));
-  _cached_size_ = 0;
 }
 
 CheckRequest::~CheckRequest() {
@@ -1120,9 +1046,7 @@ void CheckRequest::ArenaDtor(void* object) {
 void CheckRequest::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void CheckRequest::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* CheckRequest::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1130,13 +1054,10 @@ const ::google::protobuf::Descriptor* CheckRequest::descriptor() {
 }
 
 const CheckRequest& CheckRequest::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckRequest();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckRequest.base);
   return *internal_default_instance();
 }
 
-CheckRequest* CheckRequest::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<CheckRequest>(arena);
-}
 
 void CheckRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.CheckRequest)
@@ -1160,7 +1081,7 @@ bool CheckRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.CheckRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1258,7 +1179,7 @@ void CheckRequest::SerializeWithCachedSizes(
   // .istio.mixer.v1.CompressedAttributes attributes = 1 [(.gogoproto.nullable) = false];
   if (this->has_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->attributes_, output);
+      1, this->_internal_attributes(), output);
   }
 
   // uint32 global_word_count = 2;
@@ -1293,7 +1214,7 @@ void CheckRequest::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->quotas().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->quotas().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckRequest_QuotaParams >::size_type size_type;
       size_type n = 0;
@@ -1303,7 +1224,7 @@ void CheckRequest::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(quotas_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -1315,7 +1236,7 @@ void CheckRequest::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckRequest_QuotaParams >::const_iterator
           it = this->quotas().begin();
           it != this->quotas().end(); ++it) {
@@ -1349,7 +1270,7 @@ void CheckRequest::SerializeWithCachedSizes(
   if (this->has_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->attributes_, deterministic, target);
+        1, this->_internal_attributes(), deterministic, target);
   }
 
   // uint32 global_word_count = 2;
@@ -1385,7 +1306,7 @@ void CheckRequest::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->quotas().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->quotas().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckRequest_QuotaParams >::size_type size_type;
       size_type n = 0;
@@ -1395,7 +1316,7 @@ void CheckRequest::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(quotas_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -1409,7 +1330,7 @@ void CheckRequest::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckRequest_QuotaParams >::const_iterator
           it = this->quotas().begin();
           it != this->quotas().end(); ++it) {
@@ -1448,7 +1369,7 @@ size_t CheckRequest::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->quotas_size());
   {
-    ::google::protobuf::scoped_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
+    ::std::unique_ptr<CheckRequest_QuotasEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckRequest_QuotaParams >::const_iterator
         it = this->quotas().begin();
         it != this->quotas().end(); ++it) {
@@ -1475,7 +1396,7 @@ size_t CheckRequest::ByteSizeLong() const {
   if (this->has_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->attributes_);
+        *attributes_);
   }
 
   // uint32 global_word_count = 2;
@@ -1486,9 +1407,7 @@ size_t CheckRequest::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1566,11 +1485,11 @@ void CheckRequest::UnsafeArenaSwap(CheckRequest* other) {
 void CheckRequest::InternalSwap(CheckRequest* other) {
   using std::swap;
   quotas_.Swap(&other->quotas_);
-  deduplication_id_.Swap(&other->deduplication_id_);
+  deduplication_id_.Swap(&other->deduplication_id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(attributes_, other->attributes_);
   swap(global_word_count_, other->global_word_count_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CheckRequest::GetMetadata() const {
@@ -1591,10 +1510,6 @@ void CheckResponse_PreconditionResult::InitAsDefaultInstance() {
   ::istio::mixer::v1::_CheckResponse_PreconditionResult_default_instance_._instance.get_mutable()->route_directive_ = const_cast< ::istio::mixer::v1::RouteDirective*>(
       ::istio::mixer::v1::RouteDirective::internal_default_instance());
 }
-void CheckResponse_PreconditionResult::_slow_mutable_status() {
-  status_ = ::google::protobuf::Arena::Create< ::google::rpc::Status >(
-      GetArenaNoVirtual());
-}
 void CheckResponse_PreconditionResult::unsafe_arena_set_allocated_status(
     ::google::rpc::Status* status) {
   if (GetArenaNoVirtual() == NULL) {
@@ -1613,10 +1528,6 @@ void CheckResponse_PreconditionResult::clear_status() {
     delete status_;
   }
   status_ = NULL;
-}
-void CheckResponse_PreconditionResult::_slow_mutable_valid_duration() {
-  valid_duration_ = ::google::protobuf::Arena::CreateMessage< ::google::protobuf::Duration >(
-      GetArenaNoVirtual());
 }
 void CheckResponse_PreconditionResult::unsafe_arena_set_allocated_valid_duration(
     ::google::protobuf::Duration* valid_duration) {
@@ -1637,10 +1548,6 @@ void CheckResponse_PreconditionResult::clear_valid_duration() {
   }
   valid_duration_ = NULL;
 }
-void CheckResponse_PreconditionResult::_slow_mutable_referenced_attributes() {
-  referenced_attributes_ = ::google::protobuf::Arena::CreateMessage< ::istio::mixer::v1::ReferencedAttributes >(
-      GetArenaNoVirtual());
-}
 void CheckResponse_PreconditionResult::unsafe_arena_set_allocated_referenced_attributes(
     ::istio::mixer::v1::ReferencedAttributes* referenced_attributes) {
   if (GetArenaNoVirtual() == NULL) {
@@ -1653,10 +1560,6 @@ void CheckResponse_PreconditionResult::unsafe_arena_set_allocated_referenced_att
     
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:istio.mixer.v1.CheckResponse.PreconditionResult.referenced_attributes)
-}
-void CheckResponse_PreconditionResult::_slow_mutable_route_directive() {
-  route_directive_ = ::google::protobuf::Arena::CreateMessage< ::istio::mixer::v1::RouteDirective >(
-      GetArenaNoVirtual());
 }
 void CheckResponse_PreconditionResult::unsafe_arena_set_allocated_route_directive(
     ::istio::mixer::v1::RouteDirective* route_directive) {
@@ -1681,24 +1584,22 @@ const int CheckResponse_PreconditionResult::kRouteDirectiveFieldNumber;
 
 CheckResponse_PreconditionResult::CheckResponse_PreconditionResult()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse_PreconditionResult();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse_PreconditionResult.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.CheckResponse.PreconditionResult)
 }
 CheckResponse_PreconditionResult::CheckResponse_PreconditionResult(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse_PreconditionResult();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse_PreconditionResult.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.CheckResponse.PreconditionResult)
 }
 CheckResponse_PreconditionResult::CheckResponse_PreconditionResult(const CheckResponse_PreconditionResult& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_status()) {
     status_ = new ::google::rpc::Status(*from.status_);
@@ -1728,7 +1629,6 @@ void CheckResponse_PreconditionResult::SharedCtor() {
   ::memset(&status_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&valid_use_count_) -
       reinterpret_cast<char*>(&status_)) + sizeof(valid_use_count_));
-  _cached_size_ = 0;
 }
 
 CheckResponse_PreconditionResult::~CheckResponse_PreconditionResult() {
@@ -1751,9 +1651,7 @@ void CheckResponse_PreconditionResult::ArenaDtor(void* object) {
 void CheckResponse_PreconditionResult::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void CheckResponse_PreconditionResult::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* CheckResponse_PreconditionResult::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1761,13 +1659,10 @@ const ::google::protobuf::Descriptor* CheckResponse_PreconditionResult::descript
 }
 
 const CheckResponse_PreconditionResult& CheckResponse_PreconditionResult::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse_PreconditionResult();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse_PreconditionResult.base);
   return *internal_default_instance();
 }
 
-CheckResponse_PreconditionResult* CheckResponse_PreconditionResult::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<CheckResponse_PreconditionResult>(arena);
-}
 
 void CheckResponse_PreconditionResult::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.CheckResponse.PreconditionResult)
@@ -1801,7 +1696,7 @@ bool CheckResponse_PreconditionResult::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.CheckResponse.PreconditionResult)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1896,13 +1791,13 @@ void CheckResponse_PreconditionResult::SerializeWithCachedSizes(
   // .google.rpc.Status status = 1 [(.gogoproto.nullable) = false];
   if (this->has_status()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->status_, output);
+      1, this->_internal_status(), output);
   }
 
   // .google.protobuf.Duration valid_duration = 2 [(.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];
   if (this->has_valid_duration()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, *this->valid_duration_, output);
+      2, this->_internal_valid_duration(), output);
   }
 
   // int32 valid_use_count = 3;
@@ -1913,13 +1808,13 @@ void CheckResponse_PreconditionResult::SerializeWithCachedSizes(
   // .istio.mixer.v1.ReferencedAttributes referenced_attributes = 5;
   if (this->has_referenced_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, *this->referenced_attributes_, output);
+      5, this->_internal_referenced_attributes(), output);
   }
 
   // .istio.mixer.v1.RouteDirective route_directive = 6;
   if (this->has_route_directive()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, *this->route_directive_, output);
+      6, this->_internal_route_directive(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1940,14 +1835,14 @@ void CheckResponse_PreconditionResult::SerializeWithCachedSizes(
   if (this->has_status()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->status_, deterministic, target);
+        1, this->_internal_status(), deterministic, target);
   }
 
   // .google.protobuf.Duration valid_duration = 2 [(.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];
   if (this->has_valid_duration()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, *this->valid_duration_, deterministic, target);
+        2, this->_internal_valid_duration(), deterministic, target);
   }
 
   // int32 valid_use_count = 3;
@@ -1959,14 +1854,14 @@ void CheckResponse_PreconditionResult::SerializeWithCachedSizes(
   if (this->has_referenced_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, *this->referenced_attributes_, deterministic, target);
+        5, this->_internal_referenced_attributes(), deterministic, target);
   }
 
   // .istio.mixer.v1.RouteDirective route_directive = 6;
   if (this->has_route_directive()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, *this->route_directive_, deterministic, target);
+        6, this->_internal_route_directive(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1990,28 +1885,28 @@ size_t CheckResponse_PreconditionResult::ByteSizeLong() const {
   if (this->has_status()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->status_);
+        *status_);
   }
 
   // .google.protobuf.Duration valid_duration = 2 [(.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];
   if (this->has_valid_duration()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->valid_duration_);
+        *valid_duration_);
   }
 
   // .istio.mixer.v1.ReferencedAttributes referenced_attributes = 5;
   if (this->has_referenced_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->referenced_attributes_);
+        *referenced_attributes_);
   }
 
   // .istio.mixer.v1.RouteDirective route_directive = 6;
   if (this->has_route_directive()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->route_directive_);
+        *route_directive_);
   }
 
   // int32 valid_use_count = 3;
@@ -2022,9 +1917,7 @@ size_t CheckResponse_PreconditionResult::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2112,7 +2005,6 @@ void CheckResponse_PreconditionResult::InternalSwap(CheckResponse_PreconditionRe
   swap(route_directive_, other->route_directive_);
   swap(valid_use_count_, other->valid_use_count_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CheckResponse_PreconditionResult::GetMetadata() const {
@@ -2128,10 +2020,6 @@ void CheckResponse_QuotaResult::InitAsDefaultInstance() {
       ::google::protobuf::Duration::internal_default_instance());
   ::istio::mixer::v1::_CheckResponse_QuotaResult_default_instance_._instance.get_mutable()->referenced_attributes_ = const_cast< ::istio::mixer::v1::ReferencedAttributes*>(
       ::istio::mixer::v1::ReferencedAttributes::internal_default_instance());
-}
-void CheckResponse_QuotaResult::_slow_mutable_valid_duration() {
-  valid_duration_ = ::google::protobuf::Arena::CreateMessage< ::google::protobuf::Duration >(
-      GetArenaNoVirtual());
 }
 void CheckResponse_QuotaResult::unsafe_arena_set_allocated_valid_duration(
     ::google::protobuf::Duration* valid_duration) {
@@ -2151,10 +2039,6 @@ void CheckResponse_QuotaResult::clear_valid_duration() {
     delete valid_duration_;
   }
   valid_duration_ = NULL;
-}
-void CheckResponse_QuotaResult::_slow_mutable_referenced_attributes() {
-  referenced_attributes_ = ::google::protobuf::Arena::CreateMessage< ::istio::mixer::v1::ReferencedAttributes >(
-      GetArenaNoVirtual());
 }
 void CheckResponse_QuotaResult::unsafe_arena_set_allocated_referenced_attributes(
     ::istio::mixer::v1::ReferencedAttributes* referenced_attributes) {
@@ -2177,24 +2061,22 @@ const int CheckResponse_QuotaResult::kReferencedAttributesFieldNumber;
 
 CheckResponse_QuotaResult::CheckResponse_QuotaResult()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse_QuotaResult();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse_QuotaResult.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.CheckResponse.QuotaResult)
 }
 CheckResponse_QuotaResult::CheckResponse_QuotaResult(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse_QuotaResult();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse_QuotaResult.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.CheckResponse.QuotaResult)
 }
 CheckResponse_QuotaResult::CheckResponse_QuotaResult(const CheckResponse_QuotaResult& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_valid_duration()) {
     valid_duration_ = new ::google::protobuf::Duration(*from.valid_duration_);
@@ -2214,7 +2096,6 @@ void CheckResponse_QuotaResult::SharedCtor() {
   ::memset(&valid_duration_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&granted_amount_) -
       reinterpret_cast<char*>(&valid_duration_)) + sizeof(granted_amount_));
-  _cached_size_ = 0;
 }
 
 CheckResponse_QuotaResult::~CheckResponse_QuotaResult() {
@@ -2235,9 +2116,7 @@ void CheckResponse_QuotaResult::ArenaDtor(void* object) {
 void CheckResponse_QuotaResult::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void CheckResponse_QuotaResult::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* CheckResponse_QuotaResult::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2245,13 +2124,10 @@ const ::google::protobuf::Descriptor* CheckResponse_QuotaResult::descriptor() {
 }
 
 const CheckResponse_QuotaResult& CheckResponse_QuotaResult::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse_QuotaResult();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse_QuotaResult.base);
   return *internal_default_instance();
 }
 
-CheckResponse_QuotaResult* CheckResponse_QuotaResult::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<CheckResponse_QuotaResult>(arena);
-}
 
 void CheckResponse_QuotaResult::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.CheckResponse.QuotaResult)
@@ -2277,7 +2153,7 @@ bool CheckResponse_QuotaResult::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.CheckResponse.QuotaResult)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2348,7 +2224,7 @@ void CheckResponse_QuotaResult::SerializeWithCachedSizes(
   // .google.protobuf.Duration valid_duration = 1 [(.gogoproto.nullable) = false, (.gogoproto.stdduration) = true];
   if (this->has_valid_duration()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->valid_duration_, output);
+      1, this->_internal_valid_duration(), output);
   }
 
   // int64 granted_amount = 2;
@@ -2359,7 +2235,7 @@ void CheckResponse_QuotaResult::SerializeWithCachedSizes(
   // .istio.mixer.v1.ReferencedAttributes referenced_attributes = 5 [(.gogoproto.nullable) = false];
   if (this->has_referenced_attributes()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, *this->referenced_attributes_, output);
+      5, this->_internal_referenced_attributes(), output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2380,7 +2256,7 @@ void CheckResponse_QuotaResult::SerializeWithCachedSizes(
   if (this->has_valid_duration()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, *this->valid_duration_, deterministic, target);
+        1, this->_internal_valid_duration(), deterministic, target);
   }
 
   // int64 granted_amount = 2;
@@ -2392,7 +2268,7 @@ void CheckResponse_QuotaResult::SerializeWithCachedSizes(
   if (this->has_referenced_attributes()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, *this->referenced_attributes_, deterministic, target);
+        5, this->_internal_referenced_attributes(), deterministic, target);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -2416,14 +2292,14 @@ size_t CheckResponse_QuotaResult::ByteSizeLong() const {
   if (this->has_valid_duration()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->valid_duration_);
+        *valid_duration_);
   }
 
   // .istio.mixer.v1.ReferencedAttributes referenced_attributes = 5 [(.gogoproto.nullable) = false];
   if (this->has_referenced_attributes()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->referenced_attributes_);
+        *referenced_attributes_);
   }
 
   // int64 granted_amount = 2;
@@ -2434,9 +2310,7 @@ size_t CheckResponse_QuotaResult::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2516,7 +2390,6 @@ void CheckResponse_QuotaResult::InternalSwap(CheckResponse_QuotaResult* other) {
   swap(referenced_attributes_, other->referenced_attributes_);
   swap(granted_amount_, other->granted_amount_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CheckResponse_QuotaResult::GetMetadata() const {
@@ -2548,10 +2421,6 @@ void CheckResponse::InitAsDefaultInstance() {
   ::istio::mixer::v1::_CheckResponse_default_instance_._instance.get_mutable()->precondition_ = const_cast< ::istio::mixer::v1::CheckResponse_PreconditionResult*>(
       ::istio::mixer::v1::CheckResponse_PreconditionResult::internal_default_instance());
 }
-void CheckResponse::_slow_mutable_precondition() {
-  precondition_ = ::google::protobuf::Arena::CreateMessage< ::istio::mixer::v1::CheckResponse_PreconditionResult >(
-      GetArenaNoVirtual());
-}
 void CheckResponse::unsafe_arena_set_allocated_precondition(
     ::istio::mixer::v1::CheckResponse_PreconditionResult* precondition) {
   if (GetArenaNoVirtual() == NULL) {
@@ -2572,9 +2441,8 @@ const int CheckResponse::kQuotasFieldNumber;
 
 CheckResponse::CheckResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.CheckResponse)
 }
@@ -2582,15 +2450,14 @@ CheckResponse::CheckResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   quotas_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.CheckResponse)
 }
 CheckResponse::CheckResponse(const CheckResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   quotas_.MergeFrom(from.quotas_);
   if (from.has_precondition()) {
@@ -2603,7 +2470,6 @@ CheckResponse::CheckResponse(const CheckResponse& from)
 
 void CheckResponse::SharedCtor() {
   precondition_ = NULL;
-  _cached_size_ = 0;
 }
 
 CheckResponse::~CheckResponse() {
@@ -2623,9 +2489,7 @@ void CheckResponse::ArenaDtor(void* object) {
 void CheckResponse::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void CheckResponse::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* CheckResponse::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2633,13 +2497,10 @@ const ::google::protobuf::Descriptor* CheckResponse::descriptor() {
 }
 
 const CheckResponse& CheckResponse::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsCheckResponse();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_CheckResponse.base);
   return *internal_default_instance();
 }
 
-CheckResponse* CheckResponse::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<CheckResponse>(arena);
-}
 
 void CheckResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.CheckResponse)
@@ -2661,7 +2522,7 @@ bool CheckResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.CheckResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2729,7 +2590,7 @@ void CheckResponse::SerializeWithCachedSizes(
   // .istio.mixer.v1.CheckResponse.PreconditionResult precondition = 2 [(.gogoproto.nullable) = false];
   if (this->has_precondition()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, *this->precondition_, output);
+      2, this->_internal_precondition(), output);
   }
 
   // map<string, .istio.mixer.v1.CheckResponse.QuotaResult> quotas = 3 [(.gogoproto.nullable) = false];
@@ -2749,7 +2610,7 @@ void CheckResponse::SerializeWithCachedSizes(
 
     if (output->IsSerializationDeterministic() &&
         this->quotas().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->quotas().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckResponse_QuotaResult >::size_type size_type;
       size_type n = 0;
@@ -2759,7 +2620,7 @@ void CheckResponse::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(quotas_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -2771,7 +2632,7 @@ void CheckResponse::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckResponse_QuotaResult >::const_iterator
           it = this->quotas().begin();
           it != this->quotas().end(); ++it) {
@@ -2805,7 +2666,7 @@ void CheckResponse::SerializeWithCachedSizes(
   if (this->has_precondition()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, *this->precondition_, deterministic, target);
+        2, this->_internal_precondition(), deterministic, target);
   }
 
   // map<string, .istio.mixer.v1.CheckResponse.QuotaResult> quotas = 3 [(.gogoproto.nullable) = false];
@@ -2825,7 +2686,7 @@ void CheckResponse::SerializeWithCachedSizes(
 
     if (deterministic &&
         this->quotas().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
+      ::std::unique_ptr<SortItem[]> items(
           new SortItem[this->quotas().size()]);
       typedef ::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckResponse_QuotaResult >::size_type size_type;
       size_type n = 0;
@@ -2835,7 +2696,7 @@ void CheckResponse::SerializeWithCachedSizes(
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
       for (size_type i = 0; i < n; i++) {
         entry.reset(quotas_.NewEntryWrapper(
             items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
@@ -2849,7 +2710,7 @@ void CheckResponse::SerializeWithCachedSizes(
         Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
       }
     } else {
-      ::google::protobuf::scoped_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
+      ::std::unique_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
       for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckResponse_QuotaResult >::const_iterator
           it = this->quotas().begin();
           it != this->quotas().end(); ++it) {
@@ -2888,7 +2749,7 @@ size_t CheckResponse::ByteSizeLong() const {
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->quotas_size());
   {
-    ::google::protobuf::scoped_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
+    ::std::unique_ptr<CheckResponse_QuotasEntry_DoNotUse> entry;
     for (::google::protobuf::Map< ::std::string, ::istio::mixer::v1::CheckResponse_QuotaResult >::const_iterator
         it = this->quotas().begin();
         it != this->quotas().end(); ++it) {
@@ -2908,13 +2769,11 @@ size_t CheckResponse::ByteSizeLong() const {
   if (this->has_precondition()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->precondition_);
+        *precondition_);
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2988,7 +2847,6 @@ void CheckResponse::InternalSwap(CheckResponse* other) {
   quotas_.Swap(&other->quotas_);
   swap(precondition_, other->precondition_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CheckResponse::GetMetadata() const {
@@ -3010,24 +2868,22 @@ const int ReferencedAttributes_AttributeMatch::kMapKeyFieldNumber;
 
 ReferencedAttributes_AttributeMatch::ReferencedAttributes_AttributeMatch()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReferencedAttributes_AttributeMatch();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReferencedAttributes_AttributeMatch.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.ReferencedAttributes.AttributeMatch)
 }
 ReferencedAttributes_AttributeMatch::ReferencedAttributes_AttributeMatch(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReferencedAttributes_AttributeMatch();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReferencedAttributes_AttributeMatch.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.ReferencedAttributes.AttributeMatch)
 }
 ReferencedAttributes_AttributeMatch::ReferencedAttributes_AttributeMatch(const ReferencedAttributes_AttributeMatch& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   regex_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.regex().size() > 0) {
@@ -3045,7 +2901,6 @@ void ReferencedAttributes_AttributeMatch::SharedCtor() {
   ::memset(&name_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&map_key_) -
       reinterpret_cast<char*>(&name_)) + sizeof(map_key_));
-  _cached_size_ = 0;
 }
 
 ReferencedAttributes_AttributeMatch::~ReferencedAttributes_AttributeMatch() {
@@ -3065,9 +2920,7 @@ void ReferencedAttributes_AttributeMatch::ArenaDtor(void* object) {
 void ReferencedAttributes_AttributeMatch::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void ReferencedAttributes_AttributeMatch::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* ReferencedAttributes_AttributeMatch::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -3075,13 +2928,10 @@ const ::google::protobuf::Descriptor* ReferencedAttributes_AttributeMatch::descr
 }
 
 const ReferencedAttributes_AttributeMatch& ReferencedAttributes_AttributeMatch::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReferencedAttributes_AttributeMatch();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReferencedAttributes_AttributeMatch.base);
   return *internal_default_instance();
 }
 
-ReferencedAttributes_AttributeMatch* ReferencedAttributes_AttributeMatch::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<ReferencedAttributes_AttributeMatch>(arena);
-}
 
 void ReferencedAttributes_AttributeMatch::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.ReferencedAttributes.AttributeMatch)
@@ -3102,7 +2952,7 @@ bool ReferencedAttributes_AttributeMatch::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.ReferencedAttributes.AttributeMatch)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -3303,9 +3153,7 @@ size_t ReferencedAttributes_AttributeMatch::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -3384,12 +3232,12 @@ void ReferencedAttributes_AttributeMatch::UnsafeArenaSwap(ReferencedAttributes_A
 }
 void ReferencedAttributes_AttributeMatch::InternalSwap(ReferencedAttributes_AttributeMatch* other) {
   using std::swap;
-  regex_.Swap(&other->regex_);
+  regex_.Swap(&other->regex_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(name_, other->name_);
   swap(condition_, other->condition_);
   swap(map_key_, other->map_key_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReferencedAttributes_AttributeMatch::GetMetadata() const {
@@ -3409,9 +3257,8 @@ const int ReferencedAttributes::kAttributeMatchesFieldNumber;
 
 ReferencedAttributes::ReferencedAttributes()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReferencedAttributes();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReferencedAttributes.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.ReferencedAttributes)
 }
@@ -3420,7 +3267,7 @@ ReferencedAttributes::ReferencedAttributes(::google::protobuf::Arena* arena)
   _internal_metadata_(arena),
   words_(arena),
   attribute_matches_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReferencedAttributes();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReferencedAttributes.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.ReferencedAttributes)
@@ -3429,14 +3276,12 @@ ReferencedAttributes::ReferencedAttributes(const ReferencedAttributes& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       words_(from.words_),
-      attribute_matches_(from.attribute_matches_),
-      _cached_size_(0) {
+      attribute_matches_(from.attribute_matches_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.ReferencedAttributes)
 }
 
 void ReferencedAttributes::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 ReferencedAttributes::~ReferencedAttributes() {
@@ -3455,9 +3300,7 @@ void ReferencedAttributes::ArenaDtor(void* object) {
 void ReferencedAttributes::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void ReferencedAttributes::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* ReferencedAttributes::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -3465,13 +3308,10 @@ const ::google::protobuf::Descriptor* ReferencedAttributes::descriptor() {
 }
 
 const ReferencedAttributes& ReferencedAttributes::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReferencedAttributes();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReferencedAttributes.base);
   return *internal_default_instance();
 }
 
-ReferencedAttributes* ReferencedAttributes::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<ReferencedAttributes>(arena);
-}
 
 void ReferencedAttributes::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.ReferencedAttributes)
@@ -3490,7 +3330,7 @@ bool ReferencedAttributes::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.ReferencedAttributes)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -3515,7 +3355,8 @@ bool ReferencedAttributes::MergePartialFromCodedStream(
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_attribute_matches()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_attribute_matches()));
         } else {
           goto handle_unusual;
         }
@@ -3562,7 +3403,9 @@ void ReferencedAttributes::SerializeWithCachedSizes(
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->attribute_matches_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->attribute_matches(static_cast<int>(i)), output);
+      2,
+      this->attribute_matches(static_cast<int>(i)),
+      output);
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -3634,9 +3477,7 @@ size_t ReferencedAttributes::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -3705,10 +3546,9 @@ void ReferencedAttributes::UnsafeArenaSwap(ReferencedAttributes* other) {
 }
 void ReferencedAttributes::InternalSwap(ReferencedAttributes* other) {
   using std::swap;
-  words_.InternalSwap(&other->words_);
-  attribute_matches_.InternalSwap(&other->attribute_matches_);
+  words_.InternalSwap(CastToBase(&other->words_));
+  CastToBase(&attribute_matches_)->InternalSwap(CastToBase(&other->attribute_matches_));
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReferencedAttributes::GetMetadata() const {
@@ -3729,24 +3569,22 @@ const int HeaderOperation::kOperationFieldNumber;
 
 HeaderOperation::HeaderOperation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsHeaderOperation();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_HeaderOperation.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.HeaderOperation)
 }
 HeaderOperation::HeaderOperation(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsHeaderOperation();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_HeaderOperation.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.HeaderOperation)
 }
 HeaderOperation::HeaderOperation(const HeaderOperation& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.name().size() > 0) {
@@ -3766,7 +3604,6 @@ void HeaderOperation::SharedCtor() {
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   operation_ = 0;
-  _cached_size_ = 0;
 }
 
 HeaderOperation::~HeaderOperation() {
@@ -3787,9 +3624,7 @@ void HeaderOperation::ArenaDtor(void* object) {
 void HeaderOperation::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void HeaderOperation::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* HeaderOperation::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -3797,13 +3632,10 @@ const ::google::protobuf::Descriptor* HeaderOperation::descriptor() {
 }
 
 const HeaderOperation& HeaderOperation::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsHeaderOperation();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_HeaderOperation.base);
   return *internal_default_instance();
 }
 
-HeaderOperation* HeaderOperation::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<HeaderOperation>(arena);
-}
 
 void HeaderOperation::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.HeaderOperation)
@@ -3823,7 +3655,7 @@ bool HeaderOperation::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.HeaderOperation)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -4006,9 +3838,7 @@ size_t HeaderOperation::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -4084,11 +3914,12 @@ void HeaderOperation::UnsafeArenaSwap(HeaderOperation* other) {
 }
 void HeaderOperation::InternalSwap(HeaderOperation* other) {
   using std::swap;
-  name_.Swap(&other->name_);
-  value_.Swap(&other->value_);
+  name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  value_.Swap(&other->value_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(operation_, other->operation_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HeaderOperation::GetMetadata() const {
@@ -4110,9 +3941,8 @@ const int RouteDirective::kDirectResponseBodyFieldNumber;
 
 RouteDirective::RouteDirective()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsRouteDirective();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_RouteDirective.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.RouteDirective)
 }
@@ -4121,7 +3951,7 @@ RouteDirective::RouteDirective(::google::protobuf::Arena* arena)
   _internal_metadata_(arena),
   request_header_operations_(arena),
   response_header_operations_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsRouteDirective();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_RouteDirective.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.RouteDirective)
@@ -4130,8 +3960,7 @@ RouteDirective::RouteDirective(const RouteDirective& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       request_header_operations_(from.request_header_operations_),
-      response_header_operations_(from.response_header_operations_),
-      _cached_size_(0) {
+      response_header_operations_(from.response_header_operations_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   direct_response_body_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.direct_response_body().size() > 0) {
@@ -4145,7 +3974,6 @@ RouteDirective::RouteDirective(const RouteDirective& from)
 void RouteDirective::SharedCtor() {
   direct_response_body_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   direct_response_code_ = 0u;
-  _cached_size_ = 0;
 }
 
 RouteDirective::~RouteDirective() {
@@ -4165,9 +3993,7 @@ void RouteDirective::ArenaDtor(void* object) {
 void RouteDirective::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void RouteDirective::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* RouteDirective::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -4175,13 +4001,10 @@ const ::google::protobuf::Descriptor* RouteDirective::descriptor() {
 }
 
 const RouteDirective& RouteDirective::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsRouteDirective();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_RouteDirective.base);
   return *internal_default_instance();
 }
 
-RouteDirective* RouteDirective::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<RouteDirective>(arena);
-}
 
 void RouteDirective::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.RouteDirective)
@@ -4202,7 +4025,7 @@ bool RouteDirective::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.RouteDirective)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -4210,7 +4033,8 @@ bool RouteDirective::MergePartialFromCodedStream(
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_request_header_operations()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_request_header_operations()));
         } else {
           goto handle_unusual;
         }
@@ -4221,7 +4045,8 @@ bool RouteDirective::MergePartialFromCodedStream(
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_response_header_operations()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_response_header_operations()));
         } else {
           goto handle_unusual;
         }
@@ -4288,14 +4113,18 @@ void RouteDirective::SerializeWithCachedSizes(
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->request_header_operations_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->request_header_operations(static_cast<int>(i)), output);
+      1,
+      this->request_header_operations(static_cast<int>(i)),
+      output);
   }
 
   // repeated .istio.mixer.v1.HeaderOperation response_header_operations = 2 [(.gogoproto.nullable) = false];
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->response_header_operations_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->response_header_operations(static_cast<int>(i)), output);
+      2,
+      this->response_header_operations(static_cast<int>(i)),
+      output);
   }
 
   // uint32 direct_response_code = 3;
@@ -4413,9 +4242,7 @@ size_t RouteDirective::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -4490,12 +4317,12 @@ void RouteDirective::UnsafeArenaSwap(RouteDirective* other) {
 }
 void RouteDirective::InternalSwap(RouteDirective* other) {
   using std::swap;
-  request_header_operations_.InternalSwap(&other->request_header_operations_);
-  response_header_operations_.InternalSwap(&other->response_header_operations_);
-  direct_response_body_.Swap(&other->direct_response_body_);
+  CastToBase(&request_header_operations_)->InternalSwap(CastToBase(&other->request_header_operations_));
+  CastToBase(&response_header_operations_)->InternalSwap(CastToBase(&other->response_header_operations_));
+  direct_response_body_.Swap(&other->direct_response_body_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(direct_response_code_, other->direct_response_code_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RouteDirective::GetMetadata() const {
@@ -4520,9 +4347,8 @@ const int ReportRequest::kGlobalWordCountFieldNumber;
 
 ReportRequest::ReportRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReportRequest();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReportRequest.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.ReportRequest)
 }
@@ -4531,7 +4357,7 @@ ReportRequest::ReportRequest(::google::protobuf::Arena* arena)
   _internal_metadata_(arena),
   attributes_(arena),
   default_words_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReportRequest();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReportRequest.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.ReportRequest)
@@ -4540,8 +4366,7 @@ ReportRequest::ReportRequest(const ReportRequest& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL),
       attributes_(from.attributes_),
-      default_words_(from.default_words_),
-      _cached_size_(0) {
+      default_words_(from.default_words_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&global_word_count_, &from.global_word_count_,
     static_cast<size_t>(reinterpret_cast<char*>(&repeated_attributes_semantics_) -
@@ -4553,7 +4378,6 @@ void ReportRequest::SharedCtor() {
   ::memset(&global_word_count_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&repeated_attributes_semantics_) -
       reinterpret_cast<char*>(&global_word_count_)) + sizeof(repeated_attributes_semantics_));
-  _cached_size_ = 0;
 }
 
 ReportRequest::~ReportRequest() {
@@ -4572,9 +4396,7 @@ void ReportRequest::ArenaDtor(void* object) {
 void ReportRequest::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void ReportRequest::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* ReportRequest::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -4582,13 +4404,10 @@ const ::google::protobuf::Descriptor* ReportRequest::descriptor() {
 }
 
 const ReportRequest& ReportRequest::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReportRequest();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReportRequest.base);
   return *internal_default_instance();
 }
 
-ReportRequest* ReportRequest::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<ReportRequest>(arena);
-}
 
 void ReportRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.ReportRequest)
@@ -4610,7 +4429,7 @@ bool ReportRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.ReportRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -4618,7 +4437,8 @@ bool ReportRequest::MergePartialFromCodedStream(
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) ==
             static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(input, add_attributes()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_attributes()));
         } else {
           goto handle_unusual;
         }
@@ -4701,7 +4521,9 @@ void ReportRequest::SerializeWithCachedSizes(
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->attributes_size()); i < n; i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->attributes(static_cast<int>(i)), output);
+      1,
+      this->attributes(static_cast<int>(i)),
+      output);
   }
 
   // repeated string default_words = 2;
@@ -4818,9 +4640,7 @@ size_t ReportRequest::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -4895,12 +4715,11 @@ void ReportRequest::UnsafeArenaSwap(ReportRequest* other) {
 }
 void ReportRequest::InternalSwap(ReportRequest* other) {
   using std::swap;
-  attributes_.InternalSwap(&other->attributes_);
-  default_words_.InternalSwap(&other->default_words_);
+  CastToBase(&attributes_)->InternalSwap(CastToBase(&other->attributes_));
+  default_words_.InternalSwap(CastToBase(&other->default_words_));
   swap(global_word_count_, other->global_word_count_);
   swap(repeated_attributes_semantics_, other->repeated_attributes_semantics_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReportRequest::GetMetadata() const {
@@ -4918,30 +4737,27 @@ void ReportResponse::InitAsDefaultInstance() {
 
 ReportResponse::ReportResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReportResponse();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReportResponse.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:istio.mixer.v1.ReportResponse)
 }
 ReportResponse::ReportResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReportResponse();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReportResponse.base);
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:istio.mixer.v1.ReportResponse)
 }
 ReportResponse::ReportResponse(const ReportResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:istio.mixer.v1.ReportResponse)
 }
 
 void ReportResponse::SharedCtor() {
-  _cached_size_ = 0;
 }
 
 ReportResponse::~ReportResponse() {
@@ -4960,9 +4776,7 @@ void ReportResponse::ArenaDtor(void* object) {
 void ReportResponse::RegisterArenaDtor(::google::protobuf::Arena* arena) {
 }
 void ReportResponse::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* ReportResponse::descriptor() {
   ::protobuf_mixer_2fv1_2fmixer_2eproto::protobuf_AssignDescriptorsOnce();
@@ -4970,13 +4784,10 @@ const ::google::protobuf::Descriptor* ReportResponse::descriptor() {
 }
 
 const ReportResponse& ReportResponse::default_instance() {
-  ::protobuf_mixer_2fv1_2fmixer_2eproto::InitDefaultsReportResponse();
+  ::google::protobuf::internal::InitSCC(&protobuf_mixer_2fv1_2fmixer_2eproto::scc_info_ReportResponse.base);
   return *internal_default_instance();
 }
 
-ReportResponse* ReportResponse::New(::google::protobuf::Arena* arena) const {
-  return ::google::protobuf::Arena::CreateMessage<ReportResponse>(arena);
-}
 
 void ReportResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:istio.mixer.v1.ReportResponse)
@@ -4993,7 +4804,7 @@ bool ReportResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:istio.mixer.v1.ReportResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
   handle_unusual:
@@ -5050,9 +4861,7 @@ size_t ReportResponse::ByteSizeLong() const {
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
   }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -5120,7 +4929,6 @@ void ReportResponse::UnsafeArenaSwap(ReportResponse* other) {
 void ReportResponse::InternalSwap(ReportResponse* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReportResponse::GetMetadata() const {
@@ -5243,5 +5051,48 @@ void Mixer_Stub::Report(::google::protobuf::RpcController* controller,
 }  // namespace v1
 }  // namespace mixer
 }  // namespace istio
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CheckRequest_QuotaParams* Arena::CreateMaybeMessage< ::istio::mixer::v1::CheckRequest_QuotaParams >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CheckRequest_QuotaParams >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CheckRequest_QuotasEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CheckRequest_QuotasEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CheckRequest_QuotasEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CheckRequest* Arena::CreateMaybeMessage< ::istio::mixer::v1::CheckRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CheckRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CheckResponse_PreconditionResult* Arena::CreateMaybeMessage< ::istio::mixer::v1::CheckResponse_PreconditionResult >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CheckResponse_PreconditionResult >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CheckResponse_QuotaResult* Arena::CreateMaybeMessage< ::istio::mixer::v1::CheckResponse_QuotaResult >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CheckResponse_QuotaResult >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CheckResponse_QuotasEntry_DoNotUse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CheckResponse_QuotasEntry_DoNotUse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CheckResponse_QuotasEntry_DoNotUse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::CheckResponse* Arena::CreateMaybeMessage< ::istio::mixer::v1::CheckResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::CheckResponse >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::ReferencedAttributes_AttributeMatch* Arena::CreateMaybeMessage< ::istio::mixer::v1::ReferencedAttributes_AttributeMatch >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::ReferencedAttributes_AttributeMatch >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::ReferencedAttributes* Arena::CreateMaybeMessage< ::istio::mixer::v1::ReferencedAttributes >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::ReferencedAttributes >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::HeaderOperation* Arena::CreateMaybeMessage< ::istio::mixer::v1::HeaderOperation >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::HeaderOperation >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::RouteDirective* Arena::CreateMaybeMessage< ::istio::mixer::v1::RouteDirective >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::RouteDirective >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::ReportRequest* Arena::CreateMaybeMessage< ::istio::mixer::v1::ReportRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::ReportRequest >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::istio::mixer::v1::ReportResponse* Arena::CreateMaybeMessage< ::istio::mixer::v1::ReportResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::istio::mixer::v1::ReportResponse >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)
