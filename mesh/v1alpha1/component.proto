@@ -17,6 +17,7 @@ syntax = "proto3";
 import "google/protobuf/any.proto";
 import "k8s.io/api/autoscaling/v2beta1/generated.proto";
 import "mesh/v1alpha1/kubernetes.proto";
+import "google/protobuf/wrappers.proto";
 
 package istio.mesh.v1alpha1;
 
@@ -45,7 +46,7 @@ message IstioComponentSetSpec {
 // Configuration for internal components.
 message ComponentSpec {
     // Selects whether this component is installed.
-    TypeBoolValueForPB enabled = 1;
+    google.protobuf.BoolValue enabled = 1;
     // Namespace for the component.
     string namespace = 2;
     // Hub for the component (overrides top level hub setting).
@@ -181,6 +182,3 @@ message TypeMapStringInterface {}
 
 // GOTYPE: interface{}
 message TypeInterface {}
-
-// GOTYPE: *BoolValueForPB
-message TypeBoolValueForPB {}

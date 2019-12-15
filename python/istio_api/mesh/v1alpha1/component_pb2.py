@@ -16,6 +16,7 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import any_pb2 as google_dot_protobuf_dot_any__pb2
 from k8s.io.api.autoscaling.v2beta1 import generated_pb2 as k8s_dot_io_dot_api_dot_autoscaling_dot_v2beta1_dot_generated__pb2
 from mesh.v1alpha1 import kubernetes_pb2 as mesh_dot_v1alpha1_dot_kubernetes__pb2
+from google.protobuf import wrappers_pb2 as google_dot_protobuf_dot_wrappers__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -23,9 +24,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='istio.mesh.v1alpha1',
   syntax='proto3',
   serialized_options=_b('Z\032istio.io/api/mesh/v1alpha1'),
-  serialized_pb=_b('\n\x1dmesh/v1alpha1/component.proto\x12\x13istio.mesh.v1alpha1\x1a\x19google/protobuf/any.proto\x1a.k8s.io/api/autoscaling/v2beta1/generated.proto\x1a\x1emesh/v1alpha1/kubernetes.proto\"\xe4\x06\n\x15IstioComponentSetSpec\x12\x31\n\x05pilot\x18\x1e \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x31\n\x05proxy\x18\x1f \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12<\n\x10sidecar_injector\x18  \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x32\n\x06policy\x18! \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x35\n\ttelemetry\x18\" \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x33\n\x07\x63itadel\x18# \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x36\n\nnode_agent\x18$ \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x32\n\x06galley\x18% \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12/\n\x03\x63ni\x18& \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x34\n\x08\x63ore_dNS\x18\' \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12:\n\x10ingress_gateways\x18( \x03(\x0b\x32 .istio.mesh.v1alpha1.GatewaySpec\x12\x39\n\x0f\x65gress_gateways\x18) \x03(\x0b\x32 .istio.mesh.v1alpha1.GatewaySpec\x12Y\n\x10\x65xtra_components\x18\x64 \x03(\x0b\x32?.istio.mesh.v1alpha1.IstioComponentSetSpec.ExtraComponentsEntry\x1a\x62\n\x14\x45xtraComponentsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x39\n\x05value\x18\x02 \x01(\x0b\x32*.istio.mesh.v1alpha1.ExternalComponentSpec:\x02\x38\x01\"\xe3\x01\n\rComponentSpec\x12\x38\n\x07\x65nabled\x18\x01 \x01(\x0b\x32\'.istio.mesh.v1alpha1.TypeBoolValueForPB\x12\x11\n\tnamespace\x18\x02 \x01(\t\x12\x0b\n\x03hub\x18\n \x01(\t\x12\x0b\n\x03tag\x18\x0b \x01(\t\x12\x30\n\x04spec\x18\x1e \x01(\x0b\x32\".istio.mesh.v1alpha1.TypeInterface\x12\x39\n\x03k8s\x18\x32 \x01(\x0b\x32,.istio.mesh.v1alpha1.KubernetesResourcesSpec\"\xd1\x01\n\x15\x45xternalComponentSpec\x12\x11\n\tnamespace\x18\x02 \x01(\t\x12\x30\n\x04spec\x18\n \x01(\x0b\x32\".istio.mesh.v1alpha1.TypeInterface\x12\x12\n\nchart_path\x18\x1e \x01(\t\x12$\n\x06schema\x18# \x01(\x0b\x32\x14.google.protobuf.Any\x12\x39\n\x03k8s\x18\x32 \x01(\x0b\x32,.istio.mesh.v1alpha1.KubernetesResourcesSpec\"\xed\x01\n\x0bGatewaySpec\x12\x11\n\tnamespace\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12:\n\x05label\x18\x04 \x03(\x0b\x32+.istio.mesh.v1alpha1.GatewaySpec.LabelEntry\x12\x0b\n\x03hub\x18\n \x01(\t\x12\x0b\n\x03tag\x18\x0b \x01(\t\x12\x39\n\x03k8s\x18\x32 \x01(\x0b\x32,.istio.mesh.v1alpha1.KubernetesResourcesSpec\x1a,\n\nLabelEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"\xcb\x07\n\x17KubernetesResourcesSpec\x12/\n\x08\x61\x66\x66inity\x18\x01 \x01(\x0b\x32\x1d.istio.mesh.v1alpha1.Affinity\x12(\n\x03\x65nv\x18\x02 \x03(\x0b\x32\x1b.istio.mesh.v1alpha1.EnvVar\x12M\n\x08hpa_spec\x18\x03 \x01(\x0b\x32;.k8s.io.api.autoscaling.v2beta1.HorizontalPodAutoscalerSpec\x12\x19\n\x11image_pull_policy\x18\x04 \x01(\t\x12U\n\rnode_selector\x18\x05 \x03(\x0b\x32>.istio.mesh.v1alpha1.KubernetesResourcesSpec.NodeSelectorEntry\x12K\n\x15pod_disruption_budget\x18\x06 \x01(\x0b\x32,.istio.mesh.v1alpha1.PodDisruptionBudgetSpec\x12Y\n\x0fpod_annotations\x18\x07 \x03(\x0b\x32@.istio.mesh.v1alpha1.KubernetesResourcesSpec.PodAnnotationsEntry\x12\x1b\n\x13priority_class_name\x18\x08 \x01(\t\x12<\n\x0freadiness_probe\x18\t \x01(\x0b\x32#.istio.mesh.v1alpha1.ReadinessProbe\x12\x15\n\rreplica_count\x18\n \x01(\r\x12\x31\n\tresources\x18\x0b \x01(\x0b\x32\x1e.istio.mesh.v1alpha1.Resources\x12\x31\n\x07service\x18\x0c \x01(\x0b\x32 .istio.mesh.v1alpha1.ServiceSpec\x12\x39\n\x08strategy\x18\r \x01(\x0b\x32\'.istio.mesh.v1alpha1.DeploymentStrategy\x12\x34\n\x0btolerations\x18\x0e \x01(\x0b\x32\x1f.istio.mesh.v1alpha1.Toleration\x12\x37\n\x08overlays\x18\x64 \x03(\x0b\x32%.istio.mesh.v1alpha1.K8sObjectOverlay\x1a\x33\n\x11NodeSelectorEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a\x35\n\x13PodAnnotationsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"\xd3\x01\n\x10K8sObjectOverlay\x12\x13\n\x0b\x61pi_version\x18\x01 \x01(\t\x12\x0c\n\x04kind\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12@\n\x07patches\x18\x04 \x03(\x0b\x32/.istio.mesh.v1alpha1.K8sObjectOverlay.PathValue\x1aL\n\tPathValue\x12\x0c\n\x04path\x18\x01 \x01(\t\x12\x31\n\x05value\x18\x02 \x01(\x0b\x32\".istio.mesh.v1alpha1.TypeInterface\"\x18\n\x16TypeMapStringInterface\"\x0f\n\rTypeInterface\"\x14\n\x12TypeBoolValueForPBB\x1cZ\x1aistio.io/api/mesh/v1alpha1b\x06proto3')
+  serialized_pb=_b('\n\x1dmesh/v1alpha1/component.proto\x12\x13istio.mesh.v1alpha1\x1a\x19google/protobuf/any.proto\x1a.k8s.io/api/autoscaling/v2beta1/generated.proto\x1a\x1emesh/v1alpha1/kubernetes.proto\x1a\x1egoogle/protobuf/wrappers.proto\"\xe4\x06\n\x15IstioComponentSetSpec\x12\x31\n\x05pilot\x18\x1e \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x31\n\x05proxy\x18\x1f \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12<\n\x10sidecar_injector\x18  \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x32\n\x06policy\x18! \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x35\n\ttelemetry\x18\" \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x33\n\x07\x63itadel\x18# \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x36\n\nnode_agent\x18$ \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x32\n\x06galley\x18% \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12/\n\x03\x63ni\x18& \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12\x34\n\x08\x63ore_dNS\x18\' \x01(\x0b\x32\".istio.mesh.v1alpha1.ComponentSpec\x12:\n\x10ingress_gateways\x18( \x03(\x0b\x32 .istio.mesh.v1alpha1.GatewaySpec\x12\x39\n\x0f\x65gress_gateways\x18) \x03(\x0b\x32 .istio.mesh.v1alpha1.GatewaySpec\x12Y\n\x10\x65xtra_components\x18\x64 \x03(\x0b\x32?.istio.mesh.v1alpha1.IstioComponentSetSpec.ExtraComponentsEntry\x1a\x62\n\x14\x45xtraComponentsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\x39\n\x05value\x18\x02 \x01(\x0b\x32*.istio.mesh.v1alpha1.ExternalComponentSpec:\x02\x38\x01\"\xd6\x01\n\rComponentSpec\x12+\n\x07\x65nabled\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.BoolValue\x12\x11\n\tnamespace\x18\x02 \x01(\t\x12\x0b\n\x03hub\x18\n \x01(\t\x12\x0b\n\x03tag\x18\x0b \x01(\t\x12\x30\n\x04spec\x18\x1e \x01(\x0b\x32\".istio.mesh.v1alpha1.TypeInterface\x12\x39\n\x03k8s\x18\x32 \x01(\x0b\x32,.istio.mesh.v1alpha1.KubernetesResourcesSpec\"\xd1\x01\n\x15\x45xternalComponentSpec\x12\x11\n\tnamespace\x18\x02 \x01(\t\x12\x30\n\x04spec\x18\n \x01(\x0b\x32\".istio.mesh.v1alpha1.TypeInterface\x12\x12\n\nchart_path\x18\x1e \x01(\t\x12$\n\x06schema\x18# \x01(\x0b\x32\x14.google.protobuf.Any\x12\x39\n\x03k8s\x18\x32 \x01(\x0b\x32,.istio.mesh.v1alpha1.KubernetesResourcesSpec\"\xed\x01\n\x0bGatewaySpec\x12\x11\n\tnamespace\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12:\n\x05label\x18\x04 \x03(\x0b\x32+.istio.mesh.v1alpha1.GatewaySpec.LabelEntry\x12\x0b\n\x03hub\x18\n \x01(\t\x12\x0b\n\x03tag\x18\x0b \x01(\t\x12\x39\n\x03k8s\x18\x32 \x01(\x0b\x32,.istio.mesh.v1alpha1.KubernetesResourcesSpec\x1a,\n\nLabelEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"\xcb\x07\n\x17KubernetesResourcesSpec\x12/\n\x08\x61\x66\x66inity\x18\x01 \x01(\x0b\x32\x1d.istio.mesh.v1alpha1.Affinity\x12(\n\x03\x65nv\x18\x02 \x03(\x0b\x32\x1b.istio.mesh.v1alpha1.EnvVar\x12M\n\x08hpa_spec\x18\x03 \x01(\x0b\x32;.k8s.io.api.autoscaling.v2beta1.HorizontalPodAutoscalerSpec\x12\x19\n\x11image_pull_policy\x18\x04 \x01(\t\x12U\n\rnode_selector\x18\x05 \x03(\x0b\x32>.istio.mesh.v1alpha1.KubernetesResourcesSpec.NodeSelectorEntry\x12K\n\x15pod_disruption_budget\x18\x06 \x01(\x0b\x32,.istio.mesh.v1alpha1.PodDisruptionBudgetSpec\x12Y\n\x0fpod_annotations\x18\x07 \x03(\x0b\x32@.istio.mesh.v1alpha1.KubernetesResourcesSpec.PodAnnotationsEntry\x12\x1b\n\x13priority_class_name\x18\x08 \x01(\t\x12<\n\x0freadiness_probe\x18\t \x01(\x0b\x32#.istio.mesh.v1alpha1.ReadinessProbe\x12\x15\n\rreplica_count\x18\n \x01(\r\x12\x31\n\tresources\x18\x0b \x01(\x0b\x32\x1e.istio.mesh.v1alpha1.Resources\x12\x31\n\x07service\x18\x0c \x01(\x0b\x32 .istio.mesh.v1alpha1.ServiceSpec\x12\x39\n\x08strategy\x18\r \x01(\x0b\x32\'.istio.mesh.v1alpha1.DeploymentStrategy\x12\x34\n\x0btolerations\x18\x0e \x01(\x0b\x32\x1f.istio.mesh.v1alpha1.Toleration\x12\x37\n\x08overlays\x18\x64 \x03(\x0b\x32%.istio.mesh.v1alpha1.K8sObjectOverlay\x1a\x33\n\x11NodeSelectorEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\x1a\x35\n\x13PodAnnotationsEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"\xd3\x01\n\x10K8sObjectOverlay\x12\x13\n\x0b\x61pi_version\x18\x01 \x01(\t\x12\x0c\n\x04kind\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12@\n\x07patches\x18\x04 \x03(\x0b\x32/.istio.mesh.v1alpha1.K8sObjectOverlay.PathValue\x1aL\n\tPathValue\x12\x0c\n\x04path\x18\x01 \x01(\t\x12\x31\n\x05value\x18\x02 \x01(\x0b\x32\".istio.mesh.v1alpha1.TypeInterface\"\x18\n\x16TypeMapStringInterface\"\x0f\n\rTypeInterfaceB\x1cZ\x1aistio.io/api/mesh/v1alpha1b\x06proto3')
   ,
-  dependencies=[google_dot_protobuf_dot_any__pb2.DESCRIPTOR,k8s_dot_io_dot_api_dot_autoscaling_dot_v2beta1_dot_generated__pb2.DESCRIPTOR,mesh_dot_v1alpha1_dot_kubernetes__pb2.DESCRIPTOR,])
+  dependencies=[google_dot_protobuf_dot_any__pb2.DESCRIPTOR,k8s_dot_io_dot_api_dot_autoscaling_dot_v2beta1_dot_generated__pb2.DESCRIPTOR,mesh_dot_v1alpha1_dot_kubernetes__pb2.DESCRIPTOR,google_dot_protobuf_dot_wrappers__pb2.DESCRIPTOR,])
 
 
 
@@ -63,8 +64,8 @@ _ISTIOCOMPONENTSETSPEC_EXTRACOMPONENTSENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=932,
-  serialized_end=1030,
+  serialized_start=964,
+  serialized_end=1062,
 )
 
 _ISTIOCOMPONENTSETSPEC = _descriptor.Descriptor(
@@ -177,8 +178,8 @@ _ISTIOCOMPONENTSETSPEC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=162,
-  serialized_end=1030,
+  serialized_start=194,
+  serialized_end=1062,
 )
 
 
@@ -243,8 +244,8 @@ _COMPONENTSPEC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1033,
-  serialized_end=1260,
+  serialized_start=1065,
+  serialized_end=1279,
 )
 
 
@@ -302,8 +303,8 @@ _EXTERNALCOMPONENTSPEC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1263,
-  serialized_end=1472,
+  serialized_start=1282,
+  serialized_end=1491,
 )
 
 
@@ -340,8 +341,8 @@ _GATEWAYSPEC_LABELENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1668,
-  serialized_end=1712,
+  serialized_start=1687,
+  serialized_end=1731,
 )
 
 _GATEWAYSPEC = _descriptor.Descriptor(
@@ -405,8 +406,8 @@ _GATEWAYSPEC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1475,
-  serialized_end=1712,
+  serialized_start=1494,
+  serialized_end=1731,
 )
 
 
@@ -443,8 +444,8 @@ _KUBERNETESRESOURCESSPEC_NODESELECTORENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2580,
-  serialized_end=2631,
+  serialized_start=2599,
+  serialized_end=2650,
 )
 
 _KUBERNETESRESOURCESSPEC_PODANNOTATIONSENTRY = _descriptor.Descriptor(
@@ -480,8 +481,8 @@ _KUBERNETESRESOURCESSPEC_PODANNOTATIONSENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2633,
-  serialized_end=2686,
+  serialized_start=2652,
+  serialized_end=2705,
 )
 
 _KUBERNETESRESOURCESSPEC = _descriptor.Descriptor(
@@ -608,8 +609,8 @@ _KUBERNETESRESOURCESSPEC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1715,
-  serialized_end=2686,
+  serialized_start=1734,
+  serialized_end=2705,
 )
 
 
@@ -646,8 +647,8 @@ _K8SOBJECTOVERLAY_PATHVALUE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2824,
-  serialized_end=2900,
+  serialized_start=2843,
+  serialized_end=2919,
 )
 
 _K8SOBJECTOVERLAY = _descriptor.Descriptor(
@@ -697,8 +698,8 @@ _K8SOBJECTOVERLAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2689,
-  serialized_end=2900,
+  serialized_start=2708,
+  serialized_end=2919,
 )
 
 
@@ -721,8 +722,8 @@ _TYPEMAPSTRINGINTERFACE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2902,
-  serialized_end=2926,
+  serialized_start=2921,
+  serialized_end=2945,
 )
 
 
@@ -745,32 +746,8 @@ _TYPEINTERFACE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2928,
-  serialized_end=2943,
-)
-
-
-_TYPEBOOLVALUEFORPB = _descriptor.Descriptor(
-  name='TypeBoolValueForPB',
-  full_name='istio.mesh.v1alpha1.TypeBoolValueForPB',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=2945,
-  serialized_end=2965,
+  serialized_start=2947,
+  serialized_end=2962,
 )
 
 _ISTIOCOMPONENTSETSPEC_EXTRACOMPONENTSENTRY.fields_by_name['value'].message_type = _EXTERNALCOMPONENTSPEC
@@ -788,7 +765,7 @@ _ISTIOCOMPONENTSETSPEC.fields_by_name['core_dNS'].message_type = _COMPONENTSPEC
 _ISTIOCOMPONENTSETSPEC.fields_by_name['ingress_gateways'].message_type = _GATEWAYSPEC
 _ISTIOCOMPONENTSETSPEC.fields_by_name['egress_gateways'].message_type = _GATEWAYSPEC
 _ISTIOCOMPONENTSETSPEC.fields_by_name['extra_components'].message_type = _ISTIOCOMPONENTSETSPEC_EXTRACOMPONENTSENTRY
-_COMPONENTSPEC.fields_by_name['enabled'].message_type = _TYPEBOOLVALUEFORPB
+_COMPONENTSPEC.fields_by_name['enabled'].message_type = google_dot_protobuf_dot_wrappers__pb2._BOOLVALUE
 _COMPONENTSPEC.fields_by_name['spec'].message_type = _TYPEINTERFACE
 _COMPONENTSPEC.fields_by_name['k8s'].message_type = _KUBERNETESRESOURCESSPEC
 _EXTERNALCOMPONENTSPEC.fields_by_name['spec'].message_type = _TYPEINTERFACE
@@ -822,7 +799,6 @@ DESCRIPTOR.message_types_by_name['KubernetesResourcesSpec'] = _KUBERNETESRESOURC
 DESCRIPTOR.message_types_by_name['K8sObjectOverlay'] = _K8SOBJECTOVERLAY
 DESCRIPTOR.message_types_by_name['TypeMapStringInterface'] = _TYPEMAPSTRINGINTERFACE
 DESCRIPTOR.message_types_by_name['TypeInterface'] = _TYPEINTERFACE
-DESCRIPTOR.message_types_by_name['TypeBoolValueForPB'] = _TYPEBOOLVALUEFORPB
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 IstioComponentSetSpec = _reflection.GeneratedProtocolMessageType('IstioComponentSetSpec', (_message.Message,), {
@@ -920,13 +896,6 @@ TypeInterface = _reflection.GeneratedProtocolMessageType('TypeInterface', (_mess
   # @@protoc_insertion_point(class_scope:istio.mesh.v1alpha1.TypeInterface)
   })
 _sym_db.RegisterMessage(TypeInterface)
-
-TypeBoolValueForPB = _reflection.GeneratedProtocolMessageType('TypeBoolValueForPB', (_message.Message,), {
-  'DESCRIPTOR' : _TYPEBOOLVALUEFORPB,
-  '__module__' : 'mesh.v1alpha1.component_pb2'
-  # @@protoc_insertion_point(class_scope:istio.mesh.v1alpha1.TypeBoolValueForPB)
-  })
-_sym_db.RegisterMessage(TypeBoolValueForPB)
 
 
 DESCRIPTOR._options = None

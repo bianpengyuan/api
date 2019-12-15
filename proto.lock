@@ -35782,7 +35782,7 @@
               {
                 "id": 1,
                 "name": "enabled",
-                "type": "TypeBoolValueForPB"
+                "type": "google.protobuf.BoolValue"
               },
               {
                 "id": 2,

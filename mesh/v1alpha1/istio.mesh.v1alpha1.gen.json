@@ -88,7 +88,9 @@
             "$ref": "#/components/schemas/istio.mesh.v1alpha1.TypeInterface"
           },
           "enabled": {
-            "$ref": "#/components/schemas/istio.mesh.v1alpha1.TypeBoolValueForPB"
+            "description": "Selects whether this component is installed.",
+            "type": "boolean",
+            "nullable": true
           },
           "hub": {
             "description": "Hub for the component (overrides top level hub setting).",
@@ -177,10 +179,6 @@
             }
           }
         }
-      },
-      "istio.mesh.v1alpha1.TypeBoolValueForPB": {
-        "description": "GOTYPE: *BoolValueForPB",
-        "type": "object"
       },
       "istio.mesh.v1alpha1.TypeInterface": {
         "description": "GOTYPE: interface{}",
